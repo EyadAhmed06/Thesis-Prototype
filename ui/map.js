@@ -27,7 +27,7 @@ const EVMap = (() => {
     line(m.direct, css('--muted'), 1.5, [5, 5]);
     for (const L in m.to) if (L !== o.best && L !== o.model) { line(m.to[L], css('--road2'), 2); line(m.from[L], css('--road2'), 2); }
     if (o.best !== undefined) { g.globalAlpha = 0.55; line(route(m, o.best), css('--good'), 9); g.globalAlpha = 1; }
-    if (o.model !== undefined && o.model !== 'invalid') line(route(m, o.model), css('--accent'), 3.5, null, o.t == null ? null : o.t);
+    if (o.model !== undefined && o.model !== 'invalid') { g.shadowColor = css('--accent'); g.shadowBlur = 10; line(route(m, o.model), css('--accent'), 3.8, null, o.t == null ? null : o.t); g.shadowBlur = 0; }
     // car dot along the model route
     if (o.model !== undefined && o.model !== 'invalid' && o.t != null) { const p = route(m, o.model), L = lenOf(p), lim = L[L.length - 1] * o.t;
       let i = 1; while (i < p.length - 1 && L[i] < lim) i++; const f = (lim - L[i - 1]) / ((L[i] - L[i - 1]) || 1), a = p[i - 1], b = p[i] || a;

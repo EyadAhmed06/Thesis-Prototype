@@ -54,8 +54,10 @@ def grade_answer(r, c, drives, R):
         dec = dict(charge=d['charge'], charger=inv.get(d['charger']) if d['charge'] else None, target=d['target'], gives_up=d['gives_up'])
         if d['charge'] and dec['charger'] is None: dec['charger'] = 'not in list'
     g = S.grade_v2(c, dec, R, drives)
+    if not parsed:   # no readable answer (or form): a failure, never graded as a 'do not charge' decision
+        g.update(safe=False, valid=False, top1=False, honest=None, broken='no valid answer'); g.pop('gap', None); g.pop('gap_unit', None)
     g.update(model=r['model'], role=r['role'], facts=r['facts'], wording=r['wording'], variant=r['variant'], parsed=parsed,
-             profile=r.get('profile', 'laptop'), threads=r.get('threads'), wall_s=r['wall_s'], retried=bool(r.get('problems')),
+             profile=r.get('profile', 'laptop'), adapt=r.get('adapt', 'none'), threads=r.get('threads'), wall_s=r['wall_s'], retried=bool(r.get('problems')),
              memory_gb=r.get('memory_gb'), write_tok_s=r.get('write_tok_s'), read_tok_s=r.get('read_tok_s'),
              pred_letter=c['letters'].get(dec['charger']) if dec['charge'] else None, pred_target=dec.get('target'), **extra)
     return g
@@ -64,11 +66,11 @@ def main(cases_path, drives_path, res_path, out):
     cases = {json.loads(l)['id']: json.loads(l) for l in open(cases_path)}; drives = json.load(open(drives_path))
     R = Referee.__new__(Referee); R.ch = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'referee', 'chargers.csv')).set_index('id')
     rows = [grade_answer(json.loads(l), cases[json.loads(l)['id']], drives, R) for l in open(res_path)]
-    d = pd.DataFrame(rows).drop_duplicates(['model', 'role', 'facts', 'wording', 'variant', 'profile', 'id'], keep='last'); d.to_csv(out, index=False)
+    d = pd.DataFrame(rows).drop_duplicates(['model', 'role', 'facts', 'wording', 'variant', 'profile', 'adapt', 'id'], keep='last'); d.to_csv(out, index=False)
     summ = []
-    for key, g in d.groupby(['model', 'role', 'facts', 'wording', 'profile']):
+    for key, g in d.groupby(['model', 'role', 'facts', 'wording', 'profile', 'adapt']):
         s = S.summary_v2(g.to_dict('records'), ' / '.join(map(str, key)))
-        s.update(model=key[0], role=key[1], facts=key[2], wording=key[3], profile=key[4], threads=g.threads.dropna().max() if g.threads.notna().any() else None,
+        s.update(model=key[0], role=key[1], facts=key[2], wording=key[3], profile=key[4], adapt=key[5], threads=g.threads.dropna().max() if g.threads.notna().any() else None,
                  wall_s_p95=g.wall_s.quantile(0.95), retried=g.retried.mean(),
                  memory_gb_max=pd.to_numeric(g.memory_gb, errors='coerce').max(), write_tok_s_median=pd.to_numeric(g.write_tok_s, errors='coerce').median(),
                  read_tok_s_median=pd.to_numeric(g.read_tok_s, errors='coerce').median())

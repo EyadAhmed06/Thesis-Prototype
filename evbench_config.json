@@ -40,23 +40,51 @@
    "note": "the experiment laptop as it is (all CPU cores)"
   },
   {
-   "name": "in-car",
+   "name": "1 thread",
+   "threads": 1,
+   "note": "the model may use only 1 CPU thread, standing in for a weaker computer"
+  },
+  {
+   "name": "2 threads",
+   "threads": 2,
+   "note": "the model may use only 2 CPU threads, standing in for a weaker computer"
+  },
+  {
+   "name": "4 threads",
    "threads": 4,
-   "memory_budget_gb": 4,
-   "time_budget_s": 10,
-   "status": "proposed, not agreed",
-   "note": "a smaller in-car computer: 4 CPU threads; the answer must fit in 4 GB and come within 10 s"
+   "note": "the model may use only 4 CPU threads, standing in for a weaker computer"
+  },
+  {
+   "name": "8 threads",
+   "threads": 8,
+   "note": "the model may use only 8 CPU threads, standing in for a weaker computer"
   }
  ],
  "edge_on": {
   "roles": [
-   "R2",
-   "R3-known"
+   "R2"
   ],
   "wordings": [
    "template"
   ],
-  "note": "the extra profiles run only these roles and wordings, to keep the run short"
+  "note": "the hardware sweep runs only R2 with template wording on the 40 pilot situations, to keep the run short; time and memory are reported, no pass/fail budget"
  },
- "live_dashboard": true
+ "live_dashboard": true,
+ "adaptations": [
+  "rules",
+  "examples",
+  "lora"
+ ],
+ "adapt_on": {
+  "roles": [
+   "R1",
+   "R2",
+   "R3-known",
+   "R3-full"
+  ],
+  "wordings": [
+   "template"
+  ],
+  "note": "RQ3: each adaptation is run on the same situations as the main run, template wording, main profile. lora runs only once the fine-tuned models exist in Ollama (lora/README.md)."
+ }
 }

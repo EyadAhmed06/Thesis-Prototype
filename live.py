@@ -50,7 +50,7 @@ def answers(here, out, since):
                 try: g = G['SP'].grade_answer(r, c, G['drives'], G['R'])
                 except Exception as ex: g = dict(safe=False, valid=False, broken=f'could not grade: {ex}')
                 req = c['requests'].get(r['wording'], c['requests']['template']); req = req[r.get('variant', 0) % len(req)] if req else ''
-                G['rows'].append(dict(n=len(G['rows']), id=r['id'], model=r['model'], role=r['role'], wording=r['wording'], profile=r.get('profile', 'laptop'),
+                G['rows'].append(dict(n=len(G['rows']), id=r['id'], model=r['model'], role=r['role'], wording=r['wording'], profile=r.get('profile', 'laptop'), adapt=r.get('adapt', 'none'),
                                       threads=r.get('threads'), request=req, goal=c['goal'], wishes=[_wish(w) for w in c['wishes']],
                                       conflict=c['conflict'], held_out=c['held_out'], best_letter=c['best_letter'], best_target=c['best_target'],
                                       best_gives=c['gives_up'], pred_letter=g.get('pred_letter'), pred_charge=g.get('pred_charge'), pred_target=g.get('pred_target'),

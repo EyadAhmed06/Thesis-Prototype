@@ -56,10 +56,13 @@ class Manifest:
 
 # ---------------------------------------------------------------- stages
 def st_inputs(cfg, m):
-    net = os.path.join(HERE, cfg['network']); gz = net + '.gz'; ch = os.path.join(REF, 'chargers.csv')
+    net = os.path.join(HERE, cfg['network']); ch = os.path.join(REF, 'chargers.csv')
     if not os.path.exists(net):
-        if os.path.exists(gz):
-            say('  unpacking the stored road network'); shutil.copyfileobj(gzip.open(gz), open(net, 'wb'))
+        import lzma
+        packed = [(p, o) for p, o in ((net + '.xz', lzma.open), (net + '.gz', gzip.open)) if os.path.exists(p)]
+        if packed:
+            say('  unpacking the stored road network')
+            with packed[0][1](packed[0][0]) as src, open(net, 'wb') as dst: shutil.copyfileobj(src, dst, 1 << 20)
         else:
             if not (cfg.get('osm_pbf') and cfg.get('afdc_csv')): raise SystemExit('no road network: set osm_pbf and afdc_csv in the config')
             run([PY, os.path.join(HERE, 'build_network.py'), cfg['osm_pbf'], cfg['afdc_csv']])
@@ -117,7 +120,9 @@ def st_situations(cfg, m):
 def st_baselines(cfg, m):
     v2 = os.path.join(REF, 'cases_v2')
     run([PY, os.path.join(REF, 'run_baselines_v2.py'), v2, 'test', OUT, os.path.join(v2, 'base', 'test_drives.json')])
-    return [os.path.join(OUT, 'test_v2_baselines_summary.csv'), os.path.join(OUT, 'test_v2_baselines_rows.csv')], 'baselines graded'
+    sens = os.path.join(OUT, 'test_v2_sensitivity.csv')   # answer key vs charging power, unlisted prices, stop overhead
+    run([PY, os.path.join(REF, 'sensitivity.py'), sens])
+    return [os.path.join(OUT, 'test_v2_baselines_summary.csv'), os.path.join(OUT, 'test_v2_baselines_rows.csv'), sens], 'baselines graded, sensitivity checked'
 
 def ollama_ok(url):
     try: urllib.request.urlopen(url + '/api/tags', timeout=5).read(); return True
@@ -141,9 +146,26 @@ def st_models(cfg, m):
     for prof, wording, role in plan:
         say(f'  {role}, {wording} requests, profile {prof["name"]}' + (f' ({prof["threads"]} CPU threads)' if prof.get('threads') else ''))
         run([PY, os.path.join(PILOT, 'run_pilot_v2.py'), '--models', *cfg['models'], '--role', role, '--wording', wording,
-             '--facts', cfg['facts'], '--cases', os.path.join(REF, 'cases_v2', 'test_cases.jsonl'), '--ids', ids, '--url', url, '--out', res,
-             '--profile', prof['name'], '--threads', str(prof.get('threads') or 0)])
+             '--facts', cfg['facts'], '--cases', os.path.join(REF, 'cases_v2', 'test_cases.jsonl'),
+             '--ids', ids if prof is profiles[0] else os.path.join(PILOT, 'pilot_v2_ids.json'),   # the hardware sweep always uses the 40 pilot situations
+             '--url', url, '--out', res, '--profile', prof['name'], '--threads', str(prof.get('threads') or 0)])
+    # RQ3 adaptation: main profile only, on the wordings and roles of adapt_on (see pilot/adapt.py)
+    ao = cfg.get('adapt_on', {})
+    for adapt in cfg.get('adaptations', []):
+        models = cfg['models']
+        if adapt == 'lora':   # fine-tuned models are named like the base model plus -ev (see lora/README.md)
+            models = [AD_lora(x) for x in cfg['models'] if AD_lora(x) in names or AD_lora(x) + ':latest' in names]
+            if not models: say('  lora: no fine-tuned models in Ollama yet (see lora/README.md), skipped'); continue
+        for wording in ao.get('wordings', ['template']):
+            for role in ao.get('roles', cfg['roles']):
+                say(f'  {role}, {wording} requests, adaptation {adapt}')
+                run([PY, os.path.join(PILOT, 'run_pilot_v2.py'), '--models', *models, '--role', role, '--wording', wording,
+                     '--facts', cfg['facts'], '--cases', os.path.join(REF, 'cases_v2', 'test_cases.jsonl'), '--ids', ids,
+                     '--url', url, '--out', res, '--profile', profiles[0]['name'], '--threads', str(profiles[0].get('threads') or 0), '--adapt', adapt])
     return [res], f"{sum(1 for _ in open(res))} answers stored"
+
+def AD_lora(tag):
+    name, _, size = tag.partition(':'); return name + '-ev' + (':' + size if size else '')
 
 def st_score(cfg, m):
     res = os.path.join(OUT, 'model_answers.jsonl')
@@ -151,7 +173,9 @@ def st_score(cfg, m):
     out = os.path.join(OUT, 'model_scores.csv')
     run([PY, os.path.join(PILOT, 'score_pilot_v2.py'), os.path.join(REF, 'cases_v2', 'test_cases.jsonl'),
          os.path.join(REF, 'cases_v2', 'base', 'test_drives.json'), res, out])
-    return [out, out.replace('.csv', '_summary.csv')], 'model answers graded'
+    st = os.path.join(OUT, 'model_stats.csv')   # paired tests per research question (referee/stats_v2.py)
+    run([PY, os.path.join(REF, 'stats_v2.py'), out, os.path.join(OUT, 'test_v2_baselines_rows.csv'), st])
+    return [out, out.replace('.csv', '_summary.csv'), st], 'model answers graded, paired tests done'
 
 def st_report(cfg, m):
     import report
@@ -160,9 +184,13 @@ def st_report(cfg, m):
 FUN = dict(inputs=st_inputs, validation=st_validation, situations=st_situations, baselines=st_baselines, models=st_models, score=st_score, report=st_report)
 
 def planned_answers(cfg):
-    n = len(json.load(open(ids_file(cfg)))); profiles = cfg.get('edge_profiles') or [{}]; eo = cfg.get('edge_on', {})
-    per = len(cfg['wordings']) * len(cfg['roles']) + (len(profiles) - 1) * len(eo.get('wordings', cfg['wordings'])) * len(eo.get('roles', cfg['roles']))
-    return n * len(cfg['models']) * per
+    n = len(json.load(open(ids_file(cfg)))); n_p = len(json.load(open(os.path.join(PILOT, 'pilot_v2_ids.json'))))
+    profiles = cfg.get('edge_profiles') or [{}]; eo = cfg.get('edge_on', {})
+    main = n * len(cfg['wordings']) * len(cfg['roles'])
+    sweep = n_p * (len(profiles) - 1) * len(eo.get('wordings', cfg['wordings'])) * len(eo.get('roles', cfg['roles']))
+    ao = cfg.get('adapt_on', {})
+    adapt = n * len([x for x in cfg.get('adaptations', []) if x != 'lora']) * len(ao.get('wordings', ['template'])) * len(ao.get('roles', cfg['roles']))
+    return (main + sweep + adapt) * len(cfg['models'])
 
 def wait_dashboard(srv):
     if srv is None or not sys.stdin.isatty(): return

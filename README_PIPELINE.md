@@ -10,7 +10,7 @@ It runs seven stages in order and writes everything to `outputs/`. A live dashbo
 
 | # | Stage | Input | What happens | Output |
 |---|---|---|---|---|
-| 1 | inputs | OpenStreetMap Michigan + AFDC charger list | SUMO `netconvert` builds the road network (`build_network.py`); chargers are snapped to roads (`referee/stations.py`). The built network is stored as `data/aa_det.net.xml.gz`, so this is normally just an unzip. | `data/aa_det.net.xml`, `referee/chargers.csv` |
+| 1 | inputs | OpenStreetMap Michigan + AFDC charger list | SUMO `netconvert` builds the road network (`build_network.py`); chargers are snapped to roads (`referee/stations.py`). The built network is stored as `data/aa_det.net.xml.xz`, so this is normally just an unzip. | `data/aa_det.net.xml`, `referee/chargers.csv` |
 | 2 | validation | Real trips (DEVRT Leaf e+, VED Michigan) | SUMO's energy use is compared with what the real cars measured; the heating/cooling correction is fitted. | `outputs/validation.json` |
 | 3 | situations | Road network, chargers | Trips are driven in SUMO, the referee computes every valid plan and the best one, driver wishes are added, 300 test situations are selected. The stored set is checked against its frozen SHA-256. | `referee/cases_v2/test_cases.jsonl` |
 | 4 | baselines | Test situations | Random, nearest, rule and exact-planner methods, graded by the referee. | `outputs/test_v2_baselines_summary.csv` |

@@ -1,0 +1,9 @@
+1400 raw cases; driving legs in SUMO...
+16528 legs driven in 89 s
+993 solvable; 611 robust; must charge 503
+Traceback (most recent call last):
+  File "gen_cases.py", line 3, in <module>
+    import sys, os, json, time; sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+                                                                   ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "<frozen posixpath>", line 381, in abspath
+FileNotFoundError: [Errno 2] No such file or directory

@@ -5,9 +5,10 @@ Needs only Python 3 and Ollama running on this computer.
   python run_pilot_v2.py --role R2                       # model decides, on-device safety check, one retry
   python run_pilot_v2.py --role R3-known                 # model only fills in a form (training wish types), exact planner decides
   python run_pilot_v2.py --role R3-full                  # same, form has every wish type (upper bound for reading-only)
-Options: --models, --cases, --limit, --ids, --profile NAME --threads N (edge profile), --facts with_energy|without_energy, --wording template|paraphrase|human, --variant 0-2
+Options: --adapt none|rules|examples|lora (RQ3, see adapt.py), --models, --cases, --limit, --ids, --profile NAME --threads N (edge profile), --facts with_energy|without_energy, --wording template|paraphrase|human, --variant 0-2
 Writes one line per model x situation to pilot_v2_results.jsonl. Send that file back for scoring."""
 import json, re, time, argparse, platform, urllib.request
+import adapt as AD
 
 SYSTEM = ("You are the charging assistant in an electric car. Using only the facts given, decide: "
           "1) whether to charge before reaching the destination, 2) if so, at which charger (its letter), "
@@ -31,8 +32,8 @@ def system_r3(form):
 
 THREADS = None   # set by --threads: CPU threads Ollama may use (edge profile); None = Ollama's default (all cores)
 
-def ask(model, messages, url):
-    opts = {"temperature": 0, "seed": 0, "num_ctx": 4096, "num_predict": 160}
+def ask(model, messages, url, ctx=None):
+    opts = {"temperature": 0, "seed": 0, "num_ctx": ctx or 4096, "num_predict": 160}
     if THREADS: opts["num_thread"] = THREADS
     body = json.dumps({"model": model, "messages": messages, "stream": False, "format": "json", "options": opts}).encode()
     req = urllib.request.Request(url + '/api/chat', data=body, headers={'Content-Type': 'application/json'})
@@ -57,12 +58,17 @@ def speed(r):
 def parse(text):
     try:
         d = json.loads(re.search(r'\{.*\}', text, re.S).group(0))
+        if 'charge' not in d: raise ValueError('no charge field')   # an answer without a decision is not a decision
         ch = bool(d.get('charge')); L = d.get('charger'); t = d.get('target_percent'); g = d.get('gives_up')
         return dict(ok=True, charge=ch, charger=(str(L).strip().upper()[:1] if ch and L else None),
                     target=(float(t) / 100 if ch and t is not None else None),
                     gives_up=[str(x).lower().strip() for x in g] if isinstance(g, list) else None)
     except Exception:
         return dict(ok=False, charge=False, charger=None, target=None, gives_up=None)
+
+def ollama_version(url):
+    try: return json.loads(urllib.request.urlopen(url + '/api/version', timeout=5).read()).get('version')
+    except Exception: return None
 
 def parse_form(text):
     try:
@@ -98,6 +104,8 @@ def main():
     ap.add_argument('--ids', default=None, help='JSON file with the situation ids to run (default: all in --cases)')
     ap.add_argument('--profile', default='laptop', help='name of the edge profile, stored with every answer')
     ap.add_argument('--threads', type=int, default=0, help='CPU threads the model may use (0 = all)')
+    ap.add_argument('--adapt', default='none', choices=list(AD.ADAPTS), help='RQ3 adaptation condition (see adapt.py)')
+    ap.add_argument('--train', default=AD.default_train_path(), help='training situations, used only by --adapt examples')
     a = ap.parse_args(); global THREADS; THREADS = a.threads or None
     cases = [json.loads(l) for l in open(a.cases, encoding='utf-8')]
     if a.ids:
@@ -105,39 +113,46 @@ def main():
         cases = sorted([c for c in cases if c['id'] in order], key=lambda c: order[c['id']])
     cases = [c for c in cases if c['requests'].get(a.wording)]
     if a.limit: cases = cases[:a.limit]
-    machine = dict(system=platform.platform(), cpu=platform.processor(), python=platform.python_version())
+    machine = dict(system=platform.platform(), cpu=platform.processor(), python=platform.python_version(), ollama=ollama_version(a.url))
     done = set()   # resume: answers already in the output file are not asked again
     try:
         for l in open(a.out, encoding='utf-8'):
-            r = json.loads(l); done.add((r['model'], r['role'], r['facts'], r['wording'], r['variant'], r.get('profile', 'laptop'), r['id']))
+            r = json.loads(l); done.add((r['model'], r['role'], r['facts'], r['wording'], r['variant'], r.get('profile', 'laptop'), r.get('adapt', 'none'), r['id']))
     except FileNotFoundError: pass
+    retr = AD.Retriever(a.train) if a.adapt == 'examples' else None
+    ctx = AD.CTX_EXAMPLES if a.adapt == 'examples' else None
     with open(a.out, 'a', encoding='utf-8') as f:
         for model in a.models:
-            todo = [c for c in cases if (model, a.role, a.facts, a.wording, a.variant, a.profile, c['id']) not in done]
+            todo = [c for c in cases if (AD.base_name(model) if a.adapt == 'lora' else model, a.role, a.facts, a.wording, a.variant, a.profile, a.adapt, c['id']) not in done]
             if not todo: print(f'{model} {a.role} {a.wording} {a.profile}: all {len(cases)} already answered'); continue
-            ask(model, [{"role": "user", "content": 'Say {"ok": true}'}], a.url)   # load the model once
+            ask(model, [{"role": "user", "content": 'Say {"ok": true}'}], a.url, ctx)   # load the model once
             t0 = time.time()
             for i, c in enumerate(todo):
                 req = c['requests'][a.wording]; req = req[a.variant % len(req)]
-                row = dict(model=model, role=a.role, facts=a.facts, wording=a.wording, variant=a.variant, profile=a.profile, threads=THREADS, id=c['id'], machine=machine)
+                row = dict(model=AD.base_name(model) if a.adapt == 'lora' else model, model_tag=model, role=a.role, facts=a.facts, wording=a.wording, variant=a.variant, profile=a.profile, threads=THREADS, adapt=a.adapt, id=c['id'], machine=machine)
                 if a.role.startswith('R3'):
-                    msgs = [{"role": "system", "content": system_r3(FORM_FULL if a.role == 'R3-full' else FORM_KNOWN)},
-                            {"role": "user", "content": f'Driver says: "{req}"'}]
-                    text, wall, r = ask(model, msgs, a.url); row.update(raw=text, form=parse_form(text), **speed(r))
+                    sys_ = system_r3(FORM_FULL if a.role == 'R3-full' else FORM_KNOWN) + (AD.RULES_R3 if a.adapt == 'rules' else '')
+                    ex = []
+                    if a.adapt == 'examples': ex, row['examples'] = AD.example_messages(retr, req, a.role, a.facts, a.role == 'R3-full')
+                    msgs = [{"role": "system", "content": sys_}] + ex + [{"role": "user", "content": f'Driver says: "{req}"'}]
+                    text, wall, r = ask(model, msgs, a.url, ctx); row.update(raw=text, form=parse_form(text), **speed(r))
                 else:
-                    msgs = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": c['facts'][a.facts] + f'\n\nDriver says: "{req}"'}]
-                    text, wall, r = ask(model, msgs, a.url); dec = parse(text); row.update(raw=text, first=dec, **speed(r))
+                    ex = []
+                    if a.adapt == 'examples': ex, row['examples'] = AD.example_messages(retr, req, a.role, a.facts)
+                    msgs = [{"role": "system", "content": SYSTEM + (AD.RULES if a.adapt == 'rules' else '')}] + ex + \
+                           [{"role": "user", "content": c['facts'][a.facts] + f'\n\nDriver says: "{req}"'}]
+                    text, wall, r = ask(model, msgs, a.url, ctx); dec = parse(text); row.update(raw=text, first=dec, **speed(r))
                     if a.role == 'R2':
                         problems = check_on_device(c, dec); row['problems'] = problems
                         if problems:
                             msgs += [{"role": "assistant", "content": text},
                                      {"role": "user", "content": 'Your answer breaks these rules: ' + '; '.join(problems) + '. Decide again. Answer with JSON only.'}]
-                            text2, wall2, r = ask(model, msgs, a.url); dec = parse(text2); wall += wall2; row['raw_retry'] = text2
+                            text2, wall2, r = ask(model, msgs, a.url, ctx); dec = parse(text2); wall += wall2; row['raw_retry'] = text2
                     row['decision'] = dec
                 row.update(wall_s=round(wall, 3), prompt_tokens=r.get('prompt_eval_count'), output_tokens=r.get('eval_count'), memory_gb=memory_gb(model, a.url))
                 f.write(json.dumps(row) + '\n'); f.flush()
                 left = (time.time() - t0) / (i + 1) * (len(todo) - i - 1)
-                print(f"{model} {a.role} {a.wording} {a.profile} {i + 1}/{len(todo)} {c['id']} in {wall:.1f}s (about {left / 60:.0f} min left for this part)")
+                print(f"{model} {a.role} {a.adapt} {a.wording} {a.profile} {i + 1}/{len(todo)} {c['id']} in {wall:.1f}s (about {left / 60:.0f} min left for this part)")
 
 if __name__ == '__main__':
     main()

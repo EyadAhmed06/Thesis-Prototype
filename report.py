@@ -82,37 +82,72 @@ def build(here, out, manifest):
                      table(['Method', 'Pass rate', 'Same charger as referee', 'Safe', 'Says honestly what it gives up'], rows, 'wide'))
     else: parts.append('<h2>4. Baselines</h2><p class="muted">Not run yet.</p>')
 
+    sv = os.path.join(out, 'test_v2_sensitivity.csv')
+    if os.path.exists(sv):
+        t = pd.read_csv(sv)
+        parts.append('<h2>How much the answer key depends on the assumptions</h2><p class="muted">Each line changes one assumption the robustness check does not vary, '
+                     'recomputes every option from the stored drives, and counts the situations whose best answer (charge or not, charger and its kind) stays the same.</p>' +
+                     table(['Change', 'Answer unchanged', 'Also same target'], [[e(r.variant), f'{int(r.same_answer)} of {int(r.situations)} ({pct(r.same_answer_share)})',
+                            '' if r.same_including_target != r.same_including_target else e(int(r.same_including_target))] for r in t.itertuples()]))
     # ---- models
     sp = os.path.join(out, 'model_scores_summary.csv'); ap = os.path.join(out, 'model_answers.jsonl')
     if os.path.exists(sp):
         s = pd.read_csv(sp)
         if 'profile' not in s: s['profile'] = 'laptop'
+        if 'adapt' not in s: s['adapt'] = 'none'
+        s['adapt'] = s.adapt.fillna('none')
         main_p = s.profile.iloc[0] if 'laptop' not in set(s.profile) else 'laptop'
         rows = []
-        for r in s[s.profile == main_p].sort_values(['wording', 'model', 'role']).itertuples():
+        # pass rate on the situations whose answer survives every sensitivity change (referee/sensitivity.py)
+        stable = {}; idp = os.path.join(out, 'test_v2_stable_ids.json'); msp = os.path.join(out, 'model_scores.csv')
+        if os.path.exists(idp) and os.path.exists(msp):
+            ids = set(json.load(open(idp))); m = pd.read_csv(msp)
+            for col, dflt in (('adapt', 'none'), ('profile', 'laptop')):
+                if col not in m: m[col] = dflt
+            m = m[m.id.isin(ids)]
+            stable = {k: g.valid.astype(bool).mean() for k, g in m.groupby(['profile', 'adapt', 'model', 'role', 'wording'])}
+        for r in s[(s.profile == main_p) & (s.adapt == 'none')].sort_values(['wording', 'model', 'role']).itertuples():
             rows.append([e(r.model), f'<b>{e(r.role)}</b>', e(r.wording), e(int(r.n)),
-                         bar(r.pass_rate, r.pass_lo, r.pass_hi), pct(r.pass_seen), pct(r.pass_held_out), pct(r.pass_conflict),
+                         bar(r.pass_rate, r.pass_lo, r.pass_hi), pct(stable.get((r.profile, 'none', r.model, r.role, r.wording))), pct(r.pass_seen), pct(r.pass_held_out), pct(r.pass_conflict),
                          pct(r.safe_rate), pct(getattr(r, 'honest_rate', None)), pct(r.parsed), f'{r.wall_s_median:.1f} s'])
         machines = set()
         if os.path.exists(ap):
             for l in open(ap, encoding='utf-8'):
                 m = json.loads(l).get('machine', {}); machines.add(f'{m.get("system", "")}, {m.get("cpu", "")}')
         parts.append(f'<h2>5–6. Small language models, graded by the referee</h2><p class="muted">Profile: {e(main_p)}. Roles: ' + '; '.join(f'<b>{k}</b> {e(v)}' for k, v in ROLE_TEXT.items()) + '.</p>' +
-                     table(['Model', 'Role', 'Wording', 'Answers', 'Pass rate', 'Pass, seen wish types', 'Pass, unseen wish types',
+                     table(['Model', 'Role', 'Wording', 'Answers', 'Pass rate', 'Pass, answer-stable situations', 'Pass, seen wish types', 'Pass, unseen wish types',
                             'Pass, conflicts', 'Safe', 'Honest', 'Valid JSON', 'Median time'], rows, 'wide') +
                      '<p class="muted">Answers produced on: ' + e('; '.join(sorted(machines)) or 'unknown') + '.</p>')
         # edge: every profile, per model and role
         prof = {p['name']: p for p in json.load(open(os.path.join(here, 'evbench_config.json'))).get('edge_profiles', [])} if os.path.exists(os.path.join(here, 'evbench_config.json')) else {}
         er = []
-        for r in s.sort_values(['profile', 'model', 'role', 'wording']).itertuples():
+        for r in s[s.adapt == 'none'].sort_values(['profile', 'model', 'role', 'wording']).itertuples():
             p = prof.get(r.profile, {}); tb, mb = p.get('time_budget_s'), p.get('memory_budget_gb')
             mem = getattr(r, 'memory_gb_max', None); fits = '' if not (tb and mb) else ('fits' if r.wall_s_median <= tb and (mem or 0) <= mb else 'does not fit')
-            er.append([e(r.profile) + (f' ({int(r.threads)} threads)' if getattr(r, 'threads', None) == getattr(r, 'threads', None) and getattr(r, 'threads', None) else ''),
+            er.append([e(r.profile) + (f' ({int(r.threads)} threads)' if 'thread' not in str(r.profile) and getattr(r, 'threads', None) == getattr(r, 'threads', None) and getattr(r, 'threads', None) else ''),
                        e(r.model), e(r.role), e(r.wording), f'{r.wall_s_median:.1f} s', f'{r.wall_s_p95:.1f} s' if hasattr(r, 'wall_s_p95') else '',
                        '' if mem != mem or mem is None else f'{mem:.2f} GB', f'{r.read_tok_s_median:.0f} / {r.write_tok_s_median:.0f}' if getattr(r, 'read_tok_s_median', None) == getattr(r, 'read_tok_s_median', None) and getattr(r, 'read_tok_s_median', None) else '',
                        pct(r.pass_rate), (f'{e(fits)}<br><span class="muted">{tb} s, {mb} GB, {e(p.get("status", ""))}</span>' if fits else '')])
         parts.append('<h2>Edge: time, speed and memory on this computer</h2><p>Time to decide includes the retry in R2. Memory is what Ollama reports for the loaded model. '
                      'A phone and battery use are not measured.</p>' + table(['Profile', 'Model', 'Role', 'Wording', 'Median time', '95th percentile', 'Model memory', 'Tokens/s read / write', 'Pass rate', 'Budget'], er, 'wide'))
+        # adaptation (RQ3): each condition next to the same model and role without adaptation
+        ad = s[(s.profile == main_p) & (s.wording == 'template')]
+        keys = set(map(tuple, ad[ad.adapt != 'none'][['model', 'role']].values))
+        ar = [[e(r.model), f'<b>{e(r.role)}</b>', e(r.adapt), e(int(r.n)), bar(r.pass_rate, r.pass_lo, r.pass_hi), pct(r.pass_seen), pct(r.pass_held_out),
+               f'{r.wall_s_median:.1f} s'] for r in ad.sort_values(['model', 'role', 'adapt']).itertuples() if (r.model, r.role) in keys]
+        if ar:
+            parts.append('<h2>Adaptation (RQ3)</h2><p class="muted">none: plain instruction; rules: step-by-step instruction; examples: two worked examples '
+                         'retrieved from the Detroit training situations; lora: fine-tuned on the training situations. Template wording.</p>' +
+                         table(['Model', 'Role', 'Adaptation', 'Answers', 'Pass rate', 'Pass, seen wish types', 'Pass, unseen wish types', 'Median time'], ar, 'wide'))
+        stp = os.path.join(out, 'model_stats.csv')
+        if os.path.exists(stp):
+            t = pd.read_csv(stp)
+            if len(t):
+                tr = [[e(r.family), e(r.a), e(r.b), e(int(r.n)), pct(r.pass_a), pct(r.pass_b), f'{100 * r.diff:+.1f} [{100 * r.diff_lo:+.1f}, {100 * r.diff_hi:+.1f}]',
+                       f'{r.only_a} / {r.only_b}', f'{r.p:.3g}', 'yes' if r.holm_significant else 'no'] for r in t.itertuples()]
+                parts.append('<h2>Paired comparisons</h2><p class="muted">Same situations for both sides. Difference in pass rate (percentage points, A minus B) with a 95% interval; '
+                             "McNemar's test on the situations where only one side passes; Holm's correction within each research question. Template wording, main profile.</p>" +
+                             table(['RQ', 'A', 'B', 'Situations', 'Pass A', 'Pass B', 'Difference', 'Only A / only B', 'p', 'Significant after Holm'], tr, 'wide'))
     else:
         parts.append('<h2>5–6. Small language models</h2><p class="muted">Not run yet. Start Ollama, then run '
                      '<code>python evbench.py run --from models</code>.</p>')

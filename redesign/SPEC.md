@@ -52,3 +52,5 @@ Train (Detroit) never used for grading; held-out wish types never appear in trai
 - Edge profiles in evbench_config.json: "laptop" (all CPU cores) and "in-car" (4 CPU threads; budget 10 s per decision and 4 GB model memory). The in-car budgets are PROPOSED, not agreed; they only change the fits / does not fit label, never the grading. The extra profile runs only roles R2 and R3-known with template wording.
 - Phone and battery energy are not measured.
 - Display only (not graded, not hashed): referee/cases_v2/test_maps.json from referee/make_maps.py; live dashboard (live.py, ui/); demo restyled.
+
+- 2026-11-18 later: the proposed in-car budget (4 threads, 10 s, 4 GB) is REMOVED (it had no source). Replaced by a measured hardware sweep: R2, template wording, run with 1, 2, 4 and 8 CPU threads plus all cores; time, tokens/s, memory and pass rate are reported, with no pass/fail line.

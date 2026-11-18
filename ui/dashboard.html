@@ -3,92 +3,264 @@
 <title>evbench live</title>
 <link rel="stylesheet" href="/ui/theme.css">
 <style>
-.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:18px 22px 6px}
-.logo{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff}
-.top h1{font-size:19px;margin:0;line-height:1.2} .top .q{font-size:13px;color:var(--muted)}
+/* ---------- dashboard layer on top of theme.css ---------- */
+:root{--accent2:#2e8a56;--glow:rgba(14,127,143,.18);--grid:rgba(20,20,10,.035);--ease:cubic-bezier(.2,.8,.2,1)}
+@media (prefers-color-scheme:dark){:root{--accent2:#5ccf8a;--glow:rgba(60,195,211,.20);--grid:rgba(255,255,255,.025)}}
+body{background:
+  radial-gradient(1200px 500px at 85% -10%,var(--glow),transparent 60%),
+  radial-gradient(900px 400px at -10% 10%,color-mix(in srgb,var(--accent2) 10%,transparent),transparent 60%),
+  linear-gradient(var(--grid) 1px,transparent 1px) 0 0/100% 28px,var(--bg);
+  background-attachment:fixed;min-height:100vh}
+.wrap{max-width:1560px;margin:0 auto;padding:0 24px 36px;overflow-x:clip}
+@media (max-width:760px){.wrap{padding:0 16px 28px}}
+/* header */
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:20px 0 14px;position:sticky;top:0;z-index:5;
+  backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);background:color-mix(in srgb,var(--bg) 78%,transparent);
+  border-bottom:1px solid transparent;transition:border-color .3s}
+.top.scrolled{border-bottom-color:var(--line)}
+.logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;flex:none;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 6px 18px var(--glow)}
+.live .logo svg{animation:zap 2.4s var(--ease) infinite}
+@keyframes zap{0%,100%{transform:scale(1);filter:none}8%{transform:scale(1.18);filter:drop-shadow(0 0 6px #fff)}16%{transform:scale(1)}}
+.top h1{font-size:20px;margin:0;line-height:1.15;letter-spacing:-.01em}
+.top .q{font-size:13px;color:var(--muted);max-width:620px}
 .top .right{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.page{padding:10px 22px 30px;display:grid;gap:16px;max-width:1500px;margin:0 auto}
-.grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
-@media (max-width:1000px){.grid{grid-template-columns:1fr}}
-.now{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px}
-@media (max-width:760px){.now{grid-template-columns:1fr}.top,.page{padding-left:16px;padding-right:16px}}
-canvas.map{height:390px}
-.quote{font-size:15.5px;line-height:1.5;border-left:3px solid var(--accent);padding:2px 0 2px 12px;margin:8px 0 12px}
-.vs{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;margin:10px 0}
-.vs .who{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
-.plan{font-weight:650;font-size:15px}
+.pill{transition:background .3s,color .3s,border-color .3s}
+.pill.live{border-color:color-mix(in srgb,var(--good) 45%,var(--line));color:var(--good)}
+.pill.err{border-color:var(--bad);color:var(--bad)}
+a.pill{color:var(--accent);text-decoration:none} a.pill:hover{background:var(--accent-soft)}
+/* cards */
+.card{position:relative;transition:box-shadow .3s var(--ease),transform .3s var(--ease),border-color .3s}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 22%,var(--line))}
+.card h2{display:flex;align-items:center;gap:8px}
+.card h2 .dotc{width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.8}
+.grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:16px}
+@media (max-width:1100px){.grid,.grid2{grid-template-columns:1fr}}
+.stack{display:grid;gap:16px}
+.reveal{opacity:0;transform:translateY(10px);animation:rise .7s var(--ease) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+/* KPI tiles */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.kpis{grid-template-columns:1fr}}
+.kpi{padding:14px 18px 16px;overflow:hidden}
+.kpi .lab{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.kpi .val{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-top:4px;font-variant-numeric:tabular-nums}
+.kpi .val small{font-size:15px;color:var(--muted);font-weight:600;margin-left:4px}
+.kpi .sub{font-size:12.5px;color:var(--muted);margin-top:2px;min-height:19px}
+.kpi .bar{height:6px;border-radius:4px;background:var(--surface2);border:1px solid var(--line);margin-top:10px;overflow:hidden;position:relative}
+.kpi .bar .f{position:absolute;inset:0 auto 0 0;width:0;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .9s var(--ease)}
+.live .kpi .bar .f::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:sheen 1.8s linear infinite}
+@keyframes sheen{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.kpi .bar .mark{position:absolute;top:-1px;bottom:-1px;width:2px;background:var(--ink);opacity:.55}
+.kpi .spark{position:absolute;right:14px;top:14px;opacity:.9}
+.flash{animation:flash .9s var(--ease)}
+@keyframes flash{0%{background:var(--accent-soft)}100%{background:var(--surface)}}
+/* pipeline rail */
+.rail .node::before{transition:background .6s}
+.rail .node.active::before{background:linear-gradient(90deg,var(--accent) 0 40%,var(--line) 40% 100%);background-size:200% 100%;animation:flow 1.6s linear infinite}
+@keyframes flow{from{background-position:100% 0}to{background-position:0 0}}
+.rail .done .dot{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;box-shadow:0 3px 10px var(--glow)}
+.rail .dot{transition:all .5s var(--ease)}
+.rail .node.active .name{color:var(--accent)}
+/* now panel */
+.nowhead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.now{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}
+@media (max-width:760px){.now{grid-template-columns:1fr}}
+.mapbox{position:relative}
+canvas.map{height:410px;transition:opacity .35s}
+.mapbox .tag{position:absolute;left:10px;top:10px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:color-mix(in srgb,var(--surface) 85%,transparent);border:1px solid var(--line);backdrop-filter:blur(4px)}
+.quote{font-size:16px;line-height:1.5;border-left:3px solid var(--accent);padding:4px 0 4px 14px;margin:8px 0 12px;position:relative}
+.steps{display:grid;gap:10px;margin-top:12px}
+.step{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;opacity:.25;transform:translateX(-6px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.step.on{opacity:1;transform:none}
+.step .n{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:700;background:var(--surface2);border:1px solid var(--line);color:var(--muted)}
+.step.on .n{background:var(--accent);border-color:var(--accent);color:#fff}
+.step .who{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.plan{font-weight:650;font-size:16px;line-height:1.35}
+.caret::after{content:"▍";animation:blink .8s steps(1) infinite;color:var(--accent);margin-left:1px}
+@keyframes blink{50%{opacity:0}}
+.verdict{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:700;padding:6px 14px;border-radius:10px}
+.verdict.ok{color:var(--good);background:var(--good-soft)} .verdict.mid{color:var(--warn);background:var(--warn-soft)} .verdict.bad{color:var(--bad);background:var(--bad-soft)}
+.stamp{animation:stamp .55s var(--ease)}
+@keyframes stamp{0%{transform:scale(1.6);opacity:0}60%{transform:scale(.95);opacity:1}100%{transform:scale(1)}}
 .meter{position:relative;height:8px;background:var(--surface2);border:1px solid var(--line);border-radius:5px;overflow:visible;margin:4px 0 2px}
-.meter .f{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:5px;transition:width .5s}
-.meter .lim{position:absolute;top:-5px;bottom:-5px;width:2px;background:var(--warn)}
-.kv{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
-.board{width:100%;border-collapse:separate;border-spacing:4px}
-.board th{font-size:12px;color:var(--muted);font-weight:600;text-align:left;padding:2px 4px}
-.cell{position:relative;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:74px;overflow:hidden}
-.cell .fill{position:absolute;left:0;bottom:0;height:4px;background:var(--accent);transition:width .6s}
-.cell b{font-size:18px} .cell .n{font-size:11px;color:var(--muted)}
-.refs{margin-top:8px;display:grid;gap:3px} .ref{display:grid;grid-template-columns:150px 1fr 40px;gap:8px;align-items:center;font-size:12px;color:var(--muted)} .ref .meter{margin:0;height:6px}
-.refs .tick{position:absolute;top:0;height:14px;width:2px;background:var(--muted)}
-.refs .lab{position:absolute;top:16px;font-size:11px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
-.strip{display:flex;flex-wrap:wrap;gap:2px;margin:3px 0 10px}
-.strip i{width:9px;height:9px;border-radius:2px;display:block;background:var(--line)}
-.strip i.p{background:var(--good)} .strip i.s{background:var(--warn)} .strip i.u{background:var(--bad)} .strip i.cur{outline:2px solid var(--ink);outline-offset:1px}
-.rowlab{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
-.log{font:12px/1.5 ui-monospace,Consolas,monospace;color:var(--muted);max-height:150px;overflow:auto;white-space:pre-wrap}
+.meter .f{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:5px;transition:width .8s var(--ease)}
+.kv{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);gap:10px}
+.facts{display:grid;gap:6px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line)}
+.raw{font:12px ui-monospace,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px;white-space:pre-wrap;word-break:break-word;max-height:110px;overflow:auto;margin-top:6px}
+details summary{cursor:pointer;list-style:none} details summary::before{content:"▸ ";color:var(--muted)} details[open] summary::before{content:"▾ "}
+/* controls */
 .ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.seg button{border:0;background:var(--surface);padding:4px 10px;cursor:pointer;font-size:12.5px}
+.btn{transition:background .2s,border-color .2s,transform .1s} .btn:hover{border-color:var(--accent)} .btn:active{transform:scale(.97)}
+.btn.icon{width:34px;padding:6px 0;text-align:center}
+.btn:focus-visible,.seg button:focus-visible,select:focus-visible,.strip i:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:transparent;padding:5px 11px;cursor:pointer;font-size:12.5px;transition:background .25s,color .25s}
+.seg button:hover{background:var(--surface2)}
 .seg button.on{background:var(--accent);color:#fff}
-.edge td,.edge th{padding:6px 6px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:middle}
+@media (prefers-color-scheme:dark){.seg button.on{color:#062026}}
+.filters{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;align-items:center;margin-bottom:12px}
+.filters .seg{justify-self:start}
+.filters .small{white-space:nowrap}
+/* scoreboard heatmap */
+.board{width:100%;border-collapse:separate;border-spacing:5px;table-layout:fixed}
+.board th:first-child{width:92px}
+.board th{font-size:12px;color:var(--muted);font-weight:600;text-align:left;padding:2px 4px;white-space:nowrap}
+.cell{position:relative;border:1px solid var(--line);border-radius:10px;padding:8px 9px 10px;min-width:0;overflow:hidden;
+  background:color-mix(in srgb,var(--good) calc(var(--p,0) * 34%),var(--surface2));transition:background .8s var(--ease),border-color .3s,transform .3s var(--ease)}
+.cell.low{background:color-mix(in srgb,var(--bad) calc((1 - var(--p,0)) * 14%),var(--surface2))}
+.cell.empty{background:var(--surface2);opacity:.6}
+.cell b{font-size:19px;font-variant-numeric:tabular-nums} .cell .n{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cell .base{position:absolute;bottom:0;width:2px;height:7px;background:var(--ink);opacity:.5}
+.cell .fill{position:absolute;left:0;bottom:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .9s var(--ease)}
+.cell.cur{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow);transform:translateY(-1px)}
+.cell.cur::after{content:"";position:absolute;right:8px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse2 1.4s infinite}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 var(--glow)}70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.refs{margin-top:8px;display:grid;gap:5px}
+.ref{display:grid;grid-template-columns:150px 1fr 40px;gap:8px;align-items:center;font-size:12px;color:var(--muted)} .ref .meter{margin:0;height:6px}
+.ref .meter .f{background:var(--muted)}
+.ref.key{color:var(--ink);font-weight:600} .ref.key .meter .f{background:var(--ink);opacity:.6}
+.note{font-size:12.5px;color:var(--muted);margin-top:10px;line-height:1.5}
+/* answer stream */
+.rowlab{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;margin-top:6px}
+.strip{display:flex;flex-wrap:wrap;gap:3px;margin:4px 0 6px}
+.strip i{width:10px;height:10px;border-radius:3px;display:block;background:var(--line);cursor:pointer;transition:transform .2s}
+.strip i:hover{transform:scale(1.5)}
+.strip i.p{background:var(--good)} .strip i.s{background:var(--warn)} .strip i.u{background:var(--bad)}
+.strip i.cur{outline:2px solid var(--ink);outline-offset:1px}
+.strip i.new{animation:pop .5s var(--ease)}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.5)}100%{transform:scale(1)}}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)} .legend i{display:inline-block;width:18px;height:4px;border-radius:2px;vertical-align:middle;margin-right:5px}
+.sq{width:10px!important;height:10px!important;border-radius:3px!important}
+.streams{max-height:330px;overflow:auto;padding-right:4px}
+/* edge + log */
+.edge td,.edge th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:middle}
 .edge th{font-size:12px;color:var(--muted);font-weight:600}
-.edge .meter{width:120px;display:inline-block;vertical-align:middle;margin-right:6px}
+.draw{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 1.6s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.log{font:12px/1.65 ui-monospace,"Cascadia Mono",Consolas,monospace;max-height:260px;overflow:auto;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.log .l{display:block;color:var(--muted);white-space:pre-wrap;word-break:break-word}
+.log .l:first-child{color:var(--ink)} .log .t{color:var(--accent);margin-right:8px} .log .e{color:var(--bad)}
 .empty{color:var(--muted);font-size:13.5px;padding:8px 0}
-.raw{font:12px ui-monospace,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px;white-space:pre-wrap;word-break:break-word;max-height:90px;overflow:auto}
+.toast{position:fixed;right:20px;bottom:20px;z-index:9;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;
+  padding:10px 14px;box-shadow:0 10px 30px rgba(0,0,0,.15);font-size:13.5px;transform:translateY(20px);opacity:0;transition:all .45s var(--ease);pointer-events:none;max-width:340px}
+.toast.show{transform:none;opacity:1}
+.kbd{font:11px ui-monospace,Consolas,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 5px;color:var(--muted)}
+.skeleton{background:linear-gradient(90deg,var(--surface2),var(--line),var(--surface2));background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:8px}
+@keyframes sk{from{background-position:200% 0}to{background-position:-200% 0}}
+@media (max-width:560px){.top{position:static}.board{border-spacing:3px}.board th:first-child{width:58px}.board th{font-size:10.5px;padding:2px 1px;overflow:hidden;text-overflow:ellipsis}.cell{padding:6px 5px 8px;border-radius:8px}.cell b{font-size:14px}.cell .n{font-size:9.5px}.cell.cur::after{display:none}.ref{grid-template-columns:110px 1fr 34px}.kpis{grid-template-columns:1fr 1fr;gap:10px}.kpi .val{font-size:24px}.kpi .spark{display:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal,.step{opacity:1;transform:none}}
 </style></head><body>
-<div class="top">
-  <div class="logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
-  <div><h1>evbench</h1><div class="q">Can a small language model, running offline in the car, plan an electric car's charging stop correctly?</div></div>
-  <div class="right"><span id="status" class="pill">connecting…</span><span id="clock" class="pill num"></span><a id="replink" class="pill" style="display:none" href="/report" target="_blank">Open report</a></div>
-</div>
-<div class="page">
-  <div class="card"><h2>The pipeline</h2><div class="rail" id="rail"></div></div>
+<div class="wrap">
+<header class="top" id="top">
+  <div class="logo" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+  <div><h1>evbench <span class="muted" style="font-weight:500">live</span></h1><div class="q">Can a small language model, running offline on the device, plan an electric car's charging stop correctly?</div></div>
+  <div class="right"><span id="status" class="pill" role="status">connecting…</span><span id="clock" class="pill num" title="time since the run started"></span><a id="replink" class="pill" style="display:none" href="/report" target="_blank">Open report ↗</a></div>
+</header>
+
+<main class="stack">
+  <section class="kpis" aria-label="Run summary">
+    <div class="card kpi reveal" style="animation-delay:.02s"><div class="lab">Answers</div><div class="val" id="k-ans">–</div><div class="sub" id="k-ans-sub">waiting for the models stage</div><div class="bar"><div class="f" id="k-ans-bar"></div></div></div>
+    <div class="card kpi reveal" style="animation-delay:.08s"><div class="lab">Pass rate so far</div><div class="val" id="k-pass">–</div><div class="sub" id="k-pass-sub">all models and roles together</div><div class="bar"><div class="f" id="k-pass-bar"></div><div class="mark" id="k-pass-mark" style="display:none"></div></div></div>
+    <div class="card kpi reveal" style="animation-delay:.14s"><div class="lab">Time to decide</div><div class="val" id="k-time">–</div><div class="sub" id="k-time-sub">median per answer</div><svg class="spark" id="k-spark" width="110" height="34" aria-hidden="true"></svg></div>
+    <div class="card kpi reveal" style="animation-delay:.2s"><div class="lab">Working on</div><div class="val" id="k-now" style="font-size:20px;margin-top:8px">–</div><div class="sub" id="k-now-sub"></div></div>
+  </section>
+
+  <section class="card reveal" style="animation-delay:.25s"><h2><span class="dotc"></span>The pipeline</h2><div class="rail" id="rail"></div></section>
+
   <div class="grid">
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">
-        <h2 id="nowtitle" style="margin:0">Now</h2>
-        <div class="ctl"><button class="btn" id="prev">‹</button><button class="btn" id="play">Pause</button><button class="btn" id="next">›</button>
-          <select id="mfilter"><option value="">all models</option></select></div></div>
+    <section class="card reveal" style="animation-delay:.3s" aria-label="Current answer">
+      <div class="nowhead">
+        <h2 id="nowtitle" style="margin:0"><span class="dotc"></span>Now</h2>
+        <div class="ctl"><button class="btn icon" id="prev" aria-label="Previous answer" title="Previous (←)">‹</button><button class="btn" id="play" title="Pause or play (space)">Pause</button><button class="btn icon" id="next" aria-label="Next answer" title="Next (→)">›</button>
+          <select id="mfilter" aria-label="Show answers of one model"><option value="">all models</option></select></div></div>
       <div class="now">
-        <div><canvas class="map" id="map"></canvas>
-          <div class="legend" style="margin-top:8px"><span><i style="background:var(--accent)"></i>model's route</span><span><i style="background:var(--good)"></i>referee's best route</span>
-          <span><i style="background:var(--muted);height:2px"></i>straight there, no stop</span><span>◯ dashed red = trap charger (broken, private or wrong plug)</span><span>⚡ fast charger</span></div></div>
-        <div id="detail"></div>
+        <div class="mapbox"><canvas class="map" id="map" aria-label="Map of the trip, the chargers and the routes"></canvas><span class="tag" id="maptag">map</span>
+          <div class="legend" style="margin-top:10px"><span><i style="background:var(--accent)"></i>model's route</span><span><i style="background:var(--good)"></i>referee's best route</span>
+          <span><i style="background:var(--muted);height:2px"></i>straight there, no stop</span><span>◯ dashed red: trap charger</span><span>⚡ fast charger</span></div></div>
+        <div id="detail" aria-live="polite"><div class="skeleton" style="height:22px;width:60%"></div><div class="skeleton" style="height:70px;margin-top:12px"></div><div class="skeleton" style="height:120px;margin-top:12px"></div></div>
       </div>
-    </div>
-    <div class="card"><h2>Scoreboard · pass rate</h2>
-      <div class="ctl" style="margin-bottom:8px"><span class="small muted">Wording</span><div class="seg" id="wseg"></div><span class="small muted">Profile</span><div class="seg" id="pseg"></div></div>
+    </section>
+
+    <section class="card reveal" style="animation-delay:.36s" aria-label="Scoreboard">
+      <h2><span class="dotc"></span>Scoreboard · pass rate</h2>
+      <div class="filters"><span class="small muted">Wording</span><div class="seg" id="wseg"></div>
+        <span class="small muted">Computer</span><div class="seg" id="pseg" style="flex-wrap:wrap"></div>
+        <span class="small muted" id="alab">Adaptation</span><div class="seg" id="aseg"></div></div>
       <div id="board"></div>
-      <div class="small muted" style="margin-top:10px">Pass = safe, and keeps as much as the best possible plan (arrival time first, then budget, then wishes). For comparison, the simple methods without any language model:</div>
+      <div class="note">Pass means safe, and keeping as much as the best possible plan (arrival time first, then budget, then wishes). The small black tick in each cell marks the exact planner that ignores wishes. Without any language model:</div>
       <div class="refs" id="refs"></div>
-      <h2 style="margin-top:18px">Every answer so far</h2>
-      <div class="legend" style="margin-bottom:6px"><span><i style="background:var(--good);height:9px;width:9px"></i>pass</span><span><i style="background:var(--warn);height:9px;width:9px"></i>safe, keeps less</span><span><i style="background:var(--bad);height:9px;width:9px"></i>unsafe</span></div>
-      <div id="strips"></div>
+    </section>
+  </div>
+
+  <div class="grid2">
+    <section class="card reveal" style="animation-delay:.4s"><h2><span class="dotc"></span>How much computer does it need?</h2><div id="edge"></div></section>
+    <div class="stack">
+      <section class="card reveal" style="animation-delay:.44s"><h2><span class="dotc"></span>Every answer so far</h2>
+        <div class="legend" style="margin-bottom:6px"><span><i class="sq" style="background:var(--good)"></i>pass</span><span><i class="sq" style="background:var(--warn)"></i>safe, keeps less</span><span><i class="sq" style="background:var(--bad)"></i>unsafe</span><span>click a square to see that answer</span></div>
+        <div class="streams" id="strips"></div></section>
+      <section class="card reveal" style="animation-delay:.48s"><h2><span class="dotc"></span>Run log</h2><div class="log" id="log"></div>
+        <div class="small muted" style="margin-top:8px">Keys: <span class="kbd">←</span> <span class="kbd">→</span> previous and next answer, <span class="kbd">space</span> pause.</div></section>
     </div>
   </div>
-  <div class="grid">
-    <div class="card"><h2>Edge: does it fit the car's computer?</h2><div id="edge"></div></div>
-    <div class="card"><h2>Run log</h2><div class="log" id="log"></div></div>
-  </div>
+</main>
 </div>
+<div class="toast" id="toast" role="status"></div>
 <script src="/ui/map.js"></script>
 <script>
 const $ = s => document.querySelector(s), esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const pc = x => x == null || isNaN(x) ? '–' : Math.round(100 * x) + '%';
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const STAGES = [['inputs','Inputs'],['validation','Validation'],['situations','Situations'],['baselines','Baselines'],['models','Models'],['score','Score'],['report','Report']];
-let MAPS = null, CASES = {}, ROWS = [], ST = null, cur = -1, playing = true, lastShown = 0, anim = null, W = 'all', PROF = 'laptop', idleIds = [], idleI = 0;
+let MAPS = null, CASES = {}, ROWS = [], ST = null, cur = -1, playing = true, lastShown = -1, anim = null, W = 'all', PROF = 'laptop', ADP = 'none', idleIds = [], idleI = 0;
+let seen = 0, RATE = [], prevStages = {}, KEY = null;
+const short = m => String(m || '').replace('qwen2.5:', 'Qwen2.5 ');
 
+/* ---------- small helpers ---------- */
+function countTo(el, to, fmt) {
+  if (to == null || isNaN(to)) { el.textContent = '–'; el.dataset.v = ''; return; }
+  const from = el.dataset.v === '' || el.dataset.v == null ? to : +el.dataset.v; el.dataset.v = to;
+  if (RM || from === to) { el.innerHTML = fmt(to); return; }
+  const t0 = performance.now(), d = 700, f = t => { const k = Math.min(1, (t - t0) / d), e = 1 - Math.pow(1 - k, 3); el.innerHTML = fmt(from + (to - from) * e); if (k < 1) requestAnimationFrame(f); };
+  requestAnimationFrame(f);
+}
+function toast(msg) { const t = $('#toast'); t.innerHTML = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 3800); }
+function median(a) { const s = a.filter(x => x != null).sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : null; }
+function hms(s) { s = Math.max(0, Math.round(s)); const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60; return h ? `${h} h ${String(m).padStart(2, '0')} min` : `${m} min`; }
+function keyBaseline() { const b = (ST?.baselines || []).find(x => /ignores wishes/.test(x.method)); return b ? b.pass_rate : null; }
+
+/* ---------- KPIs ---------- */
+function drawKpis() {
+  const n = ROWS.length, planned = ST?.planned_answers, now = Date.now() / 1000;
+  if (n !== (RATE.length ? RATE[RATE.length - 1][1] : -1)) RATE.push([now, n]); RATE = RATE.filter(p => now - p[0] < 900);
+  countTo($('#k-ans'), n, v => `${Math.round(v)}${planned ? `<small>of ${planned}</small>` : ''}`);
+  $('#k-ans-bar').style.width = planned ? `${Math.min(100, 100 * n / planned)}%` : '0%';
+  let sub = n ? 'answers graded by the referee' : 'waiting for the models stage';
+  if (ST?.running && RATE.length > 1) { const [t0, n0] = RATE[0], [t1, n1] = RATE[RATE.length - 1], r = (n1 - n0) / Math.max(1, (t1 - t0)) * 60;
+    if (r > 0) sub = `${r.toFixed(1)} per minute${planned && planned > n ? ` · about ${hms((planned - n) / r * 60)} left` : ''}`; }
+  $('#k-ans-sub').textContent = sub;
+  const base = ROWS.filter(r => (r.adapt || 'none') == 'none'), p = base.length ? base.filter(r => r.passed).length / base.length : null, kb = keyBaseline();
+  countTo($('#k-pass'), p == null ? null : 100 * p, v => `${Math.round(v)}<small>%</small>`);
+  $('#k-pass-bar').style.width = `${100 * (p || 0)}%`;
+  if (kb != null) { $('#k-pass-mark').style.display = ''; $('#k-pass-mark').style.left = `${100 * kb}%`; }
+  $('#k-pass-sub').textContent = p == null ? 'all models and roles together' : `${base.filter(r => r.passed).length} of ${base.length}, no adaptation${kb != null ? ` · tick: planner without wishes ${pc(kb)}` : ''}`;
+  const ts = ROWS.slice(-60).map(r => r.wall_s).filter(x => x != null), md = median(ROWS.map(r => r.wall_s));
+  countTo($('#k-time'), md, v => `${v < 10 ? v.toFixed(1) : Math.round(v)}<small>s</small>`);
+  $('#k-time-sub').textContent = md == null ? 'median per answer' : `median of ${ROWS.filter(r => r.wall_s != null).length} answers · last ${ts.length} on the right`;
+  if (ts.length > 1) { const mx = Math.max(...ts) || 1, w = 110, h = 34, pts = ts.map((v, i) => `${(i / (ts.length - 1) * w).toFixed(1)},${(h - 3 - v / mx * (h - 6)).toFixed(1)}`).join(' ');
+    $('#k-spark').innerHTML = `<polyline fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round" points="${pts}"/>`; }
+  const last = ROWS[ROWS.length - 1];
+  if (ST?.running && ST.current) { $('#k-now').textContent = ST.current; $('#k-now-sub').textContent = last ? `last answer: ${short(last.model)} · ${last.role}${(last.adapt || 'none') != 'none' ? ' · ' + last.adapt : ''}` : ''; }
+  else if (ST?.error) { $('#k-now').textContent = 'stopped'; $('#k-now-sub').textContent = 'see the run log'; }
+  else { $('#k-now').textContent = n ? 'finished' : 'idle'; $('#k-now-sub').textContent = n ? 'replaying the answers' : 'start a run with: python evbench.py run'; }
+}
+
+/* ---------- pipeline ---------- */
 function metric(k) {
   const m = ST?.manifest?.stages?.[k], v = ST?.validation, t = ST?.testset;
-  if (k == 'inputs') return 'Michigan roads from OpenStreetMap, public chargers (AFDC)';
+  if (k == 'inputs') return 'Michigan roads (OpenStreetMap), public chargers (AFDC)';
   if (k == 'validation') return v ? `SUMO energy within ${Math.abs((v.devrt.total_ratio - 1) * 100).toFixed(1)}% of real Leaf trips` : 'SUMO energy vs real trips';
   if (k == 'situations') return t ? `${t.kept} test situations${m && /MATCH|matches/.test(m.note) ? ', fingerprint ✓' : ''}` : 'test situations';
   if (k == 'baselines') { const b = (ST?.baselines || []).filter(x => !/referee/.test(x.method)); return b.length ? `best simple method ${pc(Math.max(...b.map(x => x.pass_rate)))}` : 'simple methods'; }
@@ -98,84 +270,136 @@ function metric(k) {
 }
 function drawRail() {
   $('#rail').innerHTML = STAGES.map(([k, n], i) => { const s = ST?.stages?.[k] || (ST?.manifest?.stages?.[k] ? 'done' : 'waiting');
+    if (prevStages[k] && prevStages[k] != 'done' && s == 'done') toast(`<b>${n}</b> finished`); prevStages[k] = s;
     const cls = s == 'done' ? 'done' : s == 'running' ? 'active' : s == 'error' ? 'err' : '';
     return `<div class="node ${cls}"><div class="dot">${s == 'done' ? '✓' : s == 'error' ? '!' : i + 1}</div><div><div class="name">${n}</div><div class="metric">${esc(metric(k))}</div></div></div>`; }).join('');
 }
+
+/* ---------- now panel ---------- */
 function planText(charge, L, t) { return charge === false || (!L && charge !== true) ? 'drive without charging' : `charge at ${esc(L ?? '?')} to ${pc(t)}`; }
+function typeInto(el, html, done) {
+  if (RM) { el.innerHTML = html; done && done(); return; }
+  const txt = html.replace(/<[^>]+>/g, ''); let i = 0; el.classList.add('caret');
+  const h = setInterval(() => { i += 2; el.textContent = txt.slice(0, i); if (i >= txt.length) { clearInterval(h); el.classList.remove('caret'); el.innerHTML = html; done && done(); } }, 22);
+  showRow.timers.push(h);
+}
 function showRow(r) {
-  const c = CASES[r.id] || {}; cancelAnimationFrame(anim); const t0 = performance.now();
-  const model = r.pred_charge ? (r.pred_letter || 'invalid') : null;
-  const step = now => { const t = Math.min(1, (now - t0) / 1400); EVMap.draw($('#map'), MAPS, r.id, {model, best: r.best_letter, t}); if (t < 1) anim = requestAnimationFrame(step); };
+  (showRow.timers || []).forEach(t => { clearInterval(t); clearTimeout(t); }); showRow.timers = [];
+  cancelAnimationFrame(anim); const t0 = performance.now(), model = r.pred_charge ? (r.pred_letter || 'invalid') : null, dur = RM ? 1 : 1500;
+  const step = now => { const t = Math.min(1, (now - t0) / dur); EVMap.draw($('#map'), MAPS, r.id, {model, best: r.best_letter, t}); if (t < 1) anim = requestAnimationFrame(step); };
   anim = requestAnimationFrame(step);
-  const prof = (ST?.config?.edge_profiles || []).find(p => p.name == r.profile) || {};
-  const verdict = r.passed ? '<span class="badge ok">✓ Pass</span>' : r.safe ? '<span class="badge mid">Safe, but keeps less than the best plan</span>' : '<span class="badge bad">✕ Unsafe</span>';
-  const tb = prof.time_budget_s, mb = prof.memory_budget_gb, tmax = Math.max(tb || 0, r.wall_s || 0) * 1.15 || 1;
-  $('#nowtitle').textContent = `${ST?.running ? 'Now answering' : 'Replay'} · ${r.n + 1} of ${ROWS.length}`;
+  $('#maptag').textContent = `${r.id} · ${r.goal || ''}`.replace(/ · $/, '');
+  const verdict = r.passed ? '<span class="verdict ok stamp">✓ Pass</span>' : r.safe ? '<span class="verdict mid stamp">Safe, but keeps less than the best plan</span>' : '<span class="verdict bad stamp">✕ Unsafe</span>';
+  const tmax = Math.max(r.wall_s || 0, median(ROWS.map(x => x.wall_s)) * 2 || 1);
+  $('#nowtitle').innerHTML = `<span class="dotc"></span>${ST?.running ? 'Now answering' : 'Replay'} · ${r.n + 1} of ${ROWS.length}`;
+  const gap = r.passed && r.gap != null ? (r.top1 && r.gap < 0.05 ? 'same plan as the referee' : `keeps the same requests, ${r.gap_unit == '$' ? '$' + r.gap.toFixed(2) + ' more' : Math.round(r.gap) + ' min slower'} than the best plan`) : '';
+  const mine = r.parsed === false ? 'answer not readable' : planText(r.pred_charge, r.pred_letter, r.pred_target);
   $('#detail').innerHTML = `
-    <div class="small muted">${esc(r.id)} · ${esc(r.wording)} wording · profile ${esc(r.profile)}${r.threads ? ` (${r.threads} threads)` : ''}</div>
+    <div class="small muted">${esc(short(r.model))} · ${esc(r.role)}${(r.adapt || 'none') != 'none' ? ' · ' + esc(r.adapt) : ''} · ${esc(r.wording)} wording · ${esc(r.profile)}${r.threads ? ` (${r.threads} threads)` : ''}</div>
     <div class="quote">“${esc(r.request)}”</div>
     <div>${(r.wishes || []).map(w => `<span class="chip">${esc(w)}</span>`).join('')}${r.conflict ? '<span class="chip warn">cannot keep everything</span>' : ''}${r.held_out ? '<span class="chip acc">wish type never seen in training</span>' : ''}</div>
-    <div class="vs"><span class="who">${esc(r.model)}<br>${esc(r.role)}</span><span class="plan" style="color:var(--accent)">${r.parsed === false ? 'answer not readable' : planText(r.pred_charge, r.pred_letter, r.pred_target)}${r.retried ? ' <span class="chip">after one retry</span>' : ''}</span>
-      <span class="who">Referee</span><span class="plan" style="color:var(--good)">${planText(!!r.best_letter, r.best_letter, r.best_target)}${r.best_gives?.length ? ` <span class="small muted">gives up ${esc(r.best_gives.join(', '))}</span>` : ''}</span></div>
-    <div style="margin:8px 0">${verdict}${r.passed && r.gap != null ? (r.top1 && r.gap < 0.05 ? ' <span class="small muted">same plan as the referee</span>' : ` <span class="small muted">keeps the same requests, ${r.gap_unit == '$' ? '$' + r.gap.toFixed(2) + ' more' : Math.round(r.gap) + ' min slower'} than the best plan</span>`) : ''}</div>${r.broken ? `<div class="small" style="color:var(--bad);margin-bottom:6px">${esc(r.broken.replace(' Network network', ' network'))}</div>` : ''}
-    <div class="kv"><span>time to decide</span><span class="num">${r.wall_s != null ? r.wall_s.toFixed(1) + ' s' : '–'}${tb ? ` · budget ${tb} s` : ''}</span></div>
-    <div class="meter"><div class="f" style="width:${100 * Math.min(1, (r.wall_s || 0) / tmax)}%;${tb && r.wall_s > tb ? 'background:var(--bad)' : ''}"></div>${tb ? `<div class="lim" style="left:${100 * tb / tmax}%"></div>` : ''}</div>
-    <div class="kv" style="margin-top:6px"><span>speed</span><span class="num">${r.read_tok_s ? Math.round(r.read_tok_s) + ' tokens/s reading' : ''}${r.write_tok_s ? ' · ' + Math.round(r.write_tok_s) + ' tokens/s writing' : ''}</span></div>
-    <div class="kv"><span>model memory</span><span class="num">${r.memory_gb != null ? r.memory_gb.toFixed(2) + ' GB' : '–'}${mb ? ` · budget ${mb} GB` : ''}</span></div>
-    <details style="margin-top:8px"><summary class="small muted" style="cursor:pointer">What the model wrote</summary><div class="raw">${esc(r.raw)}</div></details>`;
+    <div class="steps">
+      <div class="step" id="s1"><span class="n">1</span><div><div class="who">The model decides${r.retried ? ' (after one retry)' : ''}</div><div class="plan" style="color:var(--accent)" id="mplan"></div></div></div>
+      <div class="step" id="s2"><span class="n">2</span><div><div class="who">The referee's best plan</div><div class="plan" style="color:var(--good)">${planText(!!r.best_letter, r.best_letter, r.best_target)}${r.best_gives?.length ? ` <span class="small muted" style="font-weight:500">gives up ${esc(r.best_gives.join(', '))}</span>` : ''}</div></div></div>
+      <div class="step" id="s3"><span class="n">3</span><div><div class="who">Verdict</div><div id="vd" style="margin-top:4px"></div>${gap ? `<div class="small muted" style="margin-top:4px">${gap}</div>` : ''}${r.broken ? `<div class="small" style="color:var(--bad);margin-top:4px">${esc(r.broken.replace(' Network network', ' network'))}</div>` : ''}</div></div>
+    </div>
+    <div class="facts">
+      <div class="kv"><span>time to decide</span><span class="num">${r.wall_s != null ? r.wall_s.toFixed(1) + ' s' : '–'}</span></div>
+      <div class="meter"><div class="f" id="tm" style="width:0"></div></div>
+      <div class="kv"><span>speed</span><span class="num">${r.read_tok_s ? Math.round(r.read_tok_s) + ' tokens/s reading' : ''}${r.write_tok_s ? ' · ' + Math.round(r.write_tok_s) + ' tokens/s writing' : ''}</span></div>
+      <div class="kv"><span>model memory</span><span class="num">${r.memory_gb != null ? r.memory_gb.toFixed(2) + ' GB' : '–'}</span></div>
+      <details><summary class="small muted">What the model wrote</summary><div class="raw">${esc(r.raw)}</div></details>
+    </div>`;
+  const on = id => $(id) && $(id).classList.add('on'), later = (f, ms) => showRow.timers.push(setTimeout(f, RM ? 0 : ms));
+  later(() => { on('#s1'); typeInto($('#mplan'), mine, () => { later(() => { on('#s2'); later(() => { on('#s3'); $('#vd').innerHTML = verdict; }, 450); }, 250); }); }, 250);
+  later(() => { const e = $('#tm'); if (e) e.style.width = `${100 * Math.min(1, (r.wall_s || 0) / tmax)}%`; }, 100);
   document.querySelectorAll('.strip i.cur').forEach(x => x.classList.remove('cur')); const sq = document.getElementById('a' + r.n); if (sq) sq.classList.add('cur');
+  document.querySelectorAll('.cell.cur').forEach(x => x.classList.remove('cur'));
+  const cell = document.querySelector(`.cell[data-k="${CSS.escape(r.model + '|' + r.role)}"]`); if (cell && r.profile == PROF && (r.adapt || 'none') == ADP) cell.classList.add('cur');
+  KEY = r.model + '|' + r.role;
 }
 function showIdle() {
   if (!MAPS || !idleIds.length) return; const id = idleIds[idleI % idleIds.length]; const c = CASES[id]; if (!c) return;
-  EVMap.draw($('#map'), MAPS, id, {best: c.best_letter});
-  $('#nowtitle').textContent = 'Test situations · referee\'s best plan';
+  EVMap.draw($('#map'), MAPS, id, {best: c.best_letter}); $('#maptag').textContent = `${id} · ${c.goal || ''}`;
+  $('#nowtitle').innerHTML = '<span class="dotc"></span>Test situations · the referee\'s best plan';
   $('#detail').innerHTML = `<div class="small muted">${esc(id)} · no model answers yet</div><div class="quote">“${esc(c.request)}”</div>
     <div>${c.wishes.map(w => `<span class="chip">${esc(w)}</span>`).join('')}${c.conflict ? '<span class="chip warn">cannot keep everything</span>' : ''}${c.held_out ? '<span class="chip acc">wish type never seen in training</span>' : ''}</div>
-    <div class="vs"><span class="who">Referee</span><span class="plan" style="color:var(--good)">${planText(!!c.best_letter, c.best_letter, c.best_target)}</span></div>
-    <div class="small muted">The referee worked this out by driving every option in SUMO on the real road network. When the models stage starts, each answer appears here as it arrives.</div>`;
+    <div class="steps"><div class="step on"><span class="n">✓</span><div><div class="who">The referee's best plan</div><div class="plan" style="color:var(--good)">${planText(!!c.best_letter, c.best_letter, c.best_target)}</div></div></div></div>
+    <div class="note">The referee worked this out by driving every option in SUMO on the real road network. When the models stage starts, each answer appears here as it arrives.</div>`;
 }
+
+/* ---------- scoreboard ---------- */
 const sel = () => ROWS.filter(r => !$('#mfilter').value || r.model == $('#mfilter').value);
 function drawBoard() {
   const ws = ['all', ...(ST?.config?.wordings || [])], ps = (ST?.config?.edge_profiles || [{name: 'laptop'}]).map(p => p.name);
-  $('#wseg').innerHTML = ws.map(w => `<button class="${w == W ? 'on' : ''}" data-w="${w}">${w}</button>`).join('');
-  $('#pseg').innerHTML = ps.map(p => `<button class="${p == PROF ? 'on' : ''}" data-p="${p}">${p}</button>`).join('');
+  const seg = (id, items, curv, attr, lab = x => x) => { const html = items.map(x => `<button class="${x == curv ? 'on' : ''}" data-${attr}="${esc(x)}" aria-pressed="${x == curv}">${esc(lab(x))}</button>`).join(''); if ($(id).dataset.h !== html) { $(id).innerHTML = html; $(id).dataset.h = html; } };
+  seg('#wseg', ws, W, 'w'); seg('#pseg', ps, PROF, 'p', p => p == 'laptop' ? 'all cores' : p);
+  const as = ['none', ...(ST?.config?.adaptations || [])]; seg('#aseg', as.length > 1 ? as : [], ADP, 'a', a => a == 'none' ? 'none' : a);
+  $('#alab').style.display = as.length > 1 ? '' : 'none';
   document.querySelectorAll('[data-w]').forEach(b => b.onclick = () => { W = b.dataset.w; drawBoard(); });
   document.querySelectorAll('[data-p]').forEach(b => b.onclick = () => { PROF = b.dataset.p; drawBoard(); });
+  document.querySelectorAll('[data-a]').forEach(b => b.onclick = () => { ADP = b.dataset.a; drawBoard(); });
   const models = ST?.config?.models || [...new Set(ROWS.map(r => r.model))], roles = ST?.config?.roles || [...new Set(ROWS.map(r => r.role))];
-  const rs = ROWS.filter(r => r.profile == PROF && (W == 'all' || r.wording == W));
-  $('#board').innerHTML = `<table class="board"><tr><th></th>${roles.map(r => `<th>${esc(r)}</th>`).join('')}</tr>` + models.map(m => `<tr><th>${esc(m.replace('qwen2.5:', 'Qwen2.5 '))}</th>${roles.map(ro => {
+  const rs = ROWS.filter(r => r.profile == PROF && (r.adapt || 'none') == ADP && (W == 'all' || r.wording == W)), kb = keyBaseline();
+  const html = `<table class="board"><tr><th></th>${roles.map(r => `<th>${esc(r)}</th>`).join('')}</tr>` + models.map(m => `<tr><th title="${esc(m)}">${esc(innerWidth < 560 ? short(m).replace('Qwen2.5 ', '') : short(m))}</th>${roles.map(ro => {
       const g = rs.filter(r => r.model == m && r.role == ro), p = g.length ? g.filter(r => r.passed).length / g.length : null;
-      return `<td><div class="cell"><b class="num">${pc(p)}</b><div class="n">${g.length ? `${g.length} answers · safe ${pc(g.filter(r => r.safe).length / g.length)}` : 'not yet'}</div><div class="fill" style="width:${100 * (p || 0)}%"></div></div></td>`; }).join('')}</tr>`).join('') + '</table>';
-  const b = (ST?.baselines || []).filter(x => !/referee/.test(x.method)), short = s => s.replace('exact planner, ', 'planner, ').replace(' option', '').replace(', to 80%', '').replace('reads only training wish types', 'known wishes').replace('ignores wishes', 'no wishes').replace('goal-aware rule (no wishes)', 'rule').replace('nearest compatible', 'nearest');
-  const sorted = [...b].sort((x, y) => y.pass_rate - x.pass_rate);
-  $('#refs').innerHTML = sorted.map(x => `<div class="ref"><span>${esc(short(x.method))}</span><div class="meter"><div class="f" style="width:${100 * x.pass_rate}%;background:var(--muted)"></div></div><span class="num">${pc(x.pass_rate)}</span></div>`).join('');
+      const cls = p == null ? 'empty' : p < (kb ?? 0) ? 'low' : '';
+      return `<td><div class="cell ${cls}${KEY == m + '|' + ro && ST?.running ? ' cur' : ''}" data-k="${esc(m + '|' + ro)}" style="--p:${p || 0}" title="${g.length ? `${g.filter(r => r.passed).length} of ${g.length} pass` : 'no answers yet'}"><b>${pc(p)}</b><div class="n">${g.length ? `${g.length} · safe ${pc(g.filter(r => r.safe).length / g.length)}` : 'not yet'}</div><div class="fill" style="width:${100 * (p || 0)}%"></div>${kb != null && p != null ? `<div class="base" style="left:${100 * kb}%"></div>` : ''}</div></td>`; }).join('')}</tr>`).join('') + '</table>';
+  if ($('#board').dataset.h !== html) { $('#board').innerHTML = html; $('#board').dataset.h = html; }
+  const b = (ST?.baselines || []).filter(x => !/referee/.test(x.method)), lab = s => s.replace('exact planner, ', 'planner, ').replace(' option', '').replace(', to 80%', '').replace('reads only training wish types', 'known wishes').replace('ignores wishes', 'no wishes').replace('goal-aware rule (no wishes)', 'goal rule').replace('nearest compatible', 'nearest');
+  const rh = [...b].sort((x, y) => y.pass_rate - x.pass_rate).map(x => `<div class="ref${/ignores wishes/.test(x.method) ? ' key' : ''}"><span>${esc(lab(x.method))}</span><div class="meter"><div class="f" style="width:${100 * x.pass_rate}%"></div></div><span class="num">${pc(x.pass_rate)}</span></div>`).join('');
+  if ($('#refs').dataset.h !== rh) { $('#refs').innerHTML = rh; $('#refs').dataset.h = rh; }
 }
-function drawStrips() {
-  const groups = {}; for (const r of ROWS) (groups[`${r.model} · ${r.role}`] ||= []).push(r);
-  $('#strips').innerHTML = Object.keys(groups).length ? Object.entries(groups).map(([k, g]) => `<div class="rowlab"><span>${esc(k.replace('qwen2.5:', 'Qwen2.5 '))}</span><span class="num">${g.filter(r => r.passed).length}/${g.length}</span></div>
-     <div class="strip">${g.map(r => `<i id="a${r.n}" class="${r.passed ? 'p' : r.safe ? 's' : 'u'}" title="${esc(r.id)} ${esc(r.wording)} ${esc(r.profile)}" data-n="${r.n}"></i>`).join('')}</div>`).join('')
-     : '<div class="empty">No model answers yet.</div>';
-  document.querySelectorAll('.strip i').forEach(e => e.onclick = () => { playing = false; $('#play').textContent = 'Play'; cur = +e.dataset.n; showRow(ROWS[cur]); });
+
+/* ---------- answer stream ---------- */
+function drawStrips(fresh) {
+  const groups = {}; for (const r of ROWS) (groups[`${short(r.model)} · ${r.role}${(r.adapt || 'none') != 'none' ? ' · ' + r.adapt : ''}`] ||= []).push(r);
+  $('#strips').innerHTML = Object.keys(groups).length ? Object.entries(groups).map(([k, g]) => `<div class="rowlab"><span>${esc(k)}</span><span class="num">${g.filter(r => r.passed).length}/${g.length} pass</span></div>
+     <div class="strip">${g.map(r => `<i id="a${r.n}" tabindex="0" role="button" aria-label="${esc(r.id)}, ${r.passed ? 'pass' : r.safe ? 'safe, keeps less' : 'unsafe'}" class="${r.passed ? 'p' : r.safe ? 's' : 'u'}${fresh && r.n >= fresh ? ' new' : ''}${r.n == cur ? ' cur' : ''}" title="${esc(r.id)} · ${esc(r.wording)} · ${esc(r.profile)}" data-n="${r.n}"></i>`).join('')}</div>`).join('')
+     : '<div class="empty">No model answers yet. Each answer appears here as a square the moment it is graded.</div>';
+  document.querySelectorAll('.strip i').forEach(e => { const go = () => { playing = false; $('#play').textContent = 'Play'; cur = +e.dataset.n; showRow(ROWS[cur]); }; e.onclick = go; e.onkeydown = ev => { if (ev.key == 'Enter') go(); }; });
 }
-function median(a) { const s = a.filter(x => x != null).sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : null; }
+
+/* ---------- edge ---------- */
+let edgeSig = '';
 function drawEdge() {
   const profs = ST?.config?.edge_profiles || [], models = ST?.config?.models || [];
-  if (!ROWS.length) { $('#edge').innerHTML = `<div class="empty">Each answer records the time to decide, reading and writing speed, and the memory the model takes. Profiles in this run: ${profs.map(p => `<b>${esc(p.name)}</b>${p.threads ? ` (${p.threads} CPU threads${p.time_budget_s ? `, budget ${p.time_budget_s} s and ${p.memory_budget_gb} GB` : ''}${p.status ? `, ${esc(p.status)}` : ''})` : ' (all CPU cores)'}`).join(', ')}.</div>`; return; }
-  let rows = '';
-  for (const p of profs) for (const m of models) {
-    const g = ROWS.filter(r => r.profile == p.name && r.model == m); if (!g.length) continue;
-    const t = median(g.map(r => r.wall_s)), mem = Math.max(...g.map(r => r.memory_gb || 0)), rd = median(g.map(r => r.read_tok_s)), wr = median(g.map(r => r.write_tok_s));
-    const tb = p.time_budget_s, mb = p.memory_budget_gb, tmax = Math.max(tb || 0, t || 0) * 1.15 || 1, mmax = Math.max(mb || 0, mem || 0) * 1.15 || 1;
-    const fits = tb && mb ? (t <= tb && mem <= mb ? '<span class="badge ok">fits</span>' : '<span class="badge bad">does not fit</span>') : '<span class="badge na">no budget</span>';
-    rows += `<tr><td><b>${esc(m.replace('qwen2.5:', 'Qwen2.5 '))}</b><div class="small muted">${esc(p.name)}${p.threads ? `, ${p.threads} threads` : ''}</div></td>
-      <td><div class="meter"><div class="f" style="width:${100 * t / tmax}%;${tb && t > tb ? 'background:var(--bad)' : ''}"></div>${tb ? `<div class="lim" style="left:${100 * tb / tmax}%"></div>` : ''}</div><span class="num">${t?.toFixed(1)} s</span></td>
-      <td><div class="meter"><div class="f" style="width:${100 * mem / mmax}%;${mb && mem > mb ? 'background:var(--bad)' : ''}"></div>${mb ? `<div class="lim" style="left:${100 * mb / mmax}%"></div>` : ''}</div><span class="num">${mem ? mem.toFixed(2) + ' GB' : '–'}</span></td>
-      <td class="num">${rd ? Math.round(rd) : '–'} / ${wr ? Math.round(wr) : '–'}</td><td>${fits}</td></tr>`;
-  }
-  const notes = profs.filter(p => p.status).map(p => `${esc(p.name)} budgets are ${esc(p.status)}`).join('; ');
-  $('#edge').innerHTML = `<table class="edge" style="width:100%"><tr><th>Model, profile</th><th>Median time to decide</th><th>Model memory (largest)</th><th>Tokens/s read / write</th><th>Budget</th></tr>${rows}</table>
-    <div class="small muted" style="margin-top:8px">Orange line = the budget. ${notes}. Measured on this computer; a phone is not measured.</div>`;
+  const sweep = profs.filter(p => p.threads), all = profs.find(p => !p.threads);
+  if (!ROWS.length) { $('#edge').innerHTML = `<div class="empty">Each answer records the time to decide, the reading and writing speed, and the memory the model takes. The models then answer again with only ${sweep.map(p => p.threads).join(', ')} processor threads, standing in for weaker hardware.</div>`; return; }
+  const eo = ST?.config?.edge_on || {}, pts = {}; let ymax = 0;
+  for (const m of models) { pts[m] = []; for (const p of [...sweep, ...(all ? [all] : [])]) { const g = ROWS.filter(r => r.profile == p.name && (r.adapt || 'none') == 'none' && r.model == m && (!eo.roles || eo.roles.includes(r.role)) && (!eo.wordings || eo.wordings.includes(r.wording))); if (!g.length) continue;
+      const t = median(g.map(r => r.wall_s)); pts[m].push({p, t, mem: Math.max(...g.map(r => r.memory_gb || 0)), pass: g.filter(r => r.passed).length / g.length, n: g.length}); ymax = Math.max(ymax, t); } }
+  const sig = JSON.stringify(pts); if (sig == edgeSig) return; const firstDraw = !edgeSig; edgeSig = sig;
+  const xs = [...sweep.map(p => String(p.threads)), ...(all ? ['all'] : [])], Wd = 600, H = 240, L = 46, R = 110, T = 14, B = 36;
+  const X = i => L + (xs.length < 2 ? 0 : i * (Wd - L - R) / (xs.length - 1)), Y = v => T + (H - T - B) * (1 - v / (ymax * 1.1 || 1));
+  const cols = ['var(--accent)', 'var(--warn)', 'var(--good)', 'var(--bad)', 'var(--muted)'], ticks = [0, .25, .5, .75, 1].map(f => f * ymax * 1.1);
+  let svg = `<svg viewBox="0 0 ${Wd} ${H}" style="width:100%;height:auto" role="img" aria-label="Median time to decide by processor threads">`;
+  svg += ticks.map(v => `<line x1="${L}" x2="${Wd - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${Y(v) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${v.toFixed(v < 10 ? 1 : 0)} s</text>`).join('');
+  svg += xs.map((x, i) => `<text x="${X(i)}" y="${H - B + 18}" text-anchor="middle" font-size="11" fill="var(--muted)">${x}</text>`).join('') + `<text x="${(L + Wd - R) / 2}" y="${H - 2}" text-anchor="middle" font-size="11" fill="var(--muted)">processor threads the model may use</text>`;
+  const ends = [];
+  models.forEach((m, k) => { const q = pts[m].map(o => ({...o, i: o.p.threads ? xs.indexOf(String(o.p.threads)) : xs.indexOf('all')})).filter(o => o.i >= 0).sort((a, b) => a.i - b.i); if (!q.length) return;
+    svg += `<polyline class="${firstDraw ? 'draw' : ''}" fill="none" stroke="${cols[k % 5]}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" points="${q.map(o => `${X(o.i)},${Y(o.t)}`).join(' ')}"/>` + q.map(o => `<circle cx="${X(o.i)}" cy="${Y(o.t)}" r="4" fill="var(--surface)" stroke="${cols[k % 5]}" stroke-width="2"><title>${esc(short(m))}, ${esc(o.p.name)}: median ${o.t.toFixed(1)} s, ${o.n} answers, pass ${pc(o.pass)}</title></circle>`).join('');
+    const e = q[q.length - 1]; ends.push({x: X(e.i) + 9, y: Y(e.t) + 4, c: cols[k % 5], t: short(m)}); });
+  ends.sort((a, b) => a.y - b.y); for (let i = 1; i < ends.length; i++) ends[i].y = Math.max(ends[i].y, ends[i - 1].y + 15);
+  svg += ends.map(o => `<text x="${o.x}" y="${o.y}" font-size="12" font-weight="600" fill="${o.c}">${esc(o.t)}</text>`).join('');
+  svg += '</svg>';
+  const tbl = `<table class="edge" style="width:100%;margin-top:10px"><tr><th>Model</th><th>Memory</th><th>Tokens/s read · write</th><th>Pass by threads (${xs.join(' / ')})</th></tr>` + models.map(m => { const q = pts[m]; if (!q.length) return '';
+      const a = ROWS.filter(r => r.model == m && (r.adapt || 'none') == 'none' && r.profile == (all?.name || 'laptop')), rd = median(a.map(r => r.read_tok_s)), wr = median(a.map(r => r.write_tok_s));
+      const byx = xs.map(x => { const o = q.find(o => String(o.p.threads || 'all') == x); return o ? pc(o.pass) : '–'; }).join(' / ');
+      return `<tr><td><b>${esc(short(m))}</b></td><td class="num">${Math.max(...q.map(o => o.mem)).toFixed(2)} GB</td><td class="num">${rd ? Math.round(rd) : '–'} · ${wr ? Math.round(wr) : '–'}</td><td class="num">${byx}</td></tr>`; }).join('') + '</table>';
+  $('#edge').innerHTML = `<div class="small muted" style="margin-bottom:6px">Median time to decide (role R2, template wording). Fewer threads stand in for weaker hardware.</div>${svg}${tbl}
+    <div class="note">Measured on this computer. Every point uses the same subset of answers, so the pass rates are comparable. A phone is not measured here.</div>`;
 }
+
+/* ---------- log ---------- */
+function drawLog() {
+  const lines = (ST.log || []).filter(l => !/^\S+ +\$ /.test(l)).slice().reverse();
+  const html = (ST.error ? `<span class="l e">${esc(ST.error)}</span>` : '') + (lines.length ? lines.map(l => { const m = l.match(/^(\d\d:\d\d:\d\d) (.*)$/); return `<span class="l">${m ? `<span class="t">${m[1]}</span>${esc(m[2])}` : esc(l)}</span>`; }).join('')
+    : '<span class="l">No run in progress. Start one with: python evbench.py run</span>');
+  if ($('#log').dataset.h !== html) { $('#log').innerHTML = html; $('#log').dataset.h = html; }
+}
+
+/* ---------- loop ---------- */
 function tick() {
   if (!playing || !MAPS) return; const rs = sel();
   if (!rs.length) { idleI++; showIdle(); return; }
@@ -185,23 +409,32 @@ function tick() {
 async function poll() {
   try {
     ST = await (await fetch('/api/state')).json();
-    const add = await (await fetch('/api/answers?since=' + ROWS.length)).json(); if (add.length) { ROWS.push(...add); drawStrips(); }
-    const ms = [...new Set(ROWS.map(r => r.model))], f = $('#mfilter'); if (f.options.length - 1 != ms.length) { const v = f.value; f.innerHTML = '<option value="">all models</option>' + ms.map(m => `<option>${esc(m)}</option>`).join(''); f.value = v; }
-    $('#status').className = 'pill' + (ST.running ? ' live' : ''); $('#status').textContent = ST.error ? 'stopped: see the run log' : ST.running ? `running · ${ST.current || ''}` : (ROWS.length ? 'finished · replay' : 'idle');
+    const add = await (await fetch('/api/answers?since=' + ROWS.length)).json();
+    if (add.length) { const f = ROWS.length; ROWS.push(...add); drawStrips(seen ? f : 0); seen = 1;
+      if (f) { const k = document.querySelector('.kpi'); k.classList.remove('flash'); void k.offsetWidth; k.classList.add('flash'); } }
+    const ms = [...new Set(ROWS.map(r => r.model))], f = $('#mfilter'); if (f.options.length - 1 != ms.length) { const v = f.value; f.innerHTML = '<option value="">all models</option>' + ms.map(m => `<option value="${esc(m)}">${esc(short(m))}</option>`).join(''); f.value = v; }
+    document.body.classList.toggle('live', !!ST.running);
+    $('#status').className = 'pill' + (ST.error ? ' err' : ST.running ? ' live' : ''); $('#status').textContent = ST.error ? 'stopped: see the run log' : ST.running ? `running · ${ST.current || ''}` : (ROWS.length ? 'finished · replay' : 'idle');
     if (ST.running && ST.started) { const s = Math.round(ST.now - ST.started); $('#clock').textContent = `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; }
     $('#clock').style.display = ST.running ? '' : 'none';
     $('#replink').style.display = ST.manifest?.stages?.report ? '' : 'none';
-    $('#log').textContent = (ST.error ? ST.error + '\n' : '') + (!(ST.log || []).length ? 'No run in progress. Start one with: python evbench.py run' : '') + (ST.log || []).filter(l => !/^\S+ +\$ /.test(l)).slice().reverse().join('\n');
-    drawRail(); drawBoard(); drawEdge(); if (ST.running && add.length) tick();
-  } catch (e) { $('#status').textContent = 'dashboard not reachable'; }
+    drawLog(); drawRail(); drawKpis(); drawBoard(); drawEdge(); if (ST.running && add.length) tick();
+  } catch (e) { $('#status').className = 'pill err'; $('#status').textContent = 'dashboard not reachable'; }
 }
 $('#play').onclick = () => { playing = !playing; $('#play').textContent = playing ? 'Pause' : 'Play'; };
 $('#next').onclick = () => { const rs = sel(); if (!rs.length) { idleI++; showIdle(); return; } const i = rs.findIndex(r => r.n == cur); cur = rs[(i + 1) % rs.length].n; showRow(ROWS[cur]); };
 $('#prev').onclick = () => { const rs = sel(); if (!rs.length) { idleI = Math.max(0, idleI - 1); showIdle(); return; } const i = rs.findIndex(r => r.n == cur); cur = rs[(i - 1 + rs.length) % rs.length].n; showRow(ROWS[cur]); };
-window.addEventListener('resize', () => { if (cur >= 0 && ROWS[cur]) showRow(ROWS[cur]); else showIdle(); });
+$('#mfilter').onchange = () => { const rs = sel(); if (rs.length) { cur = rs[rs.length - 1].n; showRow(ROWS[cur]); } };
+document.addEventListener('keydown', e => { if (/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+  if (e.key == 'ArrowRight') { e.preventDefault(); playing = false; $('#play').textContent = 'Play'; $('#next').click(); }
+  if (e.key == 'ArrowLeft') { e.preventDefault(); playing = false; $('#play').textContent = 'Play'; $('#prev').click(); }
+  if (e.key == ' ' && e.target.tagName != 'BUTTON') { e.preventDefault(); $('#play').click(); } });
+document.querySelectorAll('.reveal').forEach(e => e.addEventListener('animationend', ev => { if (ev.animationName == 'rise') e.classList.remove('reveal'); }));
+window.addEventListener('scroll', () => $('#top').classList.toggle('scrolled', scrollY > 4), {passive: true});
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { if (cur >= 0 && ROWS[cur]) EVMap.draw($('#map'), MAPS, ROWS[cur].id, {model: ROWS[cur].pred_charge ? (ROWS[cur].pred_letter || 'invalid') : null, best: ROWS[cur].best_letter, t: 1}); else showIdle(); }, 150); });
 (async () => {
   await poll(); MAPS = await (await fetch('/api/maps')).json(); CASES = await (await fetch('/api/cases')).json();
-  idleIds = Object.keys(CASES).filter(i => MAPS.situations[i]); if (ROWS.length) { cur = ROWS[0].n; showRow(ROWS[0]); } else showIdle();
-  setInterval(poll, 1500); setInterval(tick, 4500);
+  idleIds = Object.keys(CASES).filter(i => MAPS.situations[i]); if (ROWS.length) { cur = ROWS[ROWS.length - 1].n; showRow(ROWS[cur]); } else showIdle();
+  setInterval(poll, 1500); setInterval(tick, 5000);
 })();
 </script></body></html>
