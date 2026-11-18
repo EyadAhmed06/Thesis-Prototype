@@ -1,0 +1,32 @@
+{
+ "base situations": 716,
+ "robust with wishes": 440,
+ "kept": 440,
+ "conflict": 194,
+ "must charge": 227,
+ "wishes 0/1/2": [
+  127,
+  235,
+  78
+ ],
+ "with held-out wish type": 0,
+ "wish types": {
+  "min_arrival": 283,
+  "avoid_network": 88,
+  "max_wait": 20
+ },
+ "rules 0/1/2": [
+  156,
+  135,
+  149
+ ],
+ "with trap charger": 221,
+ "close": 109,
+ "budget set below every on-time option": 17,
+ "gives up": {
+  "nothing": 246,
+  "wishes": 177,
+  "budget,wishes": 9,
+  "budget": 8
+ }
+}

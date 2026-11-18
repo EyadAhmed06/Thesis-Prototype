@@ -1,0 +1,3 @@
+<configuration><input><net-file value="cs.net.xml"/><route-files value="cs.rou.xml"/></input>
+<output><battery-output value="cs_bat.xml"/><tripinfo-output value="cs_trip.xml"/></output>
+<processing><step-length value="1"/><ignore-route-errors value="true"/></processing><report><no-step-log value="true"/></report></configuration>

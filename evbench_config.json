@@ -1,0 +1,62 @@
+{
+ "network": "data/aa_det.net.xml",
+ "osm_pbf": null,
+ "afdc_csv": null,
+ "regenerate_situations": false,
+ "generation": {
+  "test_raw": 1400,
+  "test_seed": 11,
+  "extra_raw": 2800,
+  "extra_seed": 31,
+  "extra_id_start": 2000,
+  "train_raw": 900,
+  "train_seed": 12,
+  "test_keep": 300,
+  "wish_seed_test": 21,
+  "wish_seed_train": 22
+ },
+ "ollama_url": "http://localhost:11434",
+ "models": [
+  "qwen2.5:0.5b",
+  "qwen2.5:1.5b",
+  "qwen2.5:3b"
+ ],
+ "roles": [
+  "R1",
+  "R2",
+  "R3-known",
+  "R3-full"
+ ],
+ "wordings": [
+  "template",
+  "paraphrase"
+ ],
+ "facts": "with_energy",
+ "models_on": "pilot",
+ "edge_profiles": [
+  {
+   "name": "laptop",
+   "threads": 0,
+   "note": "the experiment laptop as it is (all CPU cores)"
+  },
+  {
+   "name": "in-car",
+   "threads": 4,
+   "memory_budget_gb": 4,
+   "time_budget_s": 10,
+   "status": "proposed, not agreed",
+   "note": "a smaller in-car computer: 4 CPU threads; the answer must fit in 4 GB and come within 10 s"
+  }
+ ],
+ "edge_on": {
+  "roles": [
+   "R2",
+   "R3-known"
+  ],
+  "wordings": [
+   "template"
+  ],
+  "note": "the extra profiles run only these roles and wordings, to keep the run short"
+ },
+ "live_dashboard": true
+}

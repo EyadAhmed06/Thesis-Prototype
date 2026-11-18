@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>evbench live</title>
+<link rel="stylesheet" href="/ui/theme.css">
+<style>
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:18px 22px 6px}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff}
+.top h1{font-size:19px;margin:0;line-height:1.2} .top .q{font-size:13px;color:var(--muted)}
+.top .right{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.page{padding:10px 22px 30px;display:grid;gap:16px;max-width:1500px;margin:0 auto}
+.grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:16px}
+@media (max-width:1000px){.grid{grid-template-columns:1fr}}
+.now{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px}
+@media (max-width:760px){.now{grid-template-columns:1fr}.top,.page{padding-left:16px;padding-right:16px}}
+canvas.map{height:390px}
+.quote{font-size:15.5px;line-height:1.5;border-left:3px solid var(--accent);padding:2px 0 2px 12px;margin:8px 0 12px}
+.vs{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;margin:10px 0}
+.vs .who{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.plan{font-weight:650;font-size:15px}
+.meter{position:relative;height:8px;background:var(--surface2);border:1px solid var(--line);border-radius:5px;overflow:visible;margin:4px 0 2px}
+.meter .f{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:5px;transition:width .5s}
+.meter .lim{position:absolute;top:-5px;bottom:-5px;width:2px;background:var(--warn)}
+.kv{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+.board{width:100%;border-collapse:separate;border-spacing:4px}
+.board th{font-size:12px;color:var(--muted);font-weight:600;text-align:left;padding:2px 4px}
+.cell{position:relative;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:7px 9px;min-width:74px;overflow:hidden}
+.cell .fill{position:absolute;left:0;bottom:0;height:4px;background:var(--accent);transition:width .6s}
+.cell b{font-size:18px} .cell .n{font-size:11px;color:var(--muted)}
+.refs{margin-top:8px;display:grid;gap:3px} .ref{display:grid;grid-template-columns:150px 1fr 40px;gap:8px;align-items:center;font-size:12px;color:var(--muted)} .ref .meter{margin:0;height:6px}
+.refs .tick{position:absolute;top:0;height:14px;width:2px;background:var(--muted)}
+.refs .lab{position:absolute;top:16px;font-size:11px;color:var(--muted);transform:translateX(-50%);white-space:nowrap}
+.strip{display:flex;flex-wrap:wrap;gap:2px;margin:3px 0 10px}
+.strip i{width:9px;height:9px;border-radius:2px;display:block;background:var(--line)}
+.strip i.p{background:var(--good)} .strip i.s{background:var(--warn)} .strip i.u{background:var(--bad)} .strip i.cur{outline:2px solid var(--ink);outline-offset:1px}
+.rowlab{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+.log{font:12px/1.5 ui-monospace,Consolas,monospace;color:var(--muted);max-height:150px;overflow:auto;white-space:pre-wrap}
+.ctl{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:4px 10px;cursor:pointer;font-size:12.5px}
+.seg button.on{background:var(--accent);color:#fff}
+.edge td,.edge th{padding:6px 6px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:middle}
+.edge th{font-size:12px;color:var(--muted);font-weight:600}
+.edge .meter{width:120px;display:inline-block;vertical-align:middle;margin-right:6px}
+.empty{color:var(--muted);font-size:13.5px;padding:8px 0}
+.raw{font:12px ui-monospace,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px;white-space:pre-wrap;word-break:break-word;max-height:90px;overflow:auto}
+</style></head><body>
+<div class="top">
+  <div class="logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+  <div><h1>evbench</h1><div class="q">Can a small language model, running offline in the car, plan an electric car's charging stop correctly?</div></div>
+  <div class="right"><span id="status" class="pill">connecting…</span><span id="clock" class="pill num"></span><a id="replink" class="pill" style="display:none" href="/report" target="_blank">Open report</a></div>
+</div>
+<div class="page">
+  <div class="card"><h2>The pipeline</h2><div class="rail" id="rail"></div></div>
+  <div class="grid">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+        <h2 id="nowtitle" style="margin:0">Now</h2>
+        <div class="ctl"><button class="btn" id="prev">‹</button><button class="btn" id="play">Pause</button><button class="btn" id="next">›</button>
+          <select id="mfilter"><option value="">all models</option></select></div></div>
+      <div class="now">
+        <div><canvas class="map" id="map"></canvas>
+          <div class="legend" style="margin-top:8px"><span><i style="background:var(--accent)"></i>model's route</span><span><i style="background:var(--good)"></i>referee's best route</span>
+          <span><i style="background:var(--muted);height:2px"></i>straight there, no stop</span><span>◯ dashed red = trap charger (broken, private or wrong plug)</span><span>⚡ fast charger</span></div></div>
+        <div id="detail"></div>
+      </div>
+    </div>
+    <div class="card"><h2>Scoreboard · pass rate</h2>
+      <div class="ctl" style="margin-bottom:8px"><span class="small muted">Wording</span><div class="seg" id="wseg"></div><span class="small muted">Profile</span><div class="seg" id="pseg"></div></div>
+      <div id="board"></div>
+      <div class="small muted" style="margin-top:10px">Pass = safe, and keeps as much as the best possible plan (arrival time first, then budget, then wishes). For comparison, the simple methods without any language model:</div>
+      <div class="refs" id="refs"></div>
+      <h2 style="margin-top:18px">Every answer so far</h2>
+      <div class="legend" style="margin-bottom:6px"><span><i style="background:var(--good);height:9px;width:9px"></i>pass</span><span><i style="background:var(--warn);height:9px;width:9px"></i>safe, keeps less</span><span><i style="background:var(--bad);height:9px;width:9px"></i>unsafe</span></div>
+      <div id="strips"></div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card"><h2>Edge: does it fit the car's computer?</h2><div id="edge"></div></div>
+    <div class="card"><h2>Run log</h2><div class="log" id="log"></div></div>
+  </div>
+</div>
+<script src="/ui/map.js"></script>
+<script>
+const $ = s => document.querySelector(s), esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pc = x => x == null || isNaN(x) ? '–' : Math.round(100 * x) + '%';
+const STAGES = [['inputs','Inputs'],['validation','Validation'],['situations','Situations'],['baselines','Baselines'],['models','Models'],['score','Score'],['report','Report']];
+let MAPS = null, CASES = {}, ROWS = [], ST = null, cur = -1, playing = true, lastShown = 0, anim = null, W = 'all', PROF = 'laptop', idleIds = [], idleI = 0;
+
+function metric(k) {
+  const m = ST?.manifest?.stages?.[k], v = ST?.validation, t = ST?.testset;
+  if (k == 'inputs') return 'Michigan roads from OpenStreetMap, public chargers (AFDC)';
+  if (k == 'validation') return v ? `SUMO energy within ${Math.abs((v.devrt.total_ratio - 1) * 100).toFixed(1)}% of real Leaf trips` : 'SUMO energy vs real trips';
+  if (k == 'situations') return t ? `${t.kept} test situations${m && /MATCH|matches/.test(m.note) ? ', fingerprint ✓' : ''}` : 'test situations';
+  if (k == 'baselines') { const b = (ST?.baselines || []).filter(x => !/referee/.test(x.method)); return b.length ? `best simple method ${pc(Math.max(...b.map(x => x.pass_rate)))}` : 'simple methods'; }
+  if (k == 'models') return ST?.planned_answers ? `${ROWS.length} of ${ST.planned_answers} answers` : `${ROWS.length} answers`;
+  if (k == 'score') return ROWS.length ? `${ROWS.filter(r => r.passed).length} pass so far` : 'referee grades each answer';
+  if (k == 'report') return m ? 'report.html ready' : 'one page with everything';
+}
+function drawRail() {
+  $('#rail').innerHTML = STAGES.map(([k, n], i) => { const s = ST?.stages?.[k] || (ST?.manifest?.stages?.[k] ? 'done' : 'waiting');
+    const cls = s == 'done' ? 'done' : s == 'running' ? 'active' : s == 'error' ? 'err' : '';
+    return `<div class="node ${cls}"><div class="dot">${s == 'done' ? '✓' : s == 'error' ? '!' : i + 1}</div><div><div class="name">${n}</div><div class="metric">${esc(metric(k))}</div></div></div>`; }).join('');
+}
+function planText(charge, L, t) { return charge === false || (!L && charge !== true) ? 'drive without charging' : `charge at ${esc(L ?? '?')} to ${pc(t)}`; }
+function showRow(r) {
+  const c = CASES[r.id] || {}; cancelAnimationFrame(anim); const t0 = performance.now();
+  const model = r.pred_charge ? (r.pred_letter || 'invalid') : null;
+  const step = now => { const t = Math.min(1, (now - t0) / 1400); EVMap.draw($('#map'), MAPS, r.id, {model, best: r.best_letter, t}); if (t < 1) anim = requestAnimationFrame(step); };
+  anim = requestAnimationFrame(step);
+  const prof = (ST?.config?.edge_profiles || []).find(p => p.name == r.profile) || {};
+  const verdict = r.passed ? '<span class="badge ok">✓ Pass</span>' : r.safe ? '<span class="badge mid">Safe, but keeps less than the best plan</span>' : '<span class="badge bad">✕ Unsafe</span>';
+  const tb = prof.time_budget_s, mb = prof.memory_budget_gb, tmax = Math.max(tb || 0, r.wall_s || 0) * 1.15 || 1;
+  $('#nowtitle').textContent = `${ST?.running ? 'Now answering' : 'Replay'} · ${r.n + 1} of ${ROWS.length}`;
+  $('#detail').innerHTML = `
+    <div class="small muted">${esc(r.id)} · ${esc(r.wording)} wording · profile ${esc(r.profile)}${r.threads ? ` (${r.threads} threads)` : ''}</div>
+    <div class="quote">“${esc(r.request)}”</div>
+    <div>${(r.wishes || []).map(w => `<span class="chip">${esc(w)}</span>`).join('')}${r.conflict ? '<span class="chip warn">cannot keep everything</span>' : ''}${r.held_out ? '<span class="chip acc">wish type never seen in training</span>' : ''}</div>
+    <div class="vs"><span class="who">${esc(r.model)}<br>${esc(r.role)}</span><span class="plan" style="color:var(--accent)">${r.parsed === false ? 'answer not readable' : planText(r.pred_charge, r.pred_letter, r.pred_target)}${r.retried ? ' <span class="chip">after one retry</span>' : ''}</span>
+      <span class="who">Referee</span><span class="plan" style="color:var(--good)">${planText(!!r.best_letter, r.best_letter, r.best_target)}${r.best_gives?.length ? ` <span class="small muted">gives up ${esc(r.best_gives.join(', '))}</span>` : ''}</span></div>
+    <div style="margin:8px 0">${verdict}${r.passed && r.gap != null ? (r.top1 && r.gap < 0.05 ? ' <span class="small muted">same plan as the referee</span>' : ` <span class="small muted">keeps the same requests, ${r.gap_unit == '$' ? '$' + r.gap.toFixed(2) + ' more' : Math.round(r.gap) + ' min slower'} than the best plan</span>`) : ''}</div>${r.broken ? `<div class="small" style="color:var(--bad);margin-bottom:6px">${esc(r.broken.replace(' Network network', ' network'))}</div>` : ''}
+    <div class="kv"><span>time to decide</span><span class="num">${r.wall_s != null ? r.wall_s.toFixed(1) + ' s' : '–'}${tb ? ` · budget ${tb} s` : ''}</span></div>
+    <div class="meter"><div class="f" style="width:${100 * Math.min(1, (r.wall_s || 0) / tmax)}%;${tb && r.wall_s > tb ? 'background:var(--bad)' : ''}"></div>${tb ? `<div class="lim" style="left:${100 * tb / tmax}%"></div>` : ''}</div>
+    <div class="kv" style="margin-top:6px"><span>speed</span><span class="num">${r.read_tok_s ? Math.round(r.read_tok_s) + ' tokens/s reading' : ''}${r.write_tok_s ? ' · ' + Math.round(r.write_tok_s) + ' tokens/s writing' : ''}</span></div>
+    <div class="kv"><span>model memory</span><span class="num">${r.memory_gb != null ? r.memory_gb.toFixed(2) + ' GB' : '–'}${mb ? ` · budget ${mb} GB` : ''}</span></div>
+    <details style="margin-top:8px"><summary class="small muted" style="cursor:pointer">What the model wrote</summary><div class="raw">${esc(r.raw)}</div></details>`;
+  document.querySelectorAll('.strip i.cur').forEach(x => x.classList.remove('cur')); const sq = document.getElementById('a' + r.n); if (sq) sq.classList.add('cur');
+}
+function showIdle() {
+  if (!MAPS || !idleIds.length) return; const id = idleIds[idleI % idleIds.length]; const c = CASES[id]; if (!c) return;
+  EVMap.draw($('#map'), MAPS, id, {best: c.best_letter});
+  $('#nowtitle').textContent = 'Test situations · referee\'s best plan';
+  $('#detail').innerHTML = `<div class="small muted">${esc(id)} · no model answers yet</div><div class="quote">“${esc(c.request)}”</div>
+    <div>${c.wishes.map(w => `<span class="chip">${esc(w)}</span>`).join('')}${c.conflict ? '<span class="chip warn">cannot keep everything</span>' : ''}${c.held_out ? '<span class="chip acc">wish type never seen in training</span>' : ''}</div>
+    <div class="vs"><span class="who">Referee</span><span class="plan" style="color:var(--good)">${planText(!!c.best_letter, c.best_letter, c.best_target)}</span></div>
+    <div class="small muted">The referee worked this out by driving every option in SUMO on the real road network. When the models stage starts, each answer appears here as it arrives.</div>`;
+}
+const sel = () => ROWS.filter(r => !$('#mfilter').value || r.model == $('#mfilter').value);
+function drawBoard() {
+  const ws = ['all', ...(ST?.config?.wordings || [])], ps = (ST?.config?.edge_profiles || [{name: 'laptop'}]).map(p => p.name);
+  $('#wseg').innerHTML = ws.map(w => `<button class="${w == W ? 'on' : ''}" data-w="${w}">${w}</button>`).join('');
+  $('#pseg').innerHTML = ps.map(p => `<button class="${p == PROF ? 'on' : ''}" data-p="${p}">${p}</button>`).join('');
+  document.querySelectorAll('[data-w]').forEach(b => b.onclick = () => { W = b.dataset.w; drawBoard(); });
+  document.querySelectorAll('[data-p]').forEach(b => b.onclick = () => { PROF = b.dataset.p; drawBoard(); });
+  const models = ST?.config?.models || [...new Set(ROWS.map(r => r.model))], roles = ST?.config?.roles || [...new Set(ROWS.map(r => r.role))];
+  const rs = ROWS.filter(r => r.profile == PROF && (W == 'all' || r.wording == W));
+  $('#board').innerHTML = `<table class="board"><tr><th></th>${roles.map(r => `<th>${esc(r)}</th>`).join('')}</tr>` + models.map(m => `<tr><th>${esc(m.replace('qwen2.5:', 'Qwen2.5 '))}</th>${roles.map(ro => {
+      const g = rs.filter(r => r.model == m && r.role == ro), p = g.length ? g.filter(r => r.passed).length / g.length : null;
+      return `<td><div class="cell"><b class="num">${pc(p)}</b><div class="n">${g.length ? `${g.length} answers · safe ${pc(g.filter(r => r.safe).length / g.length)}` : 'not yet'}</div><div class="fill" style="width:${100 * (p || 0)}%"></div></div></td>`; }).join('')}</tr>`).join('') + '</table>';
+  const b = (ST?.baselines || []).filter(x => !/referee/.test(x.method)), short = s => s.replace('exact planner, ', 'planner, ').replace(' option', '').replace(', to 80%', '').replace('reads only training wish types', 'known wishes').replace('ignores wishes', 'no wishes').replace('goal-aware rule (no wishes)', 'rule').replace('nearest compatible', 'nearest');
+  const sorted = [...b].sort((x, y) => y.pass_rate - x.pass_rate);
+  $('#refs').innerHTML = sorted.map(x => `<div class="ref"><span>${esc(short(x.method))}</span><div class="meter"><div class="f" style="width:${100 * x.pass_rate}%;background:var(--muted)"></div></div><span class="num">${pc(x.pass_rate)}</span></div>`).join('');
+}
+function drawStrips() {
+  const groups = {}; for (const r of ROWS) (groups[`${r.model} · ${r.role}`] ||= []).push(r);
+  $('#strips').innerHTML = Object.keys(groups).length ? Object.entries(groups).map(([k, g]) => `<div class="rowlab"><span>${esc(k.replace('qwen2.5:', 'Qwen2.5 '))}</span><span class="num">${g.filter(r => r.passed).length}/${g.length}</span></div>
+     <div class="strip">${g.map(r => `<i id="a${r.n}" class="${r.passed ? 'p' : r.safe ? 's' : 'u'}" title="${esc(r.id)} ${esc(r.wording)} ${esc(r.profile)}" data-n="${r.n}"></i>`).join('')}</div>`).join('')
+     : '<div class="empty">No model answers yet.</div>';
+  document.querySelectorAll('.strip i').forEach(e => e.onclick = () => { playing = false; $('#play').textContent = 'Play'; cur = +e.dataset.n; showRow(ROWS[cur]); });
+}
+function median(a) { const s = a.filter(x => x != null).sort((x, y) => x - y); return s.length ? s[Math.floor(s.length / 2)] : null; }
+function drawEdge() {
+  const profs = ST?.config?.edge_profiles || [], models = ST?.config?.models || [];
+  if (!ROWS.length) { $('#edge').innerHTML = `<div class="empty">Each answer records the time to decide, reading and writing speed, and the memory the model takes. Profiles in this run: ${profs.map(p => `<b>${esc(p.name)}</b>${p.threads ? ` (${p.threads} CPU threads${p.time_budget_s ? `, budget ${p.time_budget_s} s and ${p.memory_budget_gb} GB` : ''}${p.status ? `, ${esc(p.status)}` : ''})` : ' (all CPU cores)'}`).join(', ')}.</div>`; return; }
+  let rows = '';
+  for (const p of profs) for (const m of models) {
+    const g = ROWS.filter(r => r.profile == p.name && r.model == m); if (!g.length) continue;
+    const t = median(g.map(r => r.wall_s)), mem = Math.max(...g.map(r => r.memory_gb || 0)), rd = median(g.map(r => r.read_tok_s)), wr = median(g.map(r => r.write_tok_s));
+    const tb = p.time_budget_s, mb = p.memory_budget_gb, tmax = Math.max(tb || 0, t || 0) * 1.15 || 1, mmax = Math.max(mb || 0, mem || 0) * 1.15 || 1;
+    const fits = tb && mb ? (t <= tb && mem <= mb ? '<span class="badge ok">fits</span>' : '<span class="badge bad">does not fit</span>') : '<span class="badge na">no budget</span>';
+    rows += `<tr><td><b>${esc(m.replace('qwen2.5:', 'Qwen2.5 '))}</b><div class="small muted">${esc(p.name)}${p.threads ? `, ${p.threads} threads` : ''}</div></td>
+      <td><div class="meter"><div class="f" style="width:${100 * t / tmax}%;${tb && t > tb ? 'background:var(--bad)' : ''}"></div>${tb ? `<div class="lim" style="left:${100 * tb / tmax}%"></div>` : ''}</div><span class="num">${t?.toFixed(1)} s</span></td>
+      <td><div class="meter"><div class="f" style="width:${100 * mem / mmax}%;${mb && mem > mb ? 'background:var(--bad)' : ''}"></div>${mb ? `<div class="lim" style="left:${100 * mb / mmax}%"></div>` : ''}</div><span class="num">${mem ? mem.toFixed(2) + ' GB' : '–'}</span></td>
+      <td class="num">${rd ? Math.round(rd) : '–'} / ${wr ? Math.round(wr) : '–'}</td><td>${fits}</td></tr>`;
+  }
+  const notes = profs.filter(p => p.status).map(p => `${esc(p.name)} budgets are ${esc(p.status)}`).join('; ');
+  $('#edge').innerHTML = `<table class="edge" style="width:100%"><tr><th>Model, profile</th><th>Median time to decide</th><th>Model memory (largest)</th><th>Tokens/s read / write</th><th>Budget</th></tr>${rows}</table>
+    <div class="small muted" style="margin-top:8px">Orange line = the budget. ${notes}. Measured on this computer; a phone is not measured.</div>`;
+}
+function tick() {
+  if (!playing || !MAPS) return; const rs = sel();
+  if (!rs.length) { idleI++; showIdle(); return; }
+  if (ST?.running) { const r = rs[rs.length - 1]; if (r.n !== lastShown) { lastShown = r.n; cur = r.n; showRow(r); } return; }
+  const i = rs.findIndex(r => r.n == cur); const r = rs[(i + 1) % rs.length]; cur = r.n; showRow(r);
+}
+async function poll() {
+  try {
+    ST = await (await fetch('/api/state')).json();
+    const add = await (await fetch('/api/answers?since=' + ROWS.length)).json(); if (add.length) { ROWS.push(...add); drawStrips(); }
+    const ms = [...new Set(ROWS.map(r => r.model))], f = $('#mfilter'); if (f.options.length - 1 != ms.length) { const v = f.value; f.innerHTML = '<option value="">all models</option>' + ms.map(m => `<option>${esc(m)}</option>`).join(''); f.value = v; }
+    $('#status').className = 'pill' + (ST.running ? ' live' : ''); $('#status').textContent = ST.error ? 'stopped: see the run log' : ST.running ? `running · ${ST.current || ''}` : (ROWS.length ? 'finished · replay' : 'idle');
+    if (ST.running && ST.started) { const s = Math.round(ST.now - ST.started); $('#clock').textContent = `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; }
+    $('#clock').style.display = ST.running ? '' : 'none';
+    $('#replink').style.display = ST.manifest?.stages?.report ? '' : 'none';
+    $('#log').textContent = (ST.error ? ST.error + '\n' : '') + (!(ST.log || []).length ? 'No run in progress. Start one with: python evbench.py run' : '') + (ST.log || []).filter(l => !/^\S+ +\$ /.test(l)).slice().reverse().join('\n');
+    drawRail(); drawBoard(); drawEdge(); if (ST.running && add.length) tick();
+  } catch (e) { $('#status').textContent = 'dashboard not reachable'; }
+}
+$('#play').onclick = () => { playing = !playing; $('#play').textContent = playing ? 'Pause' : 'Play'; };
+$('#next').onclick = () => { const rs = sel(); if (!rs.length) { idleI++; showIdle(); return; } const i = rs.findIndex(r => r.n == cur); cur = rs[(i + 1) % rs.length].n; showRow(ROWS[cur]); };
+$('#prev').onclick = () => { const rs = sel(); if (!rs.length) { idleI = Math.max(0, idleI - 1); showIdle(); return; } const i = rs.findIndex(r => r.n == cur); cur = rs[(i - 1 + rs.length) % rs.length].n; showRow(ROWS[cur]); };
+window.addEventListener('resize', () => { if (cur >= 0 && ROWS[cur]) showRow(ROWS[cur]); else showIdle(); });
+(async () => {
+  await poll(); MAPS = await (await fetch('/api/maps')).json(); CASES = await (await fetch('/api/cases')).json();
+  idleIds = Object.keys(CASES).filter(i => MAPS.situations[i]); if (ROWS.length) { cur = ROWS[0].n; showRow(ROWS[0]); } else showIdle();
+  setInterval(poll, 1500); setInterval(tick, 4500);
+})();
+</script></body></html>

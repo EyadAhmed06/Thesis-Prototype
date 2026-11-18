@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EV charging assistant demo</title>
+<link rel="stylesheet" href="/ui/theme.css">
+<style>
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:18px 22px 10px}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center;color:#fff}
+.top h1{font-size:19px;margin:0;line-height:1.2} .top .q{font-size:13px;color:var(--muted)} .top .right{margin-left:auto}
+.wrap{display:grid;grid-template-columns:310px minmax(0,1fr);gap:16px;padding:0 22px 30px;max-width:1500px;margin:0 auto}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;padding:0 16px 24px}.top{padding:16px}}
+aside.card{padding:12px;max-height:calc(100vh - 100px);overflow:auto;position:sticky;top:10px}
+@media (max-width:900px){aside.card{position:static;max-height:300px}}
+.filters{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px}
+.fb{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 10px;cursor:pointer;font-size:12.5px}
+.fb.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.item{padding:8px 9px;border-radius:8px;cursor:pointer;border:1px solid transparent;font-size:13px;margin-bottom:2px}
+.item:hover{background:var(--surface2)} .item.sel{border-color:var(--accent);background:var(--accent-soft)}
+.main{display:grid;gap:16px;min-width:0}
+.two{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px} @media (max-width:1100px){.two{grid-template-columns:1fr}}
+canvas.map{height:380px}
+.req label{display:block;padding:5px 0;cursor:pointer} textarea{width:100%;min-height:56px;margin-top:4px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.steps{display:grid;gap:10px}
+.step{display:grid;grid-template-columns:30px 1fr;gap:10px}
+.step .n{width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:700;font-size:13px}
+.step h3{font-size:14px;margin:2px 0 4px}
+.raw{font:12px ui-monospace,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:8px;white-space:pre-wrap;word-break:break-word;max-height:220px;overflow:auto}
+table.cmp{width:100%;border-collapse:collapse} .cmp td,.cmp th{border-bottom:1px solid var(--line);padding:6px;text-align:left;font-size:13.5px} .cmp th{font-size:12px;color:var(--muted)}
+.err{color:var(--bad)} details summary{cursor:pointer;color:var(--accent);font-size:13px}
+pre.facts{font:12px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;margin:6px 0 0;max-height:260px;overflow:auto}
+</style></head><body>
+<div class="top">
+  <div class="logo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+  <div><h1>Charging assistant · live demo</h1><div class="q">A small language model on this computer plans the charging stop. The referee checks it with the same code as the benchmark.</div></div>
+  <div class="right"><span id="ollama" class="pill">checking Ollama…</span></div>
+</div>
+<div class="wrap">
+  <aside class="card"><div class="filters" id="filters"></div><input type="text" id="search" placeholder="search id or words" style="width:100%;margin-bottom:8px">
+    <div id="count" class="muted small" style="margin-bottom:4px"></div><div id="list"></div></aside>
+  <div class="main" id="main"><div class="card muted">Pick a situation on the left.</div></div>
+</div>
+<script src="/ui/map.js"></script>
+<script>
+const $ = s => document.querySelector(s); let ALL = [], F = 'pilot', CUR = null, MAPS = null, anim = null, LAST = {};
+const FILTERS = {all: 'All 300', pilot: 'Pilot 40', conflict: 'Cannot keep everything', held: 'Unseen wish type', nowish: 'No wishes'};
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const pc = x => x == null ? '–' : Math.round(x * 100) + '%';
+async function J(u, b) { const r = await fetch(u, b ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(b)} : {});
+  const d = await r.json(); if (d.error) throw new Error(d.error); return d; }
+function drawFilters() { $('#filters').innerHTML = Object.entries(FILTERS).map(([k, v]) => `<button class="fb ${k == F ? 'on' : ''}" data-f="${k}">${v}</button>`).join('');
+  document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { F = b.dataset.f; drawFilters(); drawList(); }); }
+function drawList() {
+  const q = $('#search').value.toLowerCase();
+  const xs = ALL.filter(s => (F == 'all' || (F == 'pilot' && s.pilot) || (F == 'conflict' && s.conflict) || (F == 'held' && s.held_out) || (F == 'nowish' && !s.n_wishes)) && (!q || (s.id + ' ' + s.request).toLowerCase().includes(q)));
+  $('#count').textContent = xs.length + ' situations';
+  $('#list').innerHTML = xs.map(s => `<div class="item ${CUR && CUR.id == s.id ? 'sel' : ''}" data-id="${s.id}"><b>${s.id}</b> <span class="muted">${s.goal}</span>
+     ${s.conflict ? '<span class="chip warn">conflict</span>' : ''}${s.held_out ? '<span class="chip acc">unseen wish</span>' : ''}
+     <div class="muted">${esc(s.request.slice(0, 105))}${s.request.length > 105 ? '…' : ''}</div></div>`).join('');
+  document.querySelectorAll('.item').forEach(e => e.onclick = () => open_(e.dataset.id));
+}
+async function models() { const m = await J('/api/models'); window.MODELS = m.models;
+  $('#ollama').className = 'pill' + (m.ok ? ' live' : ''); $('#ollama').textContent = m.ok ? `Ollama running · ${m.models.length} model(s)` : 'Ollama not running: "be the model" still works'; }
+function drawMap(o) { if (!MAPS || !CUR || !$('#map')) return; if (o) LAST = o; o = LAST; cancelAnimationFrame(anim);
+  if (o.model !== undefined) { const t0 = performance.now(); const st = n => { const t = Math.min(1, (n - t0) / 1400); EVMap.draw($('#map'), MAPS, CUR.id, {...o, t}); if (t < 1) anim = requestAnimationFrame(st); }; anim = requestAnimationFrame(st); }
+  else EVMap.draw($('#map'), MAPS, CUR.id, o); }
+async function open_(id) {
+  const s = await J('/api/situation?id=' + id); CUR = s; drawList();
+  const reqs = [...s.requests.template.map((r, i) => ['Template ' + (i + 1), r]), ...(s.requests.paraphrase || []).map(r => ['Natural paraphrase', r])];
+  const ms = window.MODELS || [];
+  $('#main').innerHTML = `
+  <div class="card"><h2>Situation ${s.id}</h2><div class="two"><div><canvas class="map" id="map"></canvas>
+    <div class="legend" style="margin-top:8px"><span><i style="background:var(--accent)"></i>decision's route</span><span><i style="background:var(--good)"></i>referee's best (shown after grading)</span><span>◯ dashed red = trap charger</span><span>⚡ fast</span></div></div>
+    <div><div><span class="chip">goal: ${s.goal}</span>${s.deadline ? `<span class="chip">arrive by ${s.deadline}</span>` : ''}${s.budget != null ? `<span class="chip">budget $${s.budget.toFixed(2)}</span>` : ''}
+      ${s.wishes.map(w => `<span class="chip">${esc(w)}</span>`).join('')}${s.conflict ? '<span class="chip warn">cannot keep everything</span>' : ''}${s.held_out ? '<span class="chip acc">wish type never seen in training</span>' : ''}</div>
+      <details style="margin-top:10px"><summary>Fact sheet (exactly what the model reads)</summary><pre class="facts">${esc(s.facts)}</pre></details>
+      <h2 style="margin-top:16px">What the driver says</h2><div class="req">
+      ${reqs.map(([t, r], i) => `<label><input type="radio" name="req" value="${i}" ${i == 0 ? 'checked' : ''}> <span class="muted small">${t}:</span> ${esc(r)}</label>`).join('')}
+      <label><input type="radio" name="req" value="own"> <span class="muted small">Your own words</span> <span class="small muted">(graded as the same wishes)</span></label>
+      <textarea id="own" placeholder="Say the same thing your way"></textarea></div></div></div></div>
+  <div class="card"><h2>Ask</h2><div class="row">
+    <label class="small">Model <select id="model" ${ms.length ? '' : 'disabled'}>${ms.map(m => `<option>${esc(m)}</option>`).join('') || '<option>no models</option>'}</select></label>
+    <label class="small">Role <select id="role"><option value="R1">R1 · model decides alone</option><option value="R2" selected>R2 · model decides, device checks safety, one retry</option>
+      <option value="R3-known">R3-known · model fills a form, planner decides</option><option value="R3-full">R3-full · form with every wish type</option></select></label>
+    <button class="btn primary" id="ask" ${ms.length ? '' : 'disabled'}>Ask the model</button></div>
+    <details style="margin-top:12px"><summary>Or be the model yourself</summary><div class="row" style="margin-top:8px">
+      <label class="small"><input type="checkbox" id="mc" checked> charge</label>
+      <label class="small">at <select id="ml">${s.letters.map(L => `<option>${L}</option>`).join('')}</select></label>
+      <label class="small">up to <input type="number" id="mt" value="50" min="0" max="100" style="width:70px"> %</label>
+      <span class="small muted">gives up:</span>${['arrival time', 'budget', 'wishes'].map(g => `<label class="small"><input type="checkbox" class="mg" value="${g}"> ${g}</label>`).join('')}
+      <button class="btn" id="grade">Grade my answer</button></div></details></div>
+  <div id="out"></div>`;
+  LAST = {}; drawMap({});
+  if ($('#ask') && ms.length) $('#ask').onclick = ask;
+  $('#grade').onclick = async () => { const d = {charge: $('#mc').checked, letter: $('#ml').value, target: $('#mt').value / 100, gives_up: [...document.querySelectorAll('.mg:checked')].map(x => x.value)};
+    const r = await J('/api/grade', {id: s.id, charge: d.charge, letter: d.letter, target: $('#mt').value, gives_up: d.gives_up});
+    $('#out').innerHTML = result([], d, r.verdict, r.best, 'Your answer'); drawMap({model: d.charge ? d.letter : null, best: r.best.letter}); };
+  window.REQS = reqs;
+}
+function request() { const v = document.querySelector('input[name=req]:checked').value; return v == 'own' ? $('#own').value : REQS[+v][1]; }
+async function ask() {
+  const req = request(); if (!req.trim()) { $('#own').focus(); return; }
+  $('#ask').disabled = true; $('#out').innerHTML = '<div class="card"><span class="pill live">The model is thinking on this computer…</span></div>';
+  try { const r = await J('/api/ask', {id: CUR.id, model: $('#model').value, role: $('#role').value, request: req});
+        $('#out').innerHTML = result(r.steps, r.decision, r.verdict, r.best, `${$('#model').value} · ${$('#role').value}`, r.seconds);
+        drawMap({model: r.decision.charge ? (r.decision.letter || 'invalid') : null, best: r.best.letter}); }
+  catch (e) { $('#out').innerHTML = `<div class="card err">${esc(e.message)}</div>`; }
+  $('#ask').disabled = false;
+}
+const plan = d => d.charge ? `charge at <b>${esc(d.letter ?? 'a charger not in the list')}</b> to <b>${pc(d.target)}</b>` : '<b>drive without charging</b>';
+const gu = x => x == null ? '<span class="muted">not said</span>' : (x.length ? x.map(esc).join(', ') : 'nothing');
+function step(s, i) {
+  let b = '';
+  if (s.kind == 'prompt') b = `<details><summary>Show the full prompt</summary><div class="raw">${esc('SYSTEM: ' + s.system + '\n\nUSER: ' + s.user)}</div></details>`;
+  if (s.kind == 'answer') b = `<div class="raw">${esc(s.raw)}</div><div class="muted small">${s.seconds.toFixed(1)} s on this computer · ${s.tokens[0] ?? '?'} tokens read, ${s.tokens[1] ?? '?'} written</div>`;
+  if (s.kind == 'check') b = s.problems.length ? '<ul style="margin:4px 0">' + s.problems.map(p => `<li class="err">${esc(p)}</li>`).join('') + '</ul><div class="small">These reasons go back to the model for one more try.</div>' : '<span class="badge ok">No safety problem found</span>';
+  if (s.kind == 'planner') b = `<div class="small">Understood: goal ${esc(s.understood.goal)}, deadline ${esc(s.understood.deadline ?? 'none')}, budget ${s.understood.budget ?? 'none'}, wishes: ${s.understood.wishes.map(esc).join('; ') || 'none'}</div>
+     <div style="margin-top:4px">${Object.entries(s.read).map(([k, v]) => `<span class="chip" style="color:var(${v ? '--good' : '--bad'})">${k} ${v ? '✓' : '✕'}</span>`).join('')}</div>`;
+  return `<div class="step"><div class="n">${i + 1}</div><div><h3>${esc(s.title)}</h3>${b}</div></div>`;
+}
+function result(steps, d, v, best, who, secs) {
+  const verdict = v.passed ? '<span class="badge ok">✓ Pass: keeps everything the best plan keeps</span>' : v.safe ? '<span class="badge mid">Safe, but keeps less than the best plan</span>' : '<span class="badge bad">✕ Unsafe</span>';
+  const hon = v.honest == null ? '' : v.honest ? '<span class="badge ok">Honest about what it gives up</span>' : '<span class="badge bad">Not honest about what it gives up</span>';
+  return `<div class="two"><div class="card"><h2>${esc(who)}</h2><div class="steps">${steps.map(step).join('')}
+     <div class="step"><div class="n">✓</div><div><h3>Final decision</h3>${plan(d)} · says it gives up: ${gu(d.gives_up)}${secs ? `<div class="muted small">${secs.toFixed(1)} s in total</div>` : ''}</div></div></div></div>
+   <div class="card"><h2>The referee's verdict</h2><div class="row">${verdict}${hon}</div>
+   ${v.broken.length ? '<div class="small err" style="margin-top:8px">Breaks: ' + v.broken.map(esc).join('; ') + '</div>' : ''}
+   <table class="cmp" style="margin-top:10px"><tr><th></th><th>This decision</th><th>Referee's best plan</th></tr>
+     <tr><td>Plan</td><td>${plan(d)}</td><td>${plan(best)}</td></tr><tr><td>Arrives</td><td class="num">${v.arrive ?? '–'}</td><td class="num">${best.arrive}</td></tr>
+     <tr><td>Charging cost</td><td class="num">${v.cost != null ? '$' + v.cost.toFixed(2) : '–'}</td><td class="num">$${best.cost.toFixed(2)}</td></tr>
+     <tr><td>Battery at arrival</td><td class="num">${pc(v.soc_end)}</td><td class="num">${pc(best.soc_end)}</td></tr>
+     <tr><td>Gives up</td><td>${v.gives_up_really ? gu(v.gives_up_really) : '–'}</td><td>${gu(best.gives_up)}</td></tr></table>
+   ${v.passed && v.gap != null ? `<div class="small" style="margin-top:8px">${v.gap < 0.05 ? 'Same result as the best plan for the driver\'s goal.' : `Keeps the same requests but is ${v.gap.toFixed(v.gap_unit == '$' ? 2 : 0)} ${v.gap_unit == '$' ? 'dollars more expensive' : 'minutes slower'} than the best plan.`}</div>` : ''}
+   <div class="small muted" style="margin-top:8px">Pass = safe and keeping as much as possible in the order arrival time, budget, wishes. Picking the very best plan for the goal is measured separately (same charger, optimality gap).</div></div></div>`;
+}
+window.addEventListener('resize', () => drawMap());
+(async () => { drawFilters(); $('#search').oninput = drawList; await models(); ALL = await J('/api/situations'); drawList();
+  MAPS = await J('/api/maps'); const first = ALL.find(s => s.pilot); if (first) open_(first.id); })();
+</script></body></html>

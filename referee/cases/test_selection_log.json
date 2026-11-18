@@ -1,0 +1,20 @@
+{
+ "generated": 993,
+ "chargers dropped because no drivable route": 9,
+ "answer survives the referee error band": 611,
+ "no duplicate trips": 611,
+ "kept after balancing": 300,
+ "must charge": 150,
+ "rules 0/1/2": [
+  108,
+  105,
+  87
+ ],
+ "close": 118,
+ "with trap charger": 150,
+ "temp range": [
+  -14,
+  32
+ ],
+ "route km median": 58.45
+}

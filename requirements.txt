@@ -1,0 +1,6 @@
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+# Only needed to rebuild the road network or regenerate the situations from scratch:
+# eclipse-sumo==1.28.0
+# osmium

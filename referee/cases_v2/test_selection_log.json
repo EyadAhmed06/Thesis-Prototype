@@ -1,0 +1,36 @@
+{
+ "base situations": 3180,
+ "robust with wishes": 1700,
+ "kept": 300,
+ "conflict": 100,
+ "must charge": 244,
+ "wishes 0/1/2": [
+  52,
+  124,
+  124
+ ],
+ "with held-out wish type": 160,
+ "wish types": {
+  "min_arrival": 106,
+  "stop_city": 84,
+  "avoid_network": 46,
+  "parked_at": 39,
+  "no_fast": 36,
+  "max_wait": 35,
+  "free_only": 26
+ },
+ "rules 0/1/2": [
+  154,
+  66,
+  80
+ ],
+ "with trap charger": 160,
+ "close": 72,
+ "budget set below every on-time option": 26,
+ "gives up": {
+  "nothing": 200,
+  "wishes": 64,
+  "budget,wishes": 24,
+  "budget": 12
+ }
+}

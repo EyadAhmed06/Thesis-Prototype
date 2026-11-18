@@ -1,0 +1,36 @@
+/* Shared look for the evbench live dashboard, the report and the demo. */
+:root{--bg:#f5f4ef;--surface:#fff;--surface2:#faf9f6;--ink:#1a1c1e;--muted:#6b7077;--line:#e3e1da;--accent:#0e7f8f;--accent-soft:#e1f1f3;
+ --good:#2e8a56;--good-soft:#e3f2e8;--bad:#c2452d;--bad-soft:#f8e5e0;--warn:#a87a10;--warn-soft:#f6eed9;--road:#dcd9d0;--road2:#c9c5ba;
+ --shadow:0 1px 2px rgba(20,20,10,.05),0 4px 14px rgba(20,20,10,.05);--r:12px}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1113;--surface:#161a1d;--surface2:#121618;--ink:#e7e9eb;--muted:#8d959c;--line:#262e33;--accent:#3cc3d3;--accent-soft:#11303a;
+ --good:#5ccf8a;--good-soft:#123222;--bad:#ff7b5e;--bad-soft:#3a1a14;--warn:#f0b445;--warn-soft:#352a10;--road:#232b30;--road2:#2f393f;--shadow:none}}
+*{box-sizing:border-box} html,body{margin:0} body{background:var(--bg);color:var(--ink);font:14.5px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.num{font-variant-numeric:tabular-nums} .muted{color:var(--muted)} .small{font-size:12.5px} code,pre,.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;box-shadow:var(--shadow);min-width:0}
+.card h2{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:3px 11px;font-size:12.5px;font-weight:600;border:1px solid var(--line);background:var(--surface)}
+.pill.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--good);animation:pulse 1.4s infinite}
+.chip{display:inline-block;border-radius:7px;padding:1px 8px;margin:2px 4px 2px 0;font-size:12.5px;background:var(--surface2);border:1px solid var(--line)}
+.chip.warn{color:var(--warn);border-color:var(--warn);background:var(--warn-soft)} .chip.acc{color:var(--accent);border-color:var(--accent);background:var(--accent-soft)}
+.badge{display:inline-flex;align-items:center;gap:5px;border-radius:7px;padding:3px 10px;font-weight:600;font-size:13px}
+.badge.ok{color:var(--good);background:var(--good-soft)} .badge.bad{color:var(--bad);background:var(--bad-soft)} .badge.mid{color:var(--warn);background:var(--warn-soft)} .badge.na{color:var(--muted);background:var(--surface2)}
+button,select,input,textarea{font:inherit;color:inherit}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 14px;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff} .btn:disabled{opacity:.5;cursor:wait}
+@media (prefers-color-scheme:dark){.btn.primary{color:#062026}}
+select,input[type=number],input[type=text],textarea{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,138,86,.5)}70%{box-shadow:0 0 0 7px rgba(46,138,86,0)}100%{box-shadow:0 0 0 0 rgba(46,138,86,0)}}
+/* pipeline rail */
+.rail{display:grid;grid-template-columns:repeat(7,1fr);gap:0;position:relative}
+.rail .node{position:relative;padding:0 8px;text-align:center;min-width:0}
+.rail .node::before{content:"";position:absolute;top:17px;left:-50%;width:100%;height:3px;background:var(--line);z-index:0}
+.rail .node:first-child::before{display:none} .rail .node.done::before,.rail .node.active::before{background:var(--accent)}
+.rail .dot{position:relative;z-index:1;width:36px;height:36px;border-radius:50%;margin:0 auto 6px;display:grid;place-items:center;font-weight:700;
+ background:var(--surface);border:2px solid var(--line);color:var(--muted)}
+.rail .done .dot{background:var(--accent);border-color:var(--accent);color:#fff} .rail .active .dot{border-color:var(--accent);color:var(--accent);animation:ring 1.6s infinite}
+.rail .err .dot{border-color:var(--bad);color:var(--bad)}
+.rail .name{font-weight:650;font-size:13.5px} .rail .metric{font-size:12px;color:var(--muted);line-height:1.35}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(14,127,143,.45)}70%{box-shadow:0 0 0 10px rgba(14,127,143,0)}100%{box-shadow:0 0 0 0 rgba(14,127,143,0)}}
+@media (max-width:760px){.rail{grid-template-columns:1fr}.rail .node{display:flex;gap:10px;text-align:left;padding:4px 0}.rail .node::before{display:none}.rail .dot{margin:0}}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)} .legend i{display:inline-block;width:18px;height:4px;border-radius:2px;vertical-align:middle;margin-right:5px}
+canvas.map{width:100%;display:block;border-radius:10px;background:var(--surface2);border:1px solid var(--line)}

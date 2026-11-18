@@ -1,0 +1,1801 @@
+id,n_rules,close,distractor,goal,truth_charge,pred_charge,top1,target_err,valid,broken,gap,gap_unit,method
+test0164,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1041,0,False,True,cheapest,True,True,True,0.0,True,,0.0,$,referee answer (sanity check)
+test0632,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0213,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0367,1,False,False,cheapest,True,True,True,0.0,True,,-0.0018777555555562486,$,referee answer (sanity check)
+test0610,1,False,True,cheapest,True,True,True,0.0,True,,0.001447499999999824,$,referee answer (sanity check)
+test0030,1,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0726,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1203,2,False,False,cheapest,True,True,True,0.0,True,,-0.000595833333333573,$,referee answer (sanity check)
+test1236,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0631,2,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0249,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1047,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1279,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0755,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0454,0,True,True,cheapest,True,True,True,0.0,True,,0.0009341666666669024,$,referee answer (sanity check)
+test0192,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0052,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0626,1,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0742,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0077,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1218,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1283,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0826,0,False,False,cheapest,True,True,True,0.0,True,,-0.0036600000000004407,$,referee answer (sanity check)
+test0187,0,False,True,cheapest,True,True,True,0.0,True,,-0.003735000000000266,$,referee answer (sanity check)
+test0393,0,True,False,cheapest,True,True,True,0.0,True,,0.0028449999999999864,$,referee answer (sanity check)
+test0281,0,True,True,cheapest,True,True,True,0.0,True,,0.001036805555555631,$,referee answer (sanity check)
+test0931,1,False,False,cheapest,True,True,True,0.0,True,,0.0024510999999995953,$,referee answer (sanity check)
+test1043,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1392,1,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0099,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0218,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0033,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0172,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0055,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1171,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0736,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0513,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1246,1,False,False,cheapest,True,True,True,0.0,True,,-0.004476922222224289,$,referee answer (sanity check)
+test0243,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0698,1,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0982,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0058,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1381,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1216,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0916,0,False,False,cheapest,True,True,True,0.0,True,,-0.001960000000000184,$,referee answer (sanity check)
+test0806,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0036,0,True,False,cheapest,True,True,True,0.0,True,,-0.002110416666666781,$,referee answer (sanity check)
+test1282,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0244,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1185,1,False,True,cheapest,True,True,True,0.0,True,,-0.004668099999999953,$,referee answer (sanity check)
+test0519,1,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0021,1,True,True,cheapest,True,True,True,0.0,True,,0.0034599000000001823,$,referee answer (sanity check)
+test0208,2,False,False,cheapest,True,True,True,0.0,True,,0.0,$,referee answer (sanity check)
+test0798,2,False,True,cheapest,True,True,True,0.0,True,,0.0036533333333332862,$,referee answer (sanity check)
+test0778,2,True,True,cheapest,True,True,True,0.0,True,,-0.0011099999999997223,$,referee answer (sanity check)
+test0860,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0334,0,False,True,cheapest,True,True,True,0.0,True,,-0.0024650000000006056,$,referee answer (sanity check)
+test0427,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1213,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0061,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0385,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0046,1,True,False,cheapest,True,True,True,0.0,True,,-0.003601444444444546,$,referee answer (sanity check)
+test0766,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1277,2,False,False,cheapest,True,True,True,0.0,True,,-0.0015008999999999162,$,referee answer (sanity check)
+test1086,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0522,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1230,0,False,False,cheapest,True,True,True,0.0,True,,0.002574999999999994,$,referee answer (sanity check)
+test0280,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0719,0,True,False,cheapest,True,True,True,0.0,True,,0.003353333333332653,$,referee answer (sanity check)
+test0851,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0446,1,False,False,cheapest,True,True,True,0.0,True,,-0.0036040000000001626,$,referee answer (sanity check)
+test0784,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0045,1,True,False,cheapest,True,True,True,0.0,True,,-0.00335398333333492,$,referee answer (sanity check)
+test0323,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1259,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1348,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0861,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0293,0,False,True,cheapest,True,True,True,0.0,True,,0.004778888888888888,$,referee answer (sanity check)
+test0910,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0053,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0489,1,False,True,cheapest,True,True,True,0.0,True,,0.0028983999999998566,$,referee answer (sanity check)
+test0251,1,True,False,cheapest,True,True,True,0.0,True,,0.0034116999999991293,$,referee answer (sanity check)
+test0038,1,True,True,cheapest,True,True,True,0.0,True,,0.0034939000000000497,$,referee answer (sanity check)
+test1166,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0595,2,False,True,cheapest,True,True,True,0.0,True,,0.003250833333332981,$,referee answer (sanity check)
+test0470,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0419,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0646,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0847,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0661,1,False,True,cheapest,True,True,True,0.0,True,,0.0027505166666665914,$,referee answer (sanity check)
+test0876,1,True,False,cheapest,True,True,True,0.0,True,,0.0003549999999994391,$,referee answer (sanity check)
+test0106,2,False,False,cheapest,True,True,True,0.0,True,,0.0,$,referee answer (sanity check)
+test1296,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0308,0,False,False,cheapest,True,True,True,0.0,True,,0.0037891666666673984,$,referee answer (sanity check)
+test1017,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0992,0,True,False,cheapest,True,True,True,0.0,True,,-0.002049722222222883,$,referee answer (sanity check)
+test0054,1,False,False,cheapest,True,True,True,0.0,True,,-0.0009782555555561956,$,referee answer (sanity check)
+test0583,1,False,True,cheapest,True,True,True,0.0,True,,0.0026872722222215373,$,referee answer (sanity check)
+test1263,1,True,False,cheapest,True,True,True,0.0,True,,-0.004465722222221746,$,referee answer (sanity check)
+test1163,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0056,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0371,0,False,False,cheapest,True,True,True,0.0,True,,-0.004289999999999683,$,referee answer (sanity check)
+test0859,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0998,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1137,1,False,False,cheapest,True,True,True,0.0,True,,0.003390066666667746,$,referee answer (sanity check)
+test0011,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0921,1,True,False,cheapest,True,True,True,0.0,True,,-0.002669433333334581,$,referee answer (sanity check)
+test1184,2,False,False,cheapest,True,True,True,0.0,True,,0.002139166666666359,$,referee answer (sanity check)
+test1232,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1190,0,False,False,cheapest,True,True,True,0.0,True,,-0.0034069444444444485,$,referee answer (sanity check)
+test0529,0,False,True,cheapest,True,True,True,0.0,True,,-0.002099500000000365,$,referee answer (sanity check)
+test1100,1,False,False,cheapest,True,True,True,0.0,True,,0.004453799999999841,$,referee answer (sanity check)
+test1119,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0862,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0037,2,False,True,cheapest,True,True,True,0.0,True,,0.00409939999999942,$,referee answer (sanity check)
+test0555,0,False,False,cheapest,True,True,True,0.0,True,,0.0038208333333336064,$,referee answer (sanity check)
+test1290,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0680,1,False,False,cheapest,True,True,True,0.0,True,,0.0021631000000001954,$,referee answer (sanity check)
+test1321,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1125,2,False,False,cheapest,True,True,True,0.0,True,,0.0029344499999988116,$,referee answer (sanity check)
+test0591,2,False,True,cheapest,True,True,True,0.0,True,,-0.0034613999999995038,$,referee answer (sanity check)
+test0224,0,False,False,cheapest,True,True,True,0.0,True,,-0.003668777777778409,$,referee answer (sanity check)
+test0576,0,False,True,cheapest,True,True,True,0.0,True,,-0.0036669000000006946,$,referee answer (sanity check)
+test0619,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1266,1,False,True,cheapest,True,True,True,0.0,True,,-0.002412300000000478,$,referee answer (sanity check)
+test1037,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0326,2,False,True,cheapest,True,True,True,0.0,True,,-0.0032337222222222906,$,referee answer (sanity check)
+test1226,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0655,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0930,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0594,1,False,True,cheapest,True,True,True,0.0,True,,0.0021699333333322635,$,referee answer (sanity check)
+test0231,2,False,False,cheapest,True,True,True,0.0,True,,0.004650299999999552,$,referee answer (sanity check)
+test0687,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0615,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0257,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0437,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0201,1,False,True,cheapest,True,True,True,0.0,True,,-0.004693800000000081,$,referee answer (sanity check)
+test0152,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0474,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0889,0,False,True,cheapest,True,True,True,0.0,True,,-0.003155000000000241,$,referee answer (sanity check)
+test0355,1,False,False,cheapest,True,True,True,0.0,True,,-0.0031388222222221707,$,referee answer (sanity check)
+test0269,1,False,True,cheapest,True,True,True,0.0,True,,-0.0015884999999997707,$,referee answer (sanity check)
+test0918,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1267,0,False,False,cheapest,True,True,True,0.0,True,,0.0,$,referee answer (sanity check)
+test0712,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test0163,1,False,False,cheapest,True,True,True,0.0,True,,2.4999999999941735e-05,$,referee answer (sanity check)
+test1051,1,False,True,cheapest,True,True,True,0.0,True,,0.0017109555555547828,$,referee answer (sanity check)
+test0874,0,False,False,cheapest,True,True,True,0.0,True,,0.0,$,referee answer (sanity check)
+test1342,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,referee answer (sanity check)
+test1221,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0105,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0946,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1327,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0905,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0977,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0720,1,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0890,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0811,2,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0623,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0232,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0728,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0716,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1011,0,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0344,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0450,0,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1156,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1394,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0209,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1096,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0016,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0663,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0317,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0321,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0676,0,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1223,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0076,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0313,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0336,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0270,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1118,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0841,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1350,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1313,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1329,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0765,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0018,0,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1180,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0597,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0537,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0779,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0411,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0920,1,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1397,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1112,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1174,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0791,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0307,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1260,0,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1345,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0690,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1059,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1371,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0222,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0417,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0219,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0147,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1197,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1084,2,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1245,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0707,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1242,0,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0275,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0718,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1374,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0310,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1111,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0140,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0252,2,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0013,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0047,2,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0303,2,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0226,0,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0493,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0361,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0769,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0598,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1049,1,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0541,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0330,2,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0571,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1224,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0000,2,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1106,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1032,0,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0994,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0772,0,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0924,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1001,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0804,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1310,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1066,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0574,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0886,2,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0155,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1237,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0398,0,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1048,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0819,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0940,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0282,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1196,1,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0194,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0412,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1018,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0866,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1028,2,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0997,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1016,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1080,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1231,0,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0311,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0633,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1093,1,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0333,1,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0445,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1008,2,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0497,2,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0639,2,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0210,0,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0467,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0544,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1209,0,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0543,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1351,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0770,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0575,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0063,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0078,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1323,2,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0362,2,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0962,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1145,0,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0614,0,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0457,0,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test1399,1,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1389,1,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0466,1,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0560,1,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0421,2,False,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test1385,2,False,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0975,2,True,False,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0331,2,True,True,cheapest,False,False,True,,True,,0.0,$,referee answer (sanity check)
+test0383,0,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0284,0,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0121,0,True,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0777,0,True,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0757,1,False,False,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0938,1,False,True,fastest,False,False,True,,True,,0.0,min,referee answer (sanity check)
+test0164,0,False,False,fastest,True,True,True,45.00000000000001,True,,53.09999999999991,min,"nearest compatible, to 80%"
+test1041,0,False,True,cheapest,True,True,True,55.00000000000001,True,,0.0,$,"nearest compatible, to 80%"
+test0632,0,True,False,fastest,True,True,False,60.00000000000001,True,,369.9265375757577,min,"nearest compatible, to 80%"
+test0213,0,True,True,fastest,True,True,True,45.00000000000001,True,,31.860000000000014,min,"nearest compatible, to 80%"
+test0367,1,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at -2%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0610,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -7%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0030,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0726,1,True,True,fastest,True,True,False,50.0,False,costs more than the budget,,,"nearest compatible, to 80%"
+test1203,2,False,False,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1236,2,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0631,2,True,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0249,2,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1047,0,False,False,fastest,True,True,True,45.00000000000001,True,,36.20454545454538,min,"nearest compatible, to 80%"
+test1279,0,False,True,fastest,True,True,False,45.00000000000001,True,,329.46374896969724,min,"nearest compatible, to 80%"
+test0755,0,True,False,fastest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve",,,"nearest compatible, to 80%"
+test0454,0,True,True,cheapest,True,True,False,60.00000000000001,True,,8.183179722222224,$,"nearest compatible, to 80%"
+test0192,1,False,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0052,1,False,True,fastest,True,True,True,55.00000000000001,True,,64.90000000000009,min,"nearest compatible, to 80%"
+test0626,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0742,1,True,True,fastest,True,True,False,40.0,False,"reaches the charger at -11%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0077,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test1218,2,False,True,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test1283,2,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 3%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0826,0,False,False,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -3%, below the reserve",,,"nearest compatible, to 80%"
+test0187,0,False,True,cheapest,True,True,True,50.0,True,,7.371265000000001,$,"nearest compatible, to 80%"
+test0393,0,True,False,cheapest,True,True,False,60.00000000000001,True,,16.5149145,$,"nearest compatible, to 80%"
+test0281,0,True,True,cheapest,True,True,True,50.0,True,,7.376036805555556,$,"nearest compatible, to 80%"
+test0931,1,False,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1043,1,False,True,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test1392,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0099,1,True,True,fastest,True,True,False,40.0,False,"reaches the charger at -8%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0218,2,False,False,fastest,True,True,False,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0033,2,False,True,fastest,True,True,False,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0172,2,True,True,fastest,True,True,True,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0055,0,False,False,fastest,True,True,True,55.00000000000001,True,,42.32608695652175,min,"nearest compatible, to 80%"
+test1171,0,False,True,fastest,True,True,False,55.00000000000001,True,,362.90882169696965,min,"nearest compatible, to 80%"
+test0736,0,True,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 4%, below the reserve",,,"nearest compatible, to 80%"
+test0513,0,True,True,fastest,True,True,True,50.0,True,,35.399999999999864,min,"nearest compatible, to 80%"
+test1246,1,False,False,cheapest,True,True,False,30.000000000000004,False,"reaches the charger at -12%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0243,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0698,1,True,False,fastest,True,True,False,60.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0982,1,True,True,fastest,True,True,True,50.0,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0058,2,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1381,2,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1216,2,True,True,fastest,True,True,True,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0916,0,False,False,cheapest,True,True,False,45.00000000000001,True,,6.7495650000000005,$,"nearest compatible, to 80%"
+test0806,0,False,True,fastest,True,True,True,40.0,True,,47.200000000000045,min,"nearest compatible, to 80%"
+test0036,0,True,False,cheapest,True,True,True,45.00000000000001,True,,6.6353895833333345,$,"nearest compatible, to 80%"
+test1282,0,True,True,fastest,True,True,False,60.00000000000001,False,"reaches the charger at 8%, below the reserve",,,"nearest compatible, to 80%"
+test0244,1,False,False,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test1185,1,False,True,cheapest,True,True,True,50.0,True,,14.450331899999998,$,"nearest compatible, to 80%"
+test0519,1,True,False,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0021,1,True,True,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0208,2,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0798,2,False,True,cheapest,True,True,True,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0778,2,True,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0860,0,False,False,fastest,True,True,True,35.0,True,,187.72727272727298,min,"nearest compatible, to 80%"
+test0334,0,False,True,cheapest,True,True,True,45.00000000000001,True,,6.635034999999999,$,"nearest compatible, to 80%"
+test0427,0,True,False,fastest,True,True,True,55.00000000000001,True,,38.93999999999983,min,"nearest compatible, to 80%"
+test1213,0,True,True,fastest,True,True,False,50.0,False,"reaches the charger at 8%, below the reserve",,,"nearest compatible, to 80%"
+test0061,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0385,1,False,True,fastest,True,True,True,60.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0046,1,True,False,cheapest,True,True,False,45.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0766,1,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1277,2,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -5%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1086,2,False,True,fastest,True,True,False,30.000000000000004,False,"reaches the charger at -7%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0522,2,True,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1230,0,False,False,cheapest,True,True,False,50.0,True,,15.6790859,$,"nearest compatible, to 80%"
+test0280,0,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve",,,"nearest compatible, to 80%"
+test0719,0,True,False,cheapest,True,True,False,45.00000000000001,True,,16.832838222222225,$,"nearest compatible, to 80%"
+test0851,0,True,True,fastest,True,True,True,55.00000000000001,True,,46.35714285714266,min,"nearest compatible, to 80%"
+test0446,1,False,False,cheapest,True,True,True,50.0,True,,14.451396,$,"nearest compatible, to 80%"
+test0784,1,False,True,fastest,True,True,False,35.0,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0045,1,True,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0323,1,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 8%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1259,2,False,False,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test1348,2,False,True,fastest,True,True,False,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0861,0,False,False,fastest,True,True,True,60.00000000000001,True,,70.80000000000018,min,"nearest compatible, to 80%"
+test0293,0,False,True,cheapest,True,True,True,55.00000000000001,True,,8.11727888888889,$,"nearest compatible, to 80%"
+test0910,0,True,False,fastest,True,True,False,50.0,True,,35.409572000000026,min,"nearest compatible, to 80%"
+test0053,1,False,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest compatible, to 80%"
+test0489,1,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0251,1,True,False,cheapest,True,True,False,45.00000000000001,True,,13.0138476,$,"nearest compatible, to 80%"
+test0038,1,True,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1166,2,False,False,fastest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0595,2,False,True,cheapest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0470,0,False,False,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 2%, below the reserve",,,"nearest compatible, to 80%"
+test0419,0,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve",,,"nearest compatible, to 80%"
+test0646,0,True,False,fastest,True,True,False,50.0,False,"reaches the charger at -3%, below the reserve",,,"nearest compatible, to 80%"
+test0847,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0661,1,False,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0876,1,True,False,cheapest,True,True,False,55.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0106,2,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1296,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 9%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0308,0,False,False,cheapest,True,True,False,35.0,False,"reaches the charger at -11%, below the reserve",,,"nearest compatible, to 80%"
+test1017,0,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 1%, below the reserve",,,"nearest compatible, to 80%"
+test0992,0,True,False,cheapest,True,True,True,45.00000000000001,True,,6.635450277777776,$,"nearest compatible, to 80%"
+test0054,1,False,False,cheapest,True,True,True,45.00000000000001,True,,13.008521744444447,$,"nearest compatible, to 80%"
+test0583,1,False,True,cheapest,True,True,False,50.0,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1263,1,True,False,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 1%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test1163,2,False,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at -8%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0056,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0371,0,False,False,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 7%, below the reserve",,,"nearest compatible, to 80%"
+test0859,0,False,True,fastest,True,True,True,45.00000000000001,True,,37.92857142857133,min,"nearest compatible, to 80%"
+test0998,0,True,False,fastest,True,True,True,45.00000000000001,True,,31.8599999999999,min,"nearest compatible, to 80%"
+test1137,1,False,False,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0011,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 4%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0921,1,True,False,cheapest,True,True,False,50.0,False,"reaches the charger at -6%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test1184,2,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1232,2,False,True,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test1190,0,False,False,cheapest,True,True,False,60.00000000000001,True,,19.57411271111111,$,"nearest compatible, to 80%"
+test0529,0,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 7%, below the reserve",,,"nearest compatible, to 80%"
+test1100,1,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test1119,1,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0862,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0037,2,False,True,cheapest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0555,0,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -8%, below the reserve",,,"nearest compatible, to 80%"
+test1290,0,False,True,fastest,True,True,True,50.0,True,,59.00000000000006,min,"nearest compatible, to 80%"
+test0680,1,False,False,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1321,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1125,2,False,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0591,2,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0224,0,False,False,cheapest,True,True,True,45.00000000000001,True,,13.005831222222227,$,"nearest compatible, to 80%"
+test0576,0,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at -1%, below the reserve",,,"nearest compatible, to 80%"
+test0619,1,False,False,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 10%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1266,1,False,True,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test1037,2,False,False,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0326,2,False,True,cheapest,True,True,False,40.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test1226,0,False,False,fastest,True,True,True,60.00000000000001,True,,321.8181818181821,min,"nearest compatible, to 80%"
+test0655,0,False,True,fastest,True,True,True,50.0,True,,35.39999999999998,min,"nearest compatible, to 80%"
+test0930,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve",,,"nearest compatible, to 80%"
+test0594,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0231,2,False,False,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest compatible, to 80%"
+test0687,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest compatible, to 80%"
+test0615,0,False,False,fastest,True,True,False,35.0,False,"reaches the charger at 2%, below the reserve",,,"nearest compatible, to 80%"
+test0257,0,False,True,fastest,True,True,True,40.0,True,,47.200000000000045,min,"nearest compatible, to 80%"
+test0437,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 1%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0201,1,False,True,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0152,2,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test0474,0,False,False,fastest,True,True,True,50.0,True,,40.227272727272634,min,"nearest compatible, to 80%"
+test0889,0,False,True,cheapest,True,True,True,60.00000000000001,True,,8.846845,$,"nearest compatible, to 80%"
+test0355,1,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0269,1,False,True,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest compatible, to 80%"
+test0918,2,False,True,fastest,True,True,False,35.0,False,"reaches the charger at -15%, below the reserve; costs more than the budget",,,"nearest compatible, to 80%"
+test1267,0,False,False,cheapest,True,True,True,45.00000000000001,True,,0.0,$,"nearest compatible, to 80%"
+test0712,0,False,True,fastest,True,True,False,30.000000000000004,False,"reaches the charger at -7%, below the reserve",,,"nearest compatible, to 80%"
+test0163,1,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -3%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test1051,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -6%, below the reserve; arrives after the deadline",,,"nearest compatible, to 80%"
+test0874,0,False,False,cheapest,True,True,False,55.00000000000001,True,,8.1383125,$,"nearest compatible, to 80%"
+test1342,0,False,True,fastest,True,True,True,55.00000000000001,True,,38.93999999999994,min,"nearest compatible, to 80%"
+test1221,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0105,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0946,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1327,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0905,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0977,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0720,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0890,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0811,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0623,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0232,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0728,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0716,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1011,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0344,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0450,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1156,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1394,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0209,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1096,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0016,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0663,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0317,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0321,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0676,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1223,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0076,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0313,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0336,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0270,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1118,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0841,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1350,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1313,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1329,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0765,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0018,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1180,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0597,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0537,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0779,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0411,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0920,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1397,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1112,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1174,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0791,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0307,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1260,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1345,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0690,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1059,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1371,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0222,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0417,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0219,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0147,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1197,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1084,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1245,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0707,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1242,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0275,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0718,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1374,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0310,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1111,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0140,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0252,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0013,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0047,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0303,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0226,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0493,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0361,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0769,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0598,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1049,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0541,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0330,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0571,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1224,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0000,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1106,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1032,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0994,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0772,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0924,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1001,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0804,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1310,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1066,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0574,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0886,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0155,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1237,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0398,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1048,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0819,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0940,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0282,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1196,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0194,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0412,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1018,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0866,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1028,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0997,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1016,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1080,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1231,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0311,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0633,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1093,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0333,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0445,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1008,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0497,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0639,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0210,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0467,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0544,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1209,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0543,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1351,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0770,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0575,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0063,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0078,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1323,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0362,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0962,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1145,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0614,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0457,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test1399,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1389,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0466,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0560,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0421,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test1385,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0975,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0331,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest compatible, to 80%"
+test0383,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0284,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0121,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0777,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0757,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0938,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest compatible, to 80%"
+test0164,0,False,False,fastest,True,True,False,45.00000000000001,True,,299.5113018181821,min,random safe option
+test1041,0,False,True,cheapest,True,True,False,35.0,True,,6.856588055555555,$,random safe option
+test0632,0,True,False,fastest,True,True,False,55.00000000000001,True,,40.97446266666634,min,random safe option
+test0213,0,True,True,fastest,True,True,True,25.0,True,,17.700000000000045,min,random safe option
+test0367,1,False,False,cheapest,True,True,False,25.000000000000007,False,arrives after the deadline,,,random safe option
+test0610,1,False,True,cheapest,True,True,True,0.0,True,,0.001447499999999824,$,random safe option
+test0030,1,True,False,fastest,True,True,False,25.0,False,costs more than the budget,,,random safe option
+test0726,1,True,True,fastest,True,True,False,0.0,False,costs more than the budget,,,random safe option
+test1203,2,False,False,cheapest,True,True,True,10.000000000000004,False,arrives after the deadline,,,random safe option
+test1236,2,False,True,fastest,True,True,True,65.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0631,2,True,False,fastest,True,True,False,35.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0249,2,True,True,fastest,True,True,False,70.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1047,0,False,False,fastest,True,True,True,35.0,True,,28.159090909090878,min,random safe option
+test1279,0,False,True,fastest,True,True,False,30.000000000000004,True,,249.0092035151515,min,random safe option
+test0755,0,True,False,fastest,True,True,False,64.99999999999999,True,,392.26614909090927,min,random safe option
+test0454,0,True,True,cheapest,True,True,False,64.99999999999999,True,,10.190529444444445,$,random safe option
+test0192,1,False,False,fastest,True,True,True,40.0,False,costs more than the budget,,,random safe option
+test0052,1,False,True,fastest,True,True,True,75.0,True,,110.19437137821387,min,random safe option
+test0626,1,True,False,fastest,True,True,False,35.0,False,costs more than the budget,,,random safe option
+test0742,1,True,True,fastest,True,True,True,60.0,False,costs more than the budget,,,random safe option
+test0077,2,False,False,fastest,True,True,True,20.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1218,2,False,True,fastest,True,True,False,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1283,2,True,True,fastest,True,True,False,50.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0826,0,False,False,cheapest,True,True,True,0.0,True,,-0.0036600000000004407,$,random safe option
+test0187,0,False,True,cheapest,True,True,True,25.000000000000007,True,,3.683765000000001,$,random safe option
+test0393,0,True,False,cheapest,True,True,False,75.0,True,,11.98331125,$,random safe option
+test0281,0,True,True,cheapest,True,True,False,55.00000000000001,True,,8.191469166666666,$,random safe option
+test0931,1,False,False,cheapest,True,True,True,0.0,True,,0.0024510999999995953,$,random safe option
+test1043,1,False,True,fastest,True,True,True,60.0,False,costs more than the budget,,,random safe option
+test1392,1,True,False,fastest,True,True,False,40.0,False,costs more than the budget,,,random safe option
+test0099,1,True,True,fastest,True,True,True,54.99999999999999,False,costs more than the budget,,,random safe option
+test0218,2,False,False,fastest,True,True,True,19.999999999999996,True,,18.631578947368553,min,random safe option
+test0033,2,False,True,fastest,True,True,True,25.0,False,costs more than the budget,,,random safe option
+test0172,2,True,True,fastest,True,True,True,60.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0055,0,False,False,fastest,True,True,True,4.999999999999999,True,,3.847826086956502,min,random safe option
+test1171,0,False,True,fastest,True,True,False,30.000000000000004,True,,234.3779126060606,min,random safe option
+test0736,0,True,False,fastest,True,True,False,15.000000000000002,True,,7.477853333333314,min,random safe option
+test0513,0,True,True,fastest,True,True,True,45.0,True,,31.8599999999999,min,random safe option
+test1246,1,False,False,cheapest,True,True,True,25.0,False,arrives after the deadline,,,random safe option
+test0243,1,False,True,fastest,True,True,True,30.0,False,costs more than the budget,,,random safe option
+test0698,1,True,False,fastest,True,True,False,35.0,False,costs more than the budget,,,random safe option
+test0982,1,True,True,fastest,True,True,False,4.999999999999999,True,,0.2632773333333489,min,random safe option
+test0058,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,random safe option
+test1381,2,False,True,fastest,True,True,True,5.000000000000004,False,arrives after the deadline,,,random safe option
+test1216,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,random safe option
+test0916,0,False,False,cheapest,True,True,False,65.0,True,,9.699565,$,random safe option
+test0806,0,False,True,fastest,True,True,True,29.999999999999993,True,,35.39999999999998,min,random safe option
+test0036,0,True,False,cheapest,True,True,False,50.0,True,,7.452636111111111,$,random safe option
+test1282,0,True,True,fastest,True,True,False,30.0,True,,26.549999999999955,min,random safe option
+test0244,1,False,False,fastest,True,True,False,15.000000000000002,False,costs more than the budget,,,random safe option
+test1185,1,False,True,cheapest,True,True,False,70.0,False,arrives after the deadline,,,random safe option
+test0519,1,True,False,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,random safe option
+test0021,1,True,True,cheapest,True,True,False,49.99999999999999,False,arrives after the deadline,,,random safe option
+test0208,2,False,False,cheapest,True,True,True,70.0,False,arrives after the deadline,,,random safe option
+test0798,2,False,True,cheapest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0778,2,True,True,cheapest,True,True,False,75.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0860,0,False,False,fastest,True,True,True,20.0,True,,107.27272727272748,min,random safe option
+test0334,0,False,True,cheapest,True,True,True,65.0,True,,9.585035,$,random safe option
+test0427,0,True,False,fastest,True,True,False,65.0,True,,414.7249606060607,min,random safe option
+test1213,0,True,True,fastest,True,True,False,70.0,True,,62.571575782587615,min,random safe option
+test0061,1,False,False,fastest,True,True,False,55.00000000000001,False,costs more than the budget,,,random safe option
+test0385,1,False,True,fastest,True,True,False,20.0,True,,154.40080715854185,min,random safe option
+test0046,1,True,False,cheapest,True,True,False,60.0,False,arrives after the deadline,,,random safe option
+test0766,1,True,True,fastest,True,True,True,50.0,False,costs more than the budget,,,random safe option
+test1277,2,False,False,cheapest,True,True,True,54.99999999999999,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1086,2,False,True,fastest,True,True,True,5.000000000000004,False,arrives after the deadline,,,random safe option
+test0522,2,True,True,fastest,True,True,False,30.000000000000004,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1230,0,False,False,cheapest,True,True,False,45.0,True,,14.855807499999997,$,random safe option
+test0280,0,False,True,fastest,True,True,True,65.0,True,,47.76175772047941,min,random safe option
+test0719,0,True,False,cheapest,True,True,False,55.00000000000001,True,,8.120629722222223,$,random safe option
+test0851,0,True,True,fastest,True,True,False,9.999999999999998,True,,48.77759437229429,min,random safe option
+test0446,1,False,False,cheapest,True,True,False,25.000000000000007,False,arrives after the deadline,,,random safe option
+test0784,1,False,True,fastest,True,True,False,20.0,False,costs more than the budget,,,random safe option
+test0045,1,True,False,cheapest,True,True,False,30.000000000000004,True,,8.669646016666666,$,random safe option
+test0323,1,True,True,fastest,True,True,False,9.999999999999998,True,,93.05386484848486,min,random safe option
+test1259,2,False,False,fastest,True,True,True,64.99999999999999,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1348,2,False,True,fastest,True,True,True,4.999999999999999,False,arrives after the deadline,,,random safe option
+test0861,0,False,False,fastest,True,True,True,75.0,True,,97.00517230689661,min,random safe option
+test0293,0,False,True,cheapest,True,True,False,40.0,True,,6.023166666666667,$,random safe option
+test0910,0,True,False,fastest,True,True,False,45.0,True,,38.26686133333328,min,random safe option
+test0053,1,False,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,random safe option
+test0489,1,False,True,cheapest,True,True,False,30.000000000000004,False,arrives after the deadline,,,random safe option
+test0251,1,True,False,cheapest,True,True,False,5.000000000000004,True,,1.4498476,$,random safe option
+test0038,1,True,True,cheapest,True,True,False,40.0,False,arrives after the deadline,,,random safe option
+test1166,2,False,False,fastest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0595,2,False,True,cheapest,True,True,True,40.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0470,0,False,False,fastest,True,True,False,20.0,True,,153.73955585858573,min,random safe option
+test0419,0,False,True,fastest,True,True,True,20.000000000000007,True,,107.27272727272725,min,random safe option
+test0646,0,True,False,fastest,True,True,False,20.0,True,,172.31479608585846,min,random safe option
+test0847,1,False,False,fastest,True,True,True,25.000000000000007,False,costs more than the budget,,,random safe option
+test0661,1,False,True,cheapest,True,True,True,25.0,False,arrives after the deadline,,,random safe option
+test0876,1,True,False,cheapest,True,True,False,55.00000000000001,False,arrives after the deadline,,,random safe option
+test0106,2,False,False,cheapest,True,True,False,4.999999999999999,False,arrives after the deadline,,,random safe option
+test1296,2,False,True,fastest,True,True,True,35.0,False,costs more than the budget,,,random safe option
+test0308,0,False,False,cheapest,True,True,True,40.0,True,,5.903789166666665,$,random safe option
+test1017,0,False,True,fastest,True,True,True,45.0,True,,31.8599999999999,min,random safe option
+test0992,0,True,False,cheapest,True,True,True,5.000000000000004,True,,0.7354502777777778,$,random safe option
+test0054,1,False,False,cheapest,True,True,False,10.000000000000004,False,arrives after the deadline,,,random safe option
+test0583,1,False,True,cheapest,True,True,False,35.0,False,arrives after the deadline,,,random safe option
+test1263,1,True,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,random safe option
+test1163,2,False,False,fastest,True,True,True,25.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0056,2,False,True,fastest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0371,0,False,False,cheapest,True,True,True,25.0,True,,3.68321,$,random safe option
+test0859,0,False,True,fastest,True,True,True,15.000000000000002,True,,12.64285714285711,min,random safe option
+test0998,0,True,False,fastest,True,True,False,45.00000000000001,True,,299.9773036363638,min,random safe option
+test1137,1,False,False,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,random safe option
+test0011,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,random safe option
+test0921,1,True,False,cheapest,True,True,False,10.000000000000004,False,arrives after the deadline,,,random safe option
+test1184,2,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1232,2,False,True,fastest,True,True,True,25.000000000000007,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1190,0,False,False,cheapest,True,True,True,64.99999999999999,True,,9.584093055555554,$,random safe option
+test0529,0,False,True,cheapest,True,True,True,9.999999999999998,True,,2.888900499999999,$,random safe option
+test1100,1,False,False,cheapest,True,True,True,60.00000000000001,False,arrives after the deadline,,,random safe option
+test1119,1,False,True,fastest,True,True,False,60.0,False,costs more than the budget,,,random safe option
+test0862,2,False,False,fastest,True,True,False,70.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0037,2,False,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0555,0,False,False,cheapest,True,True,True,44.99999999999999,True,,6.641320833333332,$,random safe option
+test1290,0,False,True,fastest,True,True,True,15.000000000000002,True,,17.69999999999999,min,random safe option
+test0680,1,False,False,cheapest,True,True,False,70.0,False,arrives after the deadline,,,random safe option
+test1321,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,random safe option
+test1125,2,False,False,cheapest,True,True,True,35.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0591,2,False,True,cheapest,True,True,True,30.000000000000004,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0224,0,False,False,cheapest,True,True,True,65.0,True,,18.787831222222223,$,random safe option
+test0576,0,False,True,cheapest,True,True,True,15.000000000000002,True,,4.332833100000002,$,random safe option
+test0619,1,False,False,fastest,True,True,False,70.0,False,costs more than the budget,,,random safe option
+test1266,1,False,True,cheapest,True,True,False,4.999999999999999,False,arrives after the deadline,,,random safe option
+test1037,2,False,False,fastest,True,True,True,45.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0326,2,False,True,cheapest,True,True,True,35.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1226,0,False,False,fastest,True,True,True,75.0,True,,402.2727272727276,min,random safe option
+test0655,0,False,True,fastest,True,True,False,4.999999999999999,True,,121.7763452121211,min,random safe option
+test0930,1,False,False,fastest,True,True,True,64.99999999999999,False,costs more than the budget,,,random safe option
+test0594,1,False,True,cheapest,True,True,False,60.0,False,arrives after the deadline,,,random safe option
+test0231,2,False,False,cheapest,True,True,False,70.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0687,2,False,True,fastest,True,True,True,10.000000000000004,False,costs more than the budget,,,random safe option
+test0615,0,False,False,fastest,True,True,True,45.0,True,,241.36363636363672,min,random safe option
+test0257,0,False,True,fastest,True,True,False,54.99999999999999,True,,360.3367781818183,min,random safe option
+test0437,1,False,False,fastest,True,True,False,0.0,False,costs more than the budget,,,random safe option
+test0201,1,False,True,cheapest,True,True,True,25.000000000000007,True,,7.222806200000001,$,random safe option
+test0152,2,False,True,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0474,0,False,False,fastest,True,True,True,4.999999999999999,True,,4.022727272727252,min,random safe option
+test0889,0,False,True,cheapest,True,True,False,49.99999999999999,True,,6.9064375,$,random safe option
+test0355,1,False,False,cheapest,True,True,False,64.99999999999999,False,arrives after the deadline,,,random safe option
+test0269,1,False,True,cheapest,True,True,True,40.0,False,arrives after the deadline,,,random safe option
+test0918,2,False,True,fastest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1267,0,False,False,cheapest,True,True,False,5.000000000000004,True,,5.591150172222223,$,random safe option
+test0712,0,False,True,fastest,True,True,True,19.999999999999996,True,,23.600000000000023,min,random safe option
+test0163,1,False,False,cheapest,True,True,True,29.999999999999993,False,arrives after the deadline,,,random safe option
+test1051,1,False,True,cheapest,True,True,True,65.0,False,arrives after the deadline,,,random safe option
+test0874,0,False,False,cheapest,True,True,True,25.0,True,,0.0,$,random safe option
+test1342,0,False,True,fastest,True,True,False,25.0,True,,183.0221614343435,min,random safe option
+test1221,0,False,False,fastest,False,True,False,,True,,12.874878787878856,min,random safe option
+test0105,0,False,True,fastest,False,True,False,,True,,154.63803030303018,min,random safe option
+test0946,0,True,False,cheapest,False,True,False,,True,,17.1597363,$,random safe option
+test1327,0,True,True,cheapest,False,True,False,,True,,9.322098099999998,$,random safe option
+test0905,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0977,1,False,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0720,1,True,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0890,1,True,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0811,2,False,False,fastest,False,True,False,,True,,9.024479999999926,min,random safe option
+test0623,2,False,True,fastest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0232,2,True,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0728,2,True,True,fastest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0716,0,False,False,fastest,False,True,False,,True,,65.27112305192384,min,random safe option
+test1011,0,False,True,cheapest,False,True,False,,True,,8.68249,$,random safe option
+test0344,0,True,False,cheapest,False,True,False,,True,,5.858812944444446,$,random safe option
+test0450,0,True,True,fastest,False,True,False,,True,,58.930132456780484,min,random safe option
+test1156,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1394,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0209,1,True,False,cheapest,False,True,False,,True,,0.42690760000000066,$,random safe option
+test1096,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0016,2,False,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0663,2,False,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0317,2,True,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0321,2,True,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0676,0,False,False,cheapest,False,True,False,,True,,14.818775999999998,$,random safe option
+test1223,0,False,True,fastest,False,True,False,,True,,447.00478787878797,min,random safe option
+test0076,0,True,False,fastest,False,True,False,,True,,36.806868686868654,min,random safe option
+test0313,0,True,True,cheapest,False,True,False,,True,,0.7552475000000001,$,random safe option
+test0336,1,False,False,cheapest,False,True,False,,True,,1.7426457999999994,$,random safe option
+test0270,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1118,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0841,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1350,2,False,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1313,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1329,2,True,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0765,2,True,True,fastest,False,True,False,,True,,6.237758333333431,min,random safe option
+test0018,0,False,False,cheapest,False,True,False,,True,,1.8030237500000004,$,random safe option
+test1180,0,False,True,fastest,False,True,False,,True,,297.425696969697,min,random safe option
+test0597,0,True,False,fastest,False,True,False,,True,,17.745344444444413,min,random safe option
+test0537,0,True,True,cheapest,False,True,False,,True,,17.403552949999998,$,random safe option
+test0779,1,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0411,1,False,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0920,1,True,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1397,1,True,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1112,2,False,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1174,2,False,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0791,2,True,False,fastest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0307,2,True,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1260,0,False,False,cheapest,False,True,False,,True,,5.314320833333334,$,random safe option
+test1345,0,False,True,fastest,False,True,False,,True,,242.57775757575757,min,random safe option
+test0690,0,True,False,fastest,False,True,False,,True,,48.69851444444441,min,random safe option
+test1059,0,True,True,cheapest,False,True,False,,True,,3.9532199999999995,$,random safe option
+test1371,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0222,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0417,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0219,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0147,2,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1197,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1084,2,True,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1245,2,True,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0707,0,False,False,fastest,False,True,False,,True,,51.10351333333324,min,random safe option
+test1242,0,False,True,cheapest,False,True,False,,True,,6.4541575,$,random safe option
+test0275,0,True,False,cheapest,False,True,False,,True,,8.014293333333335,$,random safe option
+test0718,0,True,True,cheapest,False,True,False,,True,,5.521431805555556,$,random safe option
+test1374,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0310,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1111,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0140,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0252,2,False,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0013,2,False,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0047,2,True,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0303,2,True,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0226,0,False,False,cheapest,False,True,False,,True,,10.83195606111111,$,random safe option
+test0493,0,False,True,fastest,False,True,False,,True,,14.973261904761898,min,random safe option
+test0361,0,True,False,cheapest,False,True,False,,True,,20.670586299999997,$,random safe option
+test0769,0,True,True,cheapest,False,True,False,,True,,6.3331800000000005,$,random safe option
+test0598,1,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,random safe option
+test1049,1,True,False,fastest,False,True,False,,True,,20.276606060606014,min,random safe option
+test0541,1,True,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0330,2,False,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0571,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1224,2,True,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0000,2,True,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1106,0,False,False,fastest,False,True,False,,True,,88.90536363636352,min,random safe option
+test1032,0,False,True,cheapest,False,True,False,,True,,0.8611312500000001,$,random safe option
+test0994,0,True,False,fastest,False,True,False,,True,,111.3993961182033,min,random safe option
+test0772,0,True,True,fastest,False,True,False,,True,,283.53878787878784,min,random safe option
+test0924,1,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1001,1,False,True,cheapest,False,True,False,,True,,0.6384193666666652,$,random safe option
+test0804,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1310,1,True,True,fastest,False,True,False,,True,,60.91735353535341,min,random safe option
+test1066,2,False,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0574,2,False,True,fastest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0886,2,True,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0155,2,True,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1237,0,False,False,fastest,False,True,False,,True,,28.206109333333416,min,random safe option
+test0398,0,False,True,cheapest,False,True,False,,True,,7.9204925,$,random safe option
+test1048,0,True,False,cheapest,False,True,False,,True,,8.956869999999999,$,random safe option
+test0819,0,True,True,cheapest,False,True,False,,True,,3.1349825000000004,$,random safe option
+test0940,1,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0282,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1196,1,True,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0194,1,True,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0412,2,False,False,cheapest,False,True,False,,False,costs more than the budget,,,random safe option
+test1018,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0866,2,True,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1028,2,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0997,0,False,False,fastest,False,True,False,,True,,257.38021212121225,min,random safe option
+test1016,0,False,True,fastest,False,True,False,,True,,54.79115610876397,min,random safe option
+test1080,0,True,False,cheapest,False,True,False,,True,,14.963793949999998,$,random safe option
+test1231,0,True,True,cheapest,False,True,False,,True,,7.549932500000001,$,random safe option
+test0311,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0633,1,False,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1093,1,True,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0333,1,True,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0445,2,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1008,2,False,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0497,2,True,False,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0639,2,True,True,fastest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0210,0,False,False,cheapest,False,True,False,,True,,6.154047500000001,$,random safe option
+test0467,0,False,True,fastest,False,True,False,,True,,171.88922222222214,min,random safe option
+test0544,0,True,False,fastest,False,True,False,,True,,59.52327272727268,min,random safe option
+test1209,0,True,True,fastest,False,True,False,,True,,292.9406969696969,min,random safe option
+test0543,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test1351,1,False,True,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0770,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0575,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0063,2,False,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0078,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test1323,2,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0362,2,True,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0962,0,False,False,fastest,False,True,False,,True,,33.36160266666661,min,random safe option
+test1145,0,False,True,cheapest,False,True,False,,True,,8.415906799999998,$,random safe option
+test0614,0,True,False,cheapest,False,True,False,,True,,0.035809999999999426,$,random safe option
+test0457,0,True,True,fastest,False,True,False,,True,,348.3782121212122,min,random safe option
+test1399,1,False,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test1389,1,False,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0466,1,True,False,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0560,1,True,True,cheapest,False,True,False,,False,arrives after the deadline,,,random safe option
+test0421,2,False,False,cheapest,False,True,False,,True,,0.2982355555555553,$,random safe option
+test1385,2,False,True,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0975,2,True,False,cheapest,False,True,False,,False,arrives after the deadline; costs more than the budget,,,random safe option
+test0331,2,True,True,cheapest,False,True,False,,True,,0.192834444444445,$,random safe option
+test0383,0,False,False,fastest,False,True,False,,True,,183.87332323232317,min,random safe option
+test0284,0,False,True,fastest,False,True,False,,True,,281.2836060606062,min,random safe option
+test0121,0,True,False,fastest,False,True,False,,True,,224.3320606060605,min,random safe option
+test0777,0,True,True,fastest,False,True,False,,True,,113.83048484848496,min,random safe option
+test0757,1,False,False,fastest,False,True,False,,False,costs more than the budget,,,random safe option
+test0938,1,False,True,fastest,False,True,False,,True,,322.80712121212116,min,random safe option
+test0164,0,False,False,fastest,True,True,True,5.000000000000004,True,,5.899999999999864,min,goal-aware rule
+test1041,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.0,$,goal-aware rule
+test0632,0,True,False,fastest,True,True,False,0.0,True,,2.0344626666665135,min,goal-aware rule
+test0213,0,True,True,fastest,True,True,True,5.000000000000004,True,,3.5400000000000773,min,goal-aware rule
+test0367,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4436222444444438,$,goal-aware rule
+test0610,1,False,True,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,goal-aware rule
+test0030,1,True,False,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,goal-aware rule
+test0726,1,True,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test1203,2,False,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test1236,2,False,True,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,goal-aware rule
+test0631,2,True,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test0249,2,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test1047,0,False,False,fastest,True,True,True,5.000000000000004,True,,4.022727272727252,min,goal-aware rule
+test1279,0,False,True,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,goal-aware rule
+test0755,0,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0454,0,True,True,cheapest,True,True,False,0.0,True,,0.6030294444444445,$,goal-aware rule
+test0192,1,False,False,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,goal-aware rule
+test0052,1,False,True,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,goal-aware rule
+test0626,1,True,False,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,goal-aware rule
+test0742,1,True,True,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,goal-aware rule
+test0077,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test1218,2,False,True,fastest,True,True,False,60.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test1283,2,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0826,0,False,False,cheapest,True,True,True,5.000000000000004,True,,0.7338400000000003,$,goal-aware rule
+test0187,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7337649999999996,$,goal-aware rule
+test0393,0,True,False,cheapest,True,True,True,4.999999999999999,True,,0.7403449999999998,$,goal-aware rule
+test0281,0,True,True,cheapest,True,True,True,4.999999999999999,True,,0.7385368055555555,$,goal-aware rule
+test0931,1,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4479511,$,goal-aware rule
+test1043,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test1392,1,True,False,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,goal-aware rule
+test0099,1,True,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181984,min,goal-aware rule
+test0218,2,False,False,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,goal-aware rule
+test0033,2,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0172,2,True,True,fastest,True,True,False,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test0055,0,False,False,fastest,True,True,True,4.999999999999999,True,,3.847826086956502,min,goal-aware rule
+test1171,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0736,0,True,False,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,goal-aware rule
+test0513,0,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test1246,1,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4410230777777784,$,goal-aware rule
+test0243,1,False,True,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,goal-aware rule
+test0698,1,True,False,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test0982,1,True,True,fastest,True,True,False,0.0,True,,3.8032773333333125,min,goal-aware rule
+test0058,2,False,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test1381,2,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test1216,2,True,True,fastest,True,True,False,40.0,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test0916,0,False,False,cheapest,True,True,True,5.000000000000004,True,,0.7355400000000005,$,goal-aware rule
+test0806,0,False,True,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,goal-aware rule
+test0036,0,True,False,cheapest,True,True,True,5.000000000000004,True,,0.7353895833333337,$,goal-aware rule
+test1282,0,True,True,fastest,True,True,True,4.999999999999999,True,,4.4249999999999545,min,goal-aware rule
+test0244,1,False,False,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,goal-aware rule
+test1185,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4408318999999992,$,goal-aware rule
+test0519,1,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0021,1,True,True,cheapest,True,True,True,4.999999999999999,True,,1.4489598999999997,$,goal-aware rule
+test0208,2,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; costs more than the budget",,,goal-aware rule
+test0798,2,False,True,cheapest,True,True,False,40.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline",,,goal-aware rule
+test0778,2,True,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test0860,0,False,False,fastest,True,True,True,4.999999999999999,True,,26.818181818181984,min,goal-aware rule
+test0334,0,False,True,cheapest,True,True,True,5.000000000000004,True,,0.7350350000000001,$,goal-aware rule
+test0427,0,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test1213,0,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0061,1,False,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0385,1,False,True,fastest,True,True,True,4.999999999999999,True,,3.847826086956502,min,goal-aware rule
+test0046,1,True,False,cheapest,True,True,True,5.000000000000004,True,,1.4418985555555555,$,goal-aware rule
+test0766,1,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test1277,2,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4439990999999992,$,goal-aware rule
+test1086,2,False,True,fastest,True,True,True,30.000000000000004,False,arrives after the deadline; costs more than the budget,,,goal-aware rule
+test0522,2,True,True,fastest,True,True,True,5.000000000000004,True,,4.4249999999999545,min,goal-aware rule
+test1230,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7400749999999998,$,goal-aware rule
+test0280,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0719,0,True,False,cheapest,True,True,True,5.000000000000004,True,,0.7408533333333334,$,goal-aware rule
+test0851,0,True,True,fastest,True,True,True,4.999999999999999,True,,4.214285714285779,min,goal-aware rule
+test0446,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4418959999999998,$,goal-aware rule
+test0784,1,False,True,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,goal-aware rule
+test0045,1,True,False,cheapest,True,True,True,5.000000000000004,True,,1.4421460166666669,$,goal-aware rule
+test0323,1,True,True,fastest,True,True,True,4.999999999999999,True,,3.540000000000191,min,goal-aware rule
+test1259,2,False,False,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,goal-aware rule
+test1348,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 1%, below the reserve; costs more than the budget",,,goal-aware rule
+test0861,0,False,False,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,goal-aware rule
+test0293,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7422788888888885,$,goal-aware rule
+test0910,0,True,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test0053,1,False,False,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,goal-aware rule
+test0489,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4483983999999994,$,goal-aware rule
+test0251,1,True,False,cheapest,True,True,True,5.000000000000004,True,,1.448911700000001,$,goal-aware rule
+test0038,1,True,True,cheapest,True,True,True,4.999999999999999,True,,1.4489938999999996,$,goal-aware rule
+test1166,2,False,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0595,2,False,True,cheapest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test0470,0,False,False,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,goal-aware rule
+test0419,0,False,True,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,goal-aware rule
+test0646,0,True,False,fastest,True,True,True,4.999999999999999,True,,4.4249999999999545,min,goal-aware rule
+test0847,1,False,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test0661,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4482505166666657,$,goal-aware rule
+test0876,1,True,False,cheapest,True,True,True,4.999999999999999,True,,1.445854999999999,$,goal-aware rule
+test0106,2,False,False,cheapest,True,True,True,4.999999999999999,True,,0.0,$,goal-aware rule
+test1296,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 9%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test0308,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7412891666666663,$,goal-aware rule
+test1017,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test0992,0,True,False,cheapest,True,True,True,5.000000000000004,True,,0.7354502777777778,$,goal-aware rule
+test0054,1,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4445217444444438,$,goal-aware rule
+test0583,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4481872722222207,$,goal-aware rule
+test1263,1,True,False,cheapest,True,True,True,4.999999999999999,True,,1.4410342777777778,$,goal-aware rule
+test1163,2,False,False,fastest,True,True,True,5.000000000000004,True,,5.899999999999977,min,goal-aware rule
+test0056,2,False,True,fastest,True,True,True,4.999999999999999,True,,4.214285714285666,min,goal-aware rule
+test0371,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7332100000000001,$,goal-aware rule
+test0859,0,False,True,fastest,True,True,True,5.000000000000004,True,,4.214285714285779,min,goal-aware rule
+test0998,0,True,False,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,goal-aware rule
+test1137,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4488900666666673,$,goal-aware rule
+test0011,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test0921,1,True,False,cheapest,True,True,True,4.999999999999999,True,,1.4428305666666645,$,goal-aware rule
+test1184,2,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test1232,2,False,True,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,goal-aware rule
+test1190,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7340930555555554,$,goal-aware rule
+test0529,0,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4434004999999992,$,goal-aware rule
+test1100,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.449953799999999,$,goal-aware rule
+test1119,1,False,True,fastest,True,True,True,5.000000000000004,True,,26.818181818181984,min,goal-aware rule
+test0862,2,False,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test0037,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4495993999999994,$,goal-aware rule
+test0555,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7413208333333339,$,goal-aware rule
+test1290,0,False,True,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,goal-aware rule
+test0680,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4476630999999998,$,goal-aware rule
+test1321,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test1125,2,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4484344499999997,$,goal-aware rule
+test0591,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4420386000000005,$,goal-aware rule
+test0224,0,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4418312222222225,$,goal-aware rule
+test0576,0,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4418330999999998,$,goal-aware rule
+test0619,1,False,False,fastest,True,True,True,4.999999999999999,True,,4.022727272727252,min,goal-aware rule
+test1266,1,False,True,cheapest,True,True,True,5.000000000000004,True,,1.4430877000000004,$,goal-aware rule
+test1037,2,False,False,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,goal-aware rule
+test0326,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4422662777777768,$,goal-aware rule
+test1226,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,goal-aware rule
+test0655,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test0930,1,False,False,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,goal-aware rule
+test0594,1,False,True,cheapest,True,True,True,5.000000000000004,True,,1.4476699333333332,$,goal-aware rule
+test0231,2,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4501502999999993,$,goal-aware rule
+test0687,2,False,True,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,goal-aware rule
+test0615,0,False,False,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,goal-aware rule
+test0257,0,False,True,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,goal-aware rule
+test0437,1,False,False,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,goal-aware rule
+test0201,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4408062,$,goal-aware rule
+test0152,2,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 1%, below the reserve; arrives after the deadline",,,goal-aware rule
+test0474,0,False,False,fastest,True,True,True,4.999999999999999,True,,4.022727272727252,min,goal-aware rule
+test0889,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7343449999999996,$,goal-aware rule
+test0355,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4423611777777774,$,goal-aware rule
+test0269,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4439115,$,goal-aware rule
+test0918,2,False,True,fastest,True,True,False,35.0,False,"reaches the charger at -3%, below the reserve; arrives after the deadline; costs more than the budget",,,goal-aware rule
+test1267,0,False,False,cheapest,True,True,True,5.000000000000004,True,,0.0,$,goal-aware rule
+test0712,0,False,True,fastest,True,True,True,5.000000000000004,True,,5.900000000000091,min,goal-aware rule
+test0163,1,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -0%, below the reserve; arrives after the deadline",,,goal-aware rule
+test1051,1,False,True,cheapest,True,True,True,5.000000000000004,True,,1.4472109555555566,$,goal-aware rule
+test0874,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.0,$,goal-aware rule
+test1342,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,goal-aware rule
+test1221,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0105,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0946,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1327,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0905,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0977,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0720,1,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0890,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0811,2,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0623,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0232,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0728,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0716,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1011,0,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0344,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0450,0,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1156,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1394,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0209,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1096,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0016,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0663,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0317,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0321,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0676,0,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1223,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0076,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0313,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0336,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0270,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1118,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0841,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1350,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1313,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1329,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0765,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0018,0,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1180,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0597,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0537,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0779,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0411,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0920,1,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1397,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1112,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1174,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0791,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0307,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1260,0,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1345,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0690,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1059,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1371,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0222,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0417,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0219,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0147,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1197,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1084,2,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1245,2,True,True,fastest,False,True,False,,True,,10.087394000000018,min,goal-aware rule
+test0707,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1242,0,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0275,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0718,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1374,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0310,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1111,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0140,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0252,2,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0013,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0047,2,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0303,2,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0226,0,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0493,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0361,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0769,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0598,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1049,1,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0541,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0330,2,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0571,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1224,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0000,2,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1106,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1032,0,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0994,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0772,0,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0924,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1001,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0804,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1310,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1066,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0574,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0886,2,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0155,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1237,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0398,0,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1048,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0819,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0940,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0282,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1196,1,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0194,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0412,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1018,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0866,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1028,2,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0997,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1016,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1080,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1231,0,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0311,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0633,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1093,1,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0333,1,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0445,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1008,2,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0497,2,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0639,2,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0210,0,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0467,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0544,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1209,0,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0543,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1351,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0770,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0575,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0063,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0078,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1323,2,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0362,2,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0962,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1145,0,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0614,0,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0457,0,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test1399,1,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1389,1,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0466,1,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0560,1,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0421,2,False,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test1385,2,False,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0975,2,True,False,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0331,2,True,True,cheapest,False,False,True,,True,,0.0,$,goal-aware rule
+test0383,0,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0284,0,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0121,0,True,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0777,0,True,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0757,1,False,False,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0938,1,False,True,fastest,False,False,True,,True,,0.0,min,goal-aware rule
+test0164,0,False,False,fastest,True,True,True,45.00000000000001,True,,53.09999999999991,min,"nearest, km only"
+test1041,0,False,True,cheapest,True,True,True,55.00000000000001,True,,0.0,$,"nearest, km only"
+test0632,0,True,False,fastest,True,True,False,60.00000000000001,True,,369.9265375757577,min,"nearest, km only"
+test0213,0,True,True,fastest,True,True,True,45.00000000000001,True,,31.860000000000014,min,"nearest, km only"
+test0367,1,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at -2%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0610,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -7%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0030,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0726,1,True,True,fastest,True,True,False,50.0,False,costs more than the budget,,,"nearest, km only"
+test1203,2,False,False,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1236,2,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0631,2,True,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0249,2,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1047,0,False,False,fastest,True,True,True,45.00000000000001,True,,36.20454545454538,min,"nearest, km only"
+test1279,0,False,True,fastest,True,True,False,45.00000000000001,True,,329.46374896969724,min,"nearest, km only"
+test0755,0,True,False,fastest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve",,,"nearest, km only"
+test0454,0,True,True,cheapest,True,True,False,60.00000000000001,True,,8.183179722222224,$,"nearest, km only"
+test0192,1,False,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0052,1,False,True,fastest,True,True,True,55.00000000000001,True,,64.90000000000009,min,"nearest, km only"
+test0626,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0742,1,True,True,fastest,True,True,False,40.0,False,"reaches the charger at -11%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0077,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test1218,2,False,True,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test1283,2,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 3%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0826,0,False,False,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -3%, below the reserve",,,"nearest, km only"
+test0187,0,False,True,cheapest,True,True,True,50.0,True,,7.371265000000001,$,"nearest, km only"
+test0393,0,True,False,cheapest,True,True,False,60.00000000000001,True,,16.5149145,$,"nearest, km only"
+test0281,0,True,True,cheapest,True,True,True,50.0,True,,7.376036805555556,$,"nearest, km only"
+test0931,1,False,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test1043,1,False,True,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test1392,1,True,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0099,1,True,True,fastest,True,True,False,40.0,False,"reaches the charger at -8%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0218,2,False,False,fastest,True,True,False,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0033,2,False,True,fastest,True,True,False,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0172,2,True,True,fastest,True,True,True,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0055,0,False,False,fastest,True,True,True,55.00000000000001,True,,42.32608695652175,min,"nearest, km only"
+test1171,0,False,True,fastest,True,True,False,55.00000000000001,True,,362.90882169696965,min,"nearest, km only"
+test0736,0,True,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 4%, below the reserve",,,"nearest, km only"
+test0513,0,True,True,fastest,True,True,True,50.0,True,,35.399999999999864,min,"nearest, km only"
+test1246,1,False,False,cheapest,True,True,False,30.000000000000004,False,"reaches the charger at -12%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0243,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0698,1,True,False,fastest,True,True,False,60.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0982,1,True,True,fastest,True,True,True,50.0,False,costs more than the budget,,,"nearest, km only"
+test0058,2,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1381,2,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1216,2,True,True,fastest,True,True,True,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0916,0,False,False,cheapest,True,True,False,45.00000000000001,True,,6.7495650000000005,$,"nearest, km only"
+test0806,0,False,True,fastest,True,True,True,40.0,True,,47.200000000000045,min,"nearest, km only"
+test0036,0,True,False,cheapest,True,True,True,45.00000000000001,True,,6.6353895833333345,$,"nearest, km only"
+test1282,0,True,True,fastest,True,False,False,,False,"arrives at 7%, below the 10% reserve",,,"nearest, km only"
+test0244,1,False,False,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test1185,1,False,True,cheapest,True,True,True,50.0,True,,14.450331899999998,$,"nearest, km only"
+test0519,1,True,False,fastest,True,True,True,55.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0021,1,True,True,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0208,2,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest, km only"
+test0798,2,False,True,cheapest,True,True,True,40.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0778,2,True,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0860,0,False,False,fastest,True,True,True,35.0,True,,187.72727272727298,min,"nearest, km only"
+test0334,0,False,True,cheapest,True,True,True,45.00000000000001,True,,6.635034999999999,$,"nearest, km only"
+test0427,0,True,False,fastest,True,True,True,55.00000000000001,True,,38.93999999999983,min,"nearest, km only"
+test1213,0,True,True,fastest,True,True,False,50.0,False,"reaches the charger at 8%, below the reserve",,,"nearest, km only"
+test0061,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0385,1,False,True,fastest,True,True,True,60.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0046,1,True,False,cheapest,True,True,False,45.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0766,1,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1277,2,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -5%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1086,2,False,True,fastest,True,True,False,30.000000000000004,False,"reaches the charger at -7%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0522,2,True,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1230,0,False,False,cheapest,True,True,False,50.0,True,,15.6790859,$,"nearest, km only"
+test0280,0,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 9%, below the reserve",,,"nearest, km only"
+test0719,0,True,False,cheapest,True,True,False,45.00000000000001,True,,16.832838222222225,$,"nearest, km only"
+test0851,0,True,True,fastest,True,True,True,55.00000000000001,True,,46.35714285714266,min,"nearest, km only"
+test0446,1,False,False,cheapest,True,True,True,50.0,True,,14.451396,$,"nearest, km only"
+test0784,1,False,True,fastest,True,True,False,35.0,False,costs more than the budget,,,"nearest, km only"
+test0045,1,True,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0323,1,True,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 8%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1259,2,False,False,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test1348,2,False,True,fastest,True,True,False,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0861,0,False,False,fastest,True,True,True,60.00000000000001,True,,70.80000000000018,min,"nearest, km only"
+test0293,0,False,True,cheapest,True,True,True,55.00000000000001,True,,8.11727888888889,$,"nearest, km only"
+test0910,0,True,False,fastest,True,True,False,50.0,True,,35.409572000000026,min,"nearest, km only"
+test0053,1,False,False,fastest,True,True,True,45.00000000000001,False,costs more than the budget,,,"nearest, km only"
+test0489,1,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0251,1,True,False,cheapest,True,True,False,45.00000000000001,True,,13.0138476,$,"nearest, km only"
+test0038,1,True,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test1166,2,False,False,fastest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0595,2,False,True,cheapest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0470,0,False,False,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 2%, below the reserve",,,"nearest, km only"
+test0419,0,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve",,,"nearest, km only"
+test0646,0,True,False,fastest,True,True,False,50.0,False,"reaches the charger at -3%, below the reserve",,,"nearest, km only"
+test0847,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0661,1,False,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0876,1,True,False,cheapest,True,True,False,55.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0106,2,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest, km only"
+test1296,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 9%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0308,0,False,False,cheapest,True,True,False,35.0,False,"reaches the charger at -11%, below the reserve",,,"nearest, km only"
+test1017,0,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 1%, below the reserve",,,"nearest, km only"
+test0992,0,True,False,cheapest,True,True,True,45.00000000000001,True,,6.635450277777776,$,"nearest, km only"
+test0054,1,False,False,cheapest,True,True,True,45.00000000000001,True,,13.008521744444447,$,"nearest, km only"
+test0583,1,False,True,cheapest,True,True,False,50.0,False,arrives after the deadline,,,"nearest, km only"
+test1263,1,True,False,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 1%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test1163,2,False,False,fastest,True,True,False,45.00000000000001,False,"reaches the charger at -8%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0056,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0371,0,False,False,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 7%, below the reserve",,,"nearest, km only"
+test0859,0,False,True,fastest,True,True,True,45.00000000000001,True,,37.92857142857133,min,"nearest, km only"
+test0998,0,True,False,fastest,True,True,True,45.00000000000001,True,,31.8599999999999,min,"nearest, km only"
+test1137,1,False,False,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0011,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 4%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0921,1,True,False,cheapest,True,True,False,50.0,False,"reaches the charger at -6%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test1184,2,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1232,2,False,True,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test1190,0,False,False,cheapest,True,True,False,60.00000000000001,True,,19.57411271111111,$,"nearest, km only"
+test0529,0,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 7%, below the reserve",,,"nearest, km only"
+test1100,1,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at 3%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test1119,1,False,True,fastest,True,True,False,45.00000000000001,False,"reaches the charger at 2%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0862,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0037,2,False,True,cheapest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0555,0,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -8%, below the reserve",,,"nearest, km only"
+test1290,0,False,True,fastest,True,True,True,50.0,True,,59.00000000000006,min,"nearest, km only"
+test0680,1,False,False,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test1321,1,False,True,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1125,2,False,False,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0591,2,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0224,0,False,False,cheapest,True,True,True,45.00000000000001,True,,13.005831222222227,$,"nearest, km only"
+test0576,0,False,True,cheapest,True,True,False,55.00000000000001,False,"reaches the charger at -1%, below the reserve",,,"nearest, km only"
+test0619,1,False,False,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 10%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1266,1,False,True,cheapest,True,True,True,45.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test1037,2,False,False,fastest,True,True,True,50.0,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0326,2,False,True,cheapest,True,True,False,40.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test1226,0,False,False,fastest,True,True,True,60.00000000000001,True,,321.8181818181821,min,"nearest, km only"
+test0655,0,False,True,fastest,True,True,True,50.0,True,,35.39999999999998,min,"nearest, km only"
+test0930,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 5%, below the reserve",,,"nearest, km only"
+test0594,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at 8%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0231,2,False,False,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"nearest, km only"
+test0687,2,False,True,fastest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; arrives after the deadline; costs more than the budget",,,"nearest, km only"
+test0615,0,False,False,fastest,True,True,False,35.0,False,"reaches the charger at 2%, below the reserve",,,"nearest, km only"
+test0257,0,False,True,fastest,True,True,True,40.0,True,,47.200000000000045,min,"nearest, km only"
+test0437,1,False,False,fastest,True,True,False,50.0,False,"reaches the charger at 1%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0201,1,False,True,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest, km only"
+test0152,2,False,True,fastest,True,True,False,55.00000000000001,False,"reaches the charger at 4%, below the reserve; costs more than the budget",,,"nearest, km only"
+test0474,0,False,False,fastest,True,True,True,50.0,True,,40.227272727272634,min,"nearest, km only"
+test0889,0,False,True,cheapest,True,True,True,60.00000000000001,True,,8.846845,$,"nearest, km only"
+test0355,1,False,False,cheapest,True,True,True,50.0,False,arrives after the deadline,,,"nearest, km only"
+test0269,1,False,True,cheapest,True,True,False,60.00000000000001,False,arrives after the deadline,,,"nearest, km only"
+test0918,2,False,True,fastest,True,True,False,35.0,False,"reaches the charger at -15%, below the reserve; costs more than the budget",,,"nearest, km only"
+test1267,0,False,False,cheapest,True,True,True,45.00000000000001,True,,0.0,$,"nearest, km only"
+test0712,0,False,True,fastest,True,True,False,30.000000000000004,False,"reaches the charger at -7%, below the reserve",,,"nearest, km only"
+test0163,1,False,False,cheapest,True,True,False,40.0,False,"reaches the charger at -3%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test1051,1,False,True,cheapest,True,True,False,45.00000000000001,False,"reaches the charger at -6%, below the reserve; arrives after the deadline",,,"nearest, km only"
+test0874,0,False,False,cheapest,True,True,False,55.00000000000001,True,,8.1383125,$,"nearest, km only"
+test1342,0,False,True,fastest,True,True,True,55.00000000000001,True,,38.93999999999994,min,"nearest, km only"
+test1221,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0105,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0946,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1327,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0905,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0977,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0720,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0890,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0811,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0623,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0232,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0728,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0716,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1011,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0344,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0450,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1156,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1394,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0209,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1096,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0016,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0663,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0317,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0321,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0676,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1223,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0076,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0313,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0336,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0270,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1118,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0841,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1350,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1313,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1329,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0765,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0018,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1180,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0597,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0537,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0779,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0411,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0920,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1397,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1112,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1174,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0791,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0307,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1260,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1345,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0690,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1059,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1371,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0222,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0417,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0219,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0147,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1197,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1084,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1245,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0707,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1242,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0275,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0718,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1374,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0310,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1111,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0140,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0252,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0013,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0047,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0303,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0226,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0493,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0361,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0769,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0598,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1049,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0541,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0330,2,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0571,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1224,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0000,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1106,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1032,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0994,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0772,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0924,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1001,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0804,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1310,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1066,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0574,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0886,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0155,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1237,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0398,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1048,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0819,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0940,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0282,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1196,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0194,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0412,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1018,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0866,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1028,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0997,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1016,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1080,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1231,0,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0311,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0633,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1093,1,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0333,1,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0445,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1008,2,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0497,2,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0639,2,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0210,0,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0467,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0544,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1209,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0543,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1351,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0770,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0575,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0063,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0078,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1323,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0362,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0962,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1145,0,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0614,0,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0457,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test1399,1,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1389,1,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0466,1,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0560,1,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0421,2,False,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test1385,2,False,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0975,2,True,False,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0331,2,True,True,cheapest,False,False,True,,True,,0.0,$,"nearest, km only"
+test0383,0,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0284,0,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0121,0,True,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0777,0,True,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0757,1,False,False,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0938,1,False,True,fastest,False,False,True,,True,,0.0,min,"nearest, km only"
+test0164,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1041,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.0,$,"goal-aware rule, km only"
+test0632,0,True,False,fastest,True,True,False,0.0,True,,2.0344626666665135,min,"goal-aware rule, km only"
+test0213,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0367,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4436222444444438,$,"goal-aware rule, km only"
+test0610,1,False,True,cheapest,True,True,True,0.0,True,,0.001447499999999824,$,"goal-aware rule, km only"
+test0030,1,True,False,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,"goal-aware rule, km only"
+test0726,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1203,2,False,False,cheapest,True,True,True,0.0,True,,-0.000595833333333573,$,"goal-aware rule, km only"
+test1236,2,False,True,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,"goal-aware rule, km only"
+test0631,2,True,False,fastest,True,True,False,4.999999999999999,True,,2.380041333333338,min,"goal-aware rule, km only"
+test0249,2,True,True,fastest,True,True,False,4.999999999999999,False,"reaches the charger at 9%, below the reserve",,,"goal-aware rule, km only"
+test1047,0,False,False,fastest,True,True,True,5.000000000000004,True,,4.022727272727252,min,"goal-aware rule, km only"
+test1279,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0755,0,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0454,0,True,True,cheapest,True,True,False,0.0,True,,0.6030294444444445,$,"goal-aware rule, km only"
+test0192,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0052,1,False,True,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,"goal-aware rule, km only"
+test0626,1,True,False,fastest,True,True,True,5.000000000000004,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0742,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0077,2,False,False,fastest,True,True,True,60.00000000000001,False,arrives after the deadline; costs more than the budget,,,"goal-aware rule, km only"
+test1218,2,False,True,fastest,True,True,True,4.999999999999999,False,costs more than the budget,,,"goal-aware rule, km only"
+test1283,2,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0826,0,False,False,cheapest,True,True,True,5.000000000000004,True,,0.7338400000000003,$,"goal-aware rule, km only"
+test0187,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7337649999999996,$,"goal-aware rule, km only"
+test0393,0,True,False,cheapest,True,True,True,4.999999999999999,True,,0.7403449999999998,$,"goal-aware rule, km only"
+test0281,0,True,True,cheapest,True,True,True,4.999999999999999,True,,0.7385368055555555,$,"goal-aware rule, km only"
+test0931,1,False,False,cheapest,True,True,True,0.0,True,,0.0024510999999995953,$,"goal-aware rule, km only"
+test1043,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,"goal-aware rule, km only"
+test1392,1,True,False,fastest,True,True,True,5.000000000000004,True,,26.818181818181756,min,"goal-aware rule, km only"
+test0099,1,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0218,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0033,2,False,True,fastest,True,True,False,4.999999999999999,False,"reaches the charger at 10%, below the reserve",,,"goal-aware rule, km only"
+test0172,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0055,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1171,0,False,True,fastest,True,True,False,0.0,False,"reaches the charger at 9%, below the reserve",,,"goal-aware rule, km only"
+test0736,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0513,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1246,1,False,False,cheapest,True,True,True,0.0,True,,-0.004476922222224289,$,"goal-aware rule, km only"
+test0243,1,False,True,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,"goal-aware rule, km only"
+test0698,1,True,False,fastest,True,True,False,0.0,False,"reaches the charger at 9%, below the reserve; costs more than the budget",,,"goal-aware rule, km only"
+test0982,1,True,True,fastest,True,True,False,0.0,True,,3.8032773333333125,min,"goal-aware rule, km only"
+test0058,2,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1381,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1216,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0916,0,False,False,cheapest,True,True,True,0.0,True,,-0.001960000000000184,$,"goal-aware rule, km only"
+test0806,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0036,0,True,False,cheapest,True,True,True,0.0,True,,-0.002110416666666781,$,"goal-aware rule, km only"
+test1282,0,True,True,fastest,True,True,True,4.999999999999999,True,,4.4249999999999545,min,"goal-aware rule, km only"
+test0244,1,False,False,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,"goal-aware rule, km only"
+test1185,1,False,True,cheapest,True,True,True,0.0,True,,-0.004668099999999953,$,"goal-aware rule, km only"
+test0519,1,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0021,1,True,True,cheapest,True,True,True,4.999999999999999,True,,1.4489598999999997,$,"goal-aware rule, km only"
+test0208,2,False,False,cheapest,True,True,False,50.0,False,"reaches the charger at -1%, below the reserve; costs more than the budget",,,"goal-aware rule, km only"
+test0798,2,False,True,cheapest,True,True,True,0.0,True,,0.0036533333333332862,$,"goal-aware rule, km only"
+test0778,2,True,True,cheapest,True,True,True,55.00000000000001,False,arrives after the deadline; costs more than the budget,,,"goal-aware rule, km only"
+test0860,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0334,0,False,True,cheapest,True,True,True,0.0,True,,-0.0024650000000006056,$,"goal-aware rule, km only"
+test0427,0,True,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test1213,0,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0061,1,False,False,fastest,True,True,False,9.999999999999998,False,"reaches the charger at 6%, below the reserve; costs more than the budget",,,"goal-aware rule, km only"
+test0385,1,False,True,fastest,True,True,True,4.999999999999999,True,,3.847826086956502,min,"goal-aware rule, km only"
+test0046,1,True,False,cheapest,True,True,True,5.000000000000004,True,,1.4418985555555555,$,"goal-aware rule, km only"
+test0766,1,True,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test1277,2,False,False,cheapest,True,True,False,0.0,True,,0.18015190000000025,$,"goal-aware rule, km only"
+test1086,2,False,True,fastest,True,True,False,15.000000000000002,False,"reaches the charger at 8%, below the reserve",,,"goal-aware rule, km only"
+test0522,2,True,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1230,0,False,False,cheapest,True,True,True,0.0,True,,0.002574999999999994,$,"goal-aware rule, km only"
+test0280,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0719,0,True,False,cheapest,True,True,True,0.0,True,,0.003353333333332653,$,"goal-aware rule, km only"
+test0851,0,True,True,fastest,True,True,True,4.999999999999999,True,,4.214285714285779,min,"goal-aware rule, km only"
+test0446,1,False,False,cheapest,True,True,True,0.0,True,,-0.0036040000000001626,$,"goal-aware rule, km only"
+test0784,1,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0045,1,True,False,cheapest,True,True,False,0.0,True,,-0.00335398333333492,$,"goal-aware rule, km only"
+test0323,1,True,True,fastest,True,True,False,4.999999999999999,False,"reaches the charger at 9%, below the reserve",,,"goal-aware rule, km only"
+test1259,2,False,False,fastest,True,True,True,4.999999999999999,True,,4.657894736842081,min,"goal-aware rule, km only"
+test1348,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0861,0,False,False,fastest,True,True,True,4.999999999999999,True,,5.900000000000091,min,"goal-aware rule, km only"
+test0293,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7422788888888885,$,"goal-aware rule, km only"
+test0910,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0053,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0489,1,False,True,cheapest,True,True,False,4.999999999999999,True,,0.21396589999999982,$,"goal-aware rule, km only"
+test0251,1,True,False,cheapest,True,True,True,0.0,True,,0.0034116999999991293,$,"goal-aware rule, km only"
+test0038,1,True,True,cheapest,True,True,False,4.999999999999999,True,,1.4489938999999996,$,"goal-aware rule, km only"
+test1166,2,False,False,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0595,2,False,True,cheapest,True,True,True,0.0,True,,0.003250833333332981,$,"goal-aware rule, km only"
+test0470,0,False,False,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,"goal-aware rule, km only"
+test0419,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0646,0,True,False,fastest,True,True,True,4.999999999999999,True,,4.4249999999999545,min,"goal-aware rule, km only"
+test0847,1,False,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,"goal-aware rule, km only"
+test0661,1,False,True,cheapest,True,True,False,4.999999999999999,False,"reaches the charger at 8%, below the reserve",,,"goal-aware rule, km only"
+test0876,1,True,False,cheapest,True,True,False,4.999999999999999,True,,1.445854999999999,$,"goal-aware rule, km only"
+test0106,2,False,False,cheapest,True,True,True,4.999999999999999,True,,0.0,$,"goal-aware rule, km only"
+test1296,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0308,0,False,False,cheapest,True,True,True,0.0,True,,0.0037891666666673984,$,"goal-aware rule, km only"
+test1017,0,False,True,fastest,True,True,True,4.999999999999999,True,,3.5399999999999636,min,"goal-aware rule, km only"
+test0992,0,True,False,cheapest,True,True,True,5.000000000000004,True,,0.7354502777777778,$,"goal-aware rule, km only"
+test0054,1,False,False,cheapest,True,True,True,0.0,True,,-0.0009782555555561956,$,"goal-aware rule, km only"
+test0583,1,False,True,cheapest,True,True,True,0.0,True,,0.0026872722222215373,$,"goal-aware rule, km only"
+test1263,1,True,False,cheapest,True,True,True,4.999999999999999,True,,1.4410342777777778,$,"goal-aware rule, km only"
+test1163,2,False,False,fastest,True,True,True,5.000000000000004,True,,5.899999999999977,min,"goal-aware rule, km only"
+test0056,2,False,True,fastest,True,True,True,4.999999999999999,True,,4.214285714285666,min,"goal-aware rule, km only"
+test0371,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7332100000000001,$,"goal-aware rule, km only"
+test0859,0,False,True,fastest,True,True,True,5.000000000000004,True,,4.214285714285779,min,"goal-aware rule, km only"
+test0998,0,True,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1137,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4488900666666673,$,"goal-aware rule, km only"
+test0011,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,"goal-aware rule, km only"
+test0921,1,True,False,cheapest,True,True,True,4.999999999999999,True,,1.4428305666666645,$,"goal-aware rule, km only"
+test1184,2,False,False,cheapest,True,True,True,0.0,True,,0.002139166666666359,$,"goal-aware rule, km only"
+test1232,2,False,True,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,"goal-aware rule, km only"
+test1190,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.7340930555555554,$,"goal-aware rule, km only"
+test0529,0,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4434004999999992,$,"goal-aware rule, km only"
+test1100,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.449953799999999,$,"goal-aware rule, km only"
+test1119,1,False,True,fastest,True,True,False,9.999999999999998,False,"reaches the charger at 7%, below the reserve",,,"goal-aware rule, km only"
+test0862,2,False,False,fastest,True,True,True,4.999999999999999,True,,3.5400000000000773,min,"goal-aware rule, km only"
+test0037,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4495993999999994,$,"goal-aware rule, km only"
+test0555,0,False,False,cheapest,True,True,True,0.0,True,,0.0038208333333336064,$,"goal-aware rule, km only"
+test1290,0,False,True,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,"goal-aware rule, km only"
+test0680,1,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4476630999999998,$,"goal-aware rule, km only"
+test1321,1,False,True,fastest,True,True,True,4.999999999999999,True,,26.818181818181756,min,"goal-aware rule, km only"
+test1125,2,False,False,cheapest,True,True,True,0.0,True,,0.0029344499999988116,$,"goal-aware rule, km only"
+test0591,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4420386000000005,$,"goal-aware rule, km only"
+test0224,0,False,False,cheapest,True,True,True,5.000000000000004,True,,1.4418312222222225,$,"goal-aware rule, km only"
+test0576,0,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4418330999999998,$,"goal-aware rule, km only"
+test0619,1,False,False,fastest,True,True,True,4.999999999999999,True,,4.022727272727252,min,"goal-aware rule, km only"
+test1266,1,False,True,cheapest,True,True,True,5.000000000000004,True,,1.4430877000000004,$,"goal-aware rule, km only"
+test1037,2,False,False,fastest,True,True,True,4.999999999999999,True,,5.899999999999977,min,"goal-aware rule, km only"
+test0326,2,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4422662777777768,$,"goal-aware rule, km only"
+test1226,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0655,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0930,1,False,False,fastest,True,True,True,4.999999999999999,True,,26.81818181818187,min,"goal-aware rule, km only"
+test0594,1,False,True,cheapest,True,True,True,0.0,True,,0.0021699333333322635,$,"goal-aware rule, km only"
+test0231,2,False,False,cheapest,True,True,True,4.999999999999999,True,,1.4501502999999993,$,"goal-aware rule, km only"
+test0687,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0615,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0257,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0437,1,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0201,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4408062,$,"goal-aware rule, km only"
+test0152,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0474,0,False,False,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0889,0,False,True,cheapest,True,True,True,4.999999999999999,True,,0.7343449999999996,$,"goal-aware rule, km only"
+test0355,1,False,False,cheapest,True,True,False,4.999999999999999,True,,0.576282911111111,$,"goal-aware rule, km only"
+test0269,1,False,True,cheapest,True,True,True,4.999999999999999,True,,1.4439115,$,"goal-aware rule, km only"
+test0918,2,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1267,0,False,False,cheapest,True,True,True,0.0,True,,0.0,$,"goal-aware rule, km only"
+test0712,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test0163,1,False,False,cheapest,True,True,True,0.0,True,,2.4999999999941735e-05,$,"goal-aware rule, km only"
+test1051,1,False,True,cheapest,True,True,True,5.000000000000004,True,,1.4472109555555566,$,"goal-aware rule, km only"
+test0874,0,False,False,cheapest,True,True,True,4.999999999999999,True,,0.0,$,"goal-aware rule, km only"
+test1342,0,False,True,fastest,True,True,True,0.0,True,,0.0,min,"goal-aware rule, km only"
+test1221,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0105,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0946,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1327,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0905,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0977,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0720,1,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0890,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0811,2,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0623,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0232,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0728,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0716,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1011,0,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0344,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0450,0,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1156,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1394,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0209,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1096,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0016,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0663,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0317,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0321,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0676,0,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1223,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0076,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0313,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0336,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0270,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1118,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0841,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1350,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1313,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1329,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0765,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0018,0,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1180,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0597,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0537,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0779,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0411,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0920,1,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1397,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1112,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1174,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0791,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0307,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1260,0,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1345,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0690,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1059,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1371,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0222,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0417,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0219,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0147,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1197,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1084,2,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1245,2,True,True,fastest,False,True,False,,True,,10.087394000000018,min,"goal-aware rule, km only"
+test0707,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1242,0,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0275,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0718,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1374,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0310,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1111,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0140,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0252,2,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0013,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0047,2,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0303,2,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0226,0,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0493,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0361,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0769,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0598,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0622,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1049,1,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0541,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0330,2,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0571,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1224,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0000,2,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1106,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1032,0,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0994,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0772,0,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0924,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1001,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0804,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1310,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1066,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0574,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0886,2,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0155,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1237,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0398,0,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1048,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0819,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0940,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0282,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1196,1,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0194,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0412,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1018,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0866,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1028,2,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0997,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1016,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1080,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1231,0,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0311,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0633,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1093,1,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0333,1,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0445,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1008,2,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0497,2,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0639,2,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0210,0,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0467,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0544,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1209,0,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0543,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1351,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0770,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0575,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0063,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0078,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1323,2,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0362,2,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0962,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1145,0,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0614,0,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0457,0,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test1399,1,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1389,1,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0466,1,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0560,1,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0421,2,False,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test1385,2,False,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0975,2,True,False,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0331,2,True,True,cheapest,False,False,True,,True,,0.0,$,"goal-aware rule, km only"
+test0383,0,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0284,0,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0121,0,True,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0777,0,True,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0757,1,False,False,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"
+test0938,1,False,True,fastest,False,False,True,,True,,0.0,min,"goal-aware rule, km only"

@@ -1,0 +1,5 @@
+<additional><vType id="leaf" vClass="evehicle" emissionClass="Energy/unknown" mass="1520">
+ <param key="frontSurfaceArea" value="2.29"/><param key="airDragCoefficient" value="0.29"/><param key="rollDragCoefficient" value="0.012"/>
+ <param key="constantPowerIntake" value="300"/><param key="propulsionEfficiency" value="0.88"/><param key="recuperationEfficiency" value="0.6"/>
+ <param key="radialDragCoefficient" value="0.5"/>
+</vType></additional>

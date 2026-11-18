@@ -1,0 +1,995 @@
+id,afdc_id,name,city,lon,lat,edge,pos,dist_to_road_m,level,plugs,working,public,price_kind,price_value,price_fee,price_text,network
+40610_L2,40610,City of Saline - City Parking Lot #2,Saline,-83.780162,42.166498,-1568916712,163.6,57.1,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+40704_L2,40704,Emagine Entertainment,Royal Oak,-83.131111,42.455,502845644,12.7,6.7,L2,J1772,False,True,kwh,0.0,0.0,Free,Non-Networked
+44287_DC,44287,Ann Arbor Nissan,Ann Arbor,-83.808724,42.284447,416486226#5-AddedOnRampEdge,88.3,48.5,DC,CHADEMO J1772 J1772COMBO,True,True,kwh,0.0,0.0,Free,Non-Networked
+44287_L2,44287,Ann Arbor Nissan,Ann Arbor,-83.808724,42.284447,416486226#5-AddedOnRampEdge,88.3,48.5,L2,CHADEMO J1772 J1772COMBO,True,True,kwh,0.0,0.0,Free,Non-Networked
+49174_L2,49174,McNaughton McKay Electric Co,Madison Heights,-83.09264,42.484615,-500675000,555.5,94.4,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+49175_L2,49175,Lawrence Technological University,Southfield,-83.24981,42.476386,1137839609#1,219.9,122.1,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+49836_L2,49836,Tony Serra Highland Nissan,Highland,-83.57998,42.653294,-681076191,271.3,42.2,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+49846_L2,49846,Jeffrey Automotive Group,Roseville,-82.917703,42.523619,44626446,95.2,101.3,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+49847_L2,49847,Jeffrey Automotive Group,Roseville,-82.917703,42.523619,44626446,95.2,101.3,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+49848_L2,49848,Tamaroff Nissan,Southfield,-83.286597,42.498163,136467924#1,48.7,106.3,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+52277_L2,52277,Suburban Ford - Sterling Heights,Sterling Heights,-83.0319,42.589877,1078913802#0,39.5,86.4,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+52546_DC,52546,Suburban Ford - Waterford,Waterford,-83.424174,42.657461,8698134,519.3,118.6,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,Non-Networked
+52546_L2,52546,Suburban Ford - Waterford,Waterford,-83.424174,42.657461,8698134,519.3,118.6,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,Non-Networked
+63647_L2,63647,Varsity Ford,Ann Arbor,-83.797918,42.285984,441398315,24.2,80.1,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+63714_L2,63714,Avis Ford,Southfield,-83.28388,42.502907,422067566#0,1.0,87.0,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+63715_L2,63715,Serra Ford Rochester Hills,Rochester Hills,-83.132983,42.638074,442737922,26.2,87.7,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+63717_L2,63717,Suburban Ford - Ferndale,Ferndale,-83.127736,42.45145,219477184#2-AddedOnRampEdge,29.4,26.3,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+63745_L2,63745,North Brothers Ford,Westland,-83.367414,42.326409,422063229,92.0,164.7,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+63804_L2,63804,Briarwood Ford,Saline,-83.740207,42.185792,-442427831,102.4,97.2,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+63807_L2,63807,Crest Ford,Center Line,-83.028484,42.487246,-502851973,39.3,66.9,L2,J1772 NEMA520,True,False,kwh,,0.0,not listed,Non-Networked
+64728_L2,64728,Wayne State University - Parking Structure #1,Detroit,-83.0711717437953,42.3612218163908,509152182-AddedOnRampEdge,72.8,15.7,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+64729_L2,64729,Wayne State University - Parking Structure #2,Detroit,-83.0733826383948,42.3565840255467,458688471#1-AddedOnRampEdge,95.0,63.9,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+64730_L2,64730,Wayne State University - Parking Structure #3,Detroit,-83.0633437167853,42.3573546377245,257559538#1,84.2,5.1,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+64731_L2,64731,Wayne State University - Parking Structure #4,Detroit,-83.055206,42.3559279,517839688#3,124.4,38.1,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+64732_L2,64732,Wayne State University - Parking Structure #5,Detroit,-83.0738475825638,42.3577454220504,8738825#1,52.7,49.7,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+64733_L2,64733,Wayne State University - Parking Structure #6,Detroit,-83.0660457070917,42.3574317712337,-421883488,1.0,97.2,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+64734_L2,64734,Wayne State University - Parking Structure #7,Detroit,-83.0565744079649,42.349218009098,-1490887702,462.9,1.0,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+64735_L2,64735,Wayne State University - Parking Structure #8,Detroit,-83.0641661133649,42.3542634789208,120436469,106.7,2.1,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+64736_L2,64736,Wayne State University - Lot #50,Detroit,-83.0752607214385,42.3535883333534,71691738#1,86.0,21.8,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+64737_L2,64737,Wayne State University - Lot #75,Detroit,-83.0555882770568,42.355273766443,517839688#3,177.2,98.2,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+74325_L2,74325,Ann Arbor Downtown Development Authority - Ashley and Washington Parking Structure,Ann Arbor,-83.7504773,42.2805401,-220169079,1.0,4.0,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+75468_L2,75468,Wayne State University - Advanced Technology Center,Warren,-82.97426,42.509012,-494442831,363.9,55.8,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+75777_L2,75777,Ferndale Public Library,Ferndale,-83.13309717,42.46006802,421887175,6.6,58.1,L2,J1772,False,True,kwh,,0.0,not listed,Non-Networked
+76147_L2,76147,BEDROCK NEW CENTER 1-2,Detroit,-83.076173,42.371047,219713712,18.5,103.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+76335_L2,76335,HFHS OFP LOT 1A,Detroit,-83.07509,42.363564,-826295701,251.9,103.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+77413_L2,77413,BEDROCK ONE DETROIT 1-1,Detroit,-83.044429,42.330459,119507706#1,1.0,32.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78472_L2,78472,BEDROCK GREEKTOWN 1-1,Detroit,-83.043548,42.333694,1234281890,123.4,28.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78474_L2,78474,BEDROCK Z DECK 2-4,Detroit,-83.047255,42.334881,8752486,140.1,10.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78475_L2,78475,BEDROCK BRICKTOWN 2-1,Detroit,-83.041969,42.333239,497594831,16.9,38.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78476_L2,78476,BEDROCK Z DECK 2-1,Detroit,-83.046188,42.334284,784224238,1.0,18.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78486_L2,78486,BEDROCK FIRST NAT'L 2-1,Detroit,-83.044749,42.330768,119507706#1,4.7,10.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78487_L2,78487,BEDROCK KAHN GARAGE 2-1,Detroit,-83.055087,42.328078,503937397,31.9,58.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+78488_L2,78488,BEDROCK CASS 2-2,Detroit,-83.074143,42.369064,500144992,49.6,16.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+80037_L2,80037,MEADOWLARK BLDG STATION 2,Ann Arbor,-83.794254,42.274082,421546208,263.4,41.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+80977_L2,80977,BEDROCK TWO DETROIT 1-1,Detroit,-83.043102,42.330479,552920200,181.5,13.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+86861_L2,86861,Comfort Inn - Metro Airport,Romulus,-83.351692,42.239321,-32453935,383.0,123.0,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+86982_L2,86982,MEIJER STORES 237 WARREN 2,Warren,-83.048751,42.508981,1015895755,5.9,149.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+88103_L2,88103,BEDROCK FIN DIST 2-1,Detroit,-83.049356,42.331492,-333460617,111.2,16.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+88181_L2,88181,AUBURN HILLS GARAGE EV 02,Auburn Hills,-83.221102,42.633362,508084923,12.8,32.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+88182_L2,88182,AUBURN HILLS COMMUNITYCENTER,Auburn Hills,-83.221635,42.670548,1243316417#1,3.5,93.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+88560_L2,88560,776 KROGERSOUTHGATE,Southgate,-83.1847,42.18641,249212529#1,413.1,160.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+92376_L2,92376,DET INST OF ART EV STATION 01,Detroit,-83.064826,42.360211,45806337,169.4,73.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+98744_L2,98744,DTW AIRPORT BLUEDECK 4G #3,Detroit,-83.347041,42.224805,120557546,309.6,40.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+98754_L2,98754,DTW AIRPORT MAC DECK 8B4,Romulus,-83.355813,42.20747,489797030,273.8,74.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+98755_L2,98755,DTW AIRPORT SOUTH CEL LOT,Romulus,-83.376683,42.194207,44540206#1-AddedOnRampEdge,84.7,21.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+98869_L2,98869,DTW AIRPORT MAC DECK 8B1,Romulus,-83.355793,42.207484,489797030,271.6,73.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+99489_L2,99489,MEIJER STORES 306 WARREN 1,Warren,-82.98839,42.481068,38726673,362.4,124.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+99520_L2,99520,MEIJER STORES 306 WARREN 2,Warren,-82.989701,42.479841,-503798214,167.6,177.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+102221_DC,102221,"Ann Arbor, MI - Tesla Supercharger",Ann Arbor,-83.766551,42.241125,442397815,97.6,58.3,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+102234_DC,102234,"Roseville, MI - Tesla Supercharger",Roseville,-82.906768,42.522041,72948182,1247.5,165.3,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+102943_L2,102943,HFHS OFP LOT 1B,Detroit,-83.075327,42.363854,-826295701,289.2,97.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+104279_DC,104279,Feldman Chevrolet - New Hudson,New Hudson,-83.608279,42.515722,489532665,115.9,91.8,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,Non-Networked
+104279_L2,104279,Feldman Chevrolet - New Hudson,New Hudson,-83.608279,42.515722,489532665,115.9,91.8,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,Non-Networked
+104280_DC,104280,Feldman Chevrolet - Novi,Novi,-83.465085,42.477793,-446099775,311.9,71.1,DC,J1772 J1772COMBO,True,False,kwh,0.0,0.0,Free,Non-Networked
+104280_L2,104280,Feldman Chevrolet - Novi,Novi,-83.465085,42.477793,-446099775,311.9,71.1,L2,J1772 J1772COMBO,True,False,kwh,0.0,0.0,Free,Non-Networked
+104289_L2,104289,BEDROCK OCM 1-2,Detroit,-83.045934,42.333436,107500706#0,89.9,41.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+104290_L2,104290,BEDROCK OCM 1-8,Detroit,-83.04589,42.333435,107500706#0,88.2,38.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+104400_L2,104400,BEDROCK OCM B1-1,Detroit,-83.046192,42.3328,107500706#0,162.2,24.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+114460_L2,114460,Sheraton Ann Arbor Hotel - Tesla Destination,Ann Arbor,-83.735175,42.241166,1161797065,276.8,40.8,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+114462_L2,114462,The Townsend Hotel - Tesla Destination,Birmingham,-83.215811,42.544777,-404872374,105.3,208.8,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+114468_L2,114468,Atheneum Suite Hotel - Tesla Destination,Detroit,-83.043069,42.333974,1234281890,74.2,36.5,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+114469_L2,114469,The Z Deck EFF - Tesla Destination,Detroit,-83.045959,42.334265,-284932768,1.0,5.5,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+114470_L2,114470,One Detroit Center Garage - Tesla Destination,Detroit,-83.044786,42.330607,119507706#1,16.4,3.3,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+114471_L2,114471,Financial District Garage - Tesla Destination,Detroit,-83.048927,42.331181,-333460617,146.5,51.3,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+116834_L2,116834,ROCHESTER HILLS THE VILLAGE,Rochester Hills,-83.192104,42.684393,40989988,151.0,166.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+117025_L2,117025,PRW GRAND CIRCUS,Detroit,-83.050852,42.33647,-505225101,43.5,21.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+117546_L2,117546,AUBURN HILLS DEN PARKING LOT,Auburn Hills,-83.220704,42.63346,508084923,44.6,22.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+120988_L2,120988,BEDROCK BUHL 3-1,Detroit,-83.046874,42.329103,637654812,1.0,38.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+121387_L2,121387,BEDROCK 124 ALF GRG 1-1,Detroit,-83.052619,42.34351,-30259472,582.6,11.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+145077_DC,145077,BLUE ENERGY 1 BEACON PARK DC4,Detroit,-83.055956,42.334972,219477241,203.3,6.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+145078_DC,145078,BLUE ENERGY 1 BEACON PARK DC3,Detroit,-83.05598,42.33487,219477241,191.8,6.4,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+145371_DC,145371,"Roundtree Place (Ypsilanti, MI)",Ypsilanti,-83.64926,42.22952,673384171,926.5,104.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+145401_DC,145401,"Walmart 5893 (Novi, MI)",Novi,-83.4726,42.48204,514106323,324.7,101.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+147501_DC,147501,MEIJER STORES 064 SALINE RD 1,Ann Arbor,-83.766005,42.240517,442397814,20.1,122.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+149211_L2,149211,776 STATION 1,Warren,-82.986259,42.522916,-619101459,746.6,102.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+149548_L2,149548,BEDROCK ASSEMBLYGRG 2-1,Detroit,-83.065702,42.323624,249228134,2.9,68.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+149549_L2,149549,BEDROCK ASSEMBLYGRG 3-1,Detroit,-83.065727,42.323676,249228134,1.8,74.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+150714_L2,150714,Up2Go International - Tesla Destination,Northville,-83.4842064,42.4311888,-405655612,82.7,78.6,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+150829_L2,150829,BEDROCK QL DATA CTR S-1,Detroit,-83.06964,42.326576,454737865#2,1.0,31.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+153654_L2,153654,BEDROCK QL DATA CTR S-2,Detroit,-83.069305,42.326,454737865#3,9.1,28.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+153916_L2,153916,Home2 Suites by Hilton - Taylor,Taylor,-83.258417,42.201597,556491739,380.8,11.2,L2,J1772,True,True,kwh,0.0,0.0,Free for guest use,Non-Networked
+154039_L2,154039,MILFORD VILLAGE STATION 3,Milford Charter Township,-83.599518,42.59149,441123388,34.5,20.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+164113_L2,164113,PITTSFIELD TWP WEST,Saline,-83.700732,42.197611,-502989899,487.5,127.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+166302_L2,166302,Blue Care Network of Michigan,Southfield,-83.247437,42.480942,-516290427,268.2,125.8,L2,J1772,True,False,kwh,,0.0,not listed,EV Connect
+167139_DC,167139,ARCTURUS STATION 2,Troy,-83.146881,42.563116,502885265#0,13.2,57.4,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+167153_L2,167153,Lebanese Grill Troy,Troy,-83.13169630282,42.549093130002,406787916,42.5,30.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+168052_L2,168052,The Ypsilanti Performance Space,Ypsilanti,-83.615633,42.244439,1075814380,79.9,34.7,L2,J1772 TESLA,True,True,kwh,,0.0,$0.30/kW,Non-Networked
+168663_L2,168663,Car & Driver - Tesla Destination,Ann Arbor,-83.730255,42.238571,8723762#1,3357.5,146.0,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+168827_L2,168827,Hampton Inn West Bloomfield/ Southfield - Tesla Destination,West Bloomfield Township,-83.358873,42.5298223,491297710,21.7,58.0,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+169957_L2,169957,ARCH DENTAL STA STATION 1,Madison Heights,-83.109511,42.483126,-8696480,284.9,26.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+170234_L2,170234,City of Wixom Vehicle Charging Station,Wixom,-83.537691997692,42.524042259457,-182749301,53.1,25.4,L2,J1772,True,True,hour,1.0,0.0,$1.00/Hr Parking Fee,Blink Network
+170328_DC,170328,"Meijer Roseville (Roseville, MI)",Roseville,-82.90668,42.5222,72948182,1264.9,173.1,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+170982_L2,170982,WALLED LAKE WIXOM EL,Wixom,-83.53642,42.527707,-558152298,374.6,18.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+170983_L2,170983,WALLED LAKE COMMERCE,Commerce Charter Township,-83.487527,42.594258,8713525,346.9,289.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+170985_L2,170985,WALLED LAKE GLENGARY,Commerce Charter Township,-83.50115,42.565621,506648288,434.3,245.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+171763_L2,171763,BEDROCK KAHN GARAGE 3-1,Detroit,-83.054934,42.328168,503937397,17.8,61.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172194_L2,172194,BEDROCK NEW CENTER 1-1,Detroit,-83.076242,42.371338,219713712,49.8,113.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172222_L2,172222,BEDROCK ONE DETROIT 1-2,Detroit,-83.04442,42.33044,119507706#1,1.0,34.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172225_L2,172225,BEDROCK Z DECK 2-3,Detroit,-83.047075,42.334855,8752486,144.8,24.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172226_L2,172226,BEDROCK CASS 2-1,Detroit,-83.074203,42.369151,500144992,60.5,16.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172322_L2,172322,AUBURN HILLS GARAGE EV 01,Auburn Hills,-83.221143,42.633402,508084923,9.7,27.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172323_L2,172323,AUBURN HILLS CAMPUS P3,Auburn Hills,-83.221202,42.67089,1243316417#0,1.0,51.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172324_L2,172324,AUBURN HILLS CAMPUS P2,Auburn Hills,-83.220667,42.670713,1243316417#0,26.1,12.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+172462_L2,172462,MEADOWLARK BLDG STATION 1,Ann Arbor,-83.794254,42.274074,421546208,263.2,40.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173084_L2,173084,DET INST OF ART EV STATION 02,Detroit,-83.063176,42.359918,45806337,259.2,33.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173085_L2,173085,DET INST OF ART EV STATION 03,Detroit,-83.064687,42.360268,45806337,168.8,60.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173237_L2,173237,DTW AIRPORT BLUEDECK 4G #4,Detroit,-83.34704,42.224814,120557546,308.7,40.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173239_L2,173239,DTW AIRPORT BLUEDECK 4G #2,Detroit,-83.347122,42.224828,120557546,310.6,33.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173241_L2,173241,DTW AIRPORT MAC DECK 8B3,Romulus,-83.355828,42.207454,489797030,275.9,74.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173242_L2,173242,DTW AIRPORT MAC DECK 8B2,Romulus,-83.35575,42.20754,489797030,264.5,73.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173243_L2,173243,DTW AIRPORT MCNAMARA VALET,Romulus,-83.356068,42.206698,489797030,359.0,51.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173335_L2,173335,ROCTR1 NEW STATION 2,Royal Oak,-83.146101,42.488134,-8693812,57.1,39.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173495_L2,173495,BEDROCK OCM 1-4,Detroit,-83.045947,42.333399,107500706#0,94.0,40.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173497_L2,173497,BEDROCK OCM 1-3,Detroit,-83.045951,42.333342,107500706#0,99.7,37.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173498_L2,173498,BEDROCK OCM 1-6,Detroit,-83.045915,42.333404,107500706#0,92.2,38.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173499_L2,173499,BEDROCK OCM 1-1,Detroit,-83.045935,42.33343,107500706#0,90.6,41.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173500_L2,173500,BEDROCK OCM 1-5,Detroit,-83.04612,42.333413,784224241,32.3,35.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+173904_L2,173904,BEDROCK BUHL 3-2,Detroit,-83.046932,42.329145,637654812,1.0,44.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+174403_DC,174403,BLUE ENERGY 1 BEACON PARK DC2,Detroit,-83.056015,42.334755,219477241,178.8,6.6,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+174404_DC,174404,BLUE ENERGY 1 BEACON PARK DC1,Detroit,-83.056049,42.334638,219477241,166.7,7.5,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+174646_DC,174646,MEIJER STORES 064 SALINE RD 2,Ann Arbor,-83.766034,42.24054,442397814,17.6,120.2,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+174715_L2,174715,BEDROCK ASSEMBLYGRG 5-1,Detroit,-83.065706,42.323645,249228134,2.0,70.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+174716_L2,174716,BEDROCK ASSEMBLYGRG 4-1,Detroit,-83.065679,42.323639,249228134,1.0,68.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+175234_L2,175234,MILFORD VILLAGE STATION 2,Milford Charter Township,-83.599513,42.591519,441123388,35.0,17.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+175235_L2,175235,MILFORD VILLAGE STATION 1,Milford Charter Township,-83.59953,42.5915,441123388,33.6,19.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+180827_L2,180827,PITTSFIELD TWP EAST,Saline,-83.700681,42.197633,-502989899,492.4,128.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+181422_DC,181422,ARCTURUS STATION 1,Troy,-83.146878,42.563149,502885265#0,12.9,61.1,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+182852_L2,182852,AMPCAP 1305 WOODHAVEN,Woodhaven,-83.234081,42.141605,-505495735,343.9,203.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+183851_L2,183851,MEIJER STORES 237 WARREN 3,Warren,-83.048861,42.509027,1015895755,1.0,158.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+184233_L2,184233,VISN10/Detroit VAMC,Detroit,-83.059203,42.35571,663026715,169.3,112.3,L2,J1772,True,False,kwh,0.13,0.0,$0.13 per kWh,Non-Networked
+184433_L2,184433,STERLING HEIGHTS,Sterling Heights,-83.038474,42.566225,498560856,359.9,84.2,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+184845_L2,184845,EPA Ann Arbor - Station 1,Ann Arbor,-83.710984,42.303847,-897491919,277.8,155.8,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+185075_L2,185075,CAE Inc,Township of Hamburg,-83.791451,42.454892,-558152343,417.5,279.7,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,Non-Networked
+185078_L2,185078,Serra Ford,Farmington Hills,-83.433646,42.46901,422043558,512.7,103.7,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+185080_L2,185080,Freedom Plaza,Farmington,-83.414567,42.46787,-494610743,9.6,81.1,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+185081_L2,185081,Residence Inn by Marriott Detroit Farmington Hills,Farmington Hills,-83.376223,42.496216,220023791#2,635.0,95.6,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+185082_L2,185082,Courtyard by Marriott - Detroit Farmington Hills,Farmington Hills,-83.373856,42.49602,220023791#2,442.8,58.8,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+185086_L2,185086,"Dearborn, Michigan - East Parking Deck",Dearborn,-83.247935,42.304394,421882049,17.0,93.8,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+185087_L2,185087,John D. Dingell Transit Center,Dearborn,-83.235207,42.307593,421882040,1.0,51.2,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+185090_L2,185090,Henry Ford Centennial Library,Dearborn,-83.202218,42.313015,25907404,18.0,123.7,L2,J1772,False,True,kwh,,0.0,not listed,Non-Networked
+187235_L2,187235,HFHS WB MAIN LOT 1A,West Bloomfield Township,-83.407362,42.539301,-8710225,156.6,252.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+187703_L2,187703,Beaubian Place Garage,Detroit,-83.037957,42.329203,8759335,42.3,30.8,L2,J1772,True,True,kwh,0.0,0.0,Free; pay lot,Non-Networked
+187746_L2,187746,HFHS WB MAIN LOT 1B,West Bloomfield Township,-83.407567,42.539475,-8710225,140.6,232.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+187890_L2,187890,HAMPTON -YPSI DTWYP #1,Ypsilanti,-83.620799,42.224688,-179465056,580.8,71.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+189679_L2,189679,CUST. CHARGING MB NOVI 1,Novi,-83.436326,42.47302,420351230,245.2,90.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+191538_DC,191538,PS FOOD MARTS WHITMORE LK #2,Whitmore Lake,-83.759071,42.379059,670748414#0,156.0,32.6,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+191539_DC,191539,PS FOOD MARTS WHITMORE LK #1,Whitmore Lake,-83.759066,42.379033,670748414#0,156.2,35.5,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+192593_L2,192593,CHARGERS1AND2 AHF 1,Dearborn,-83.23714,42.302408,120566380,337.8,63.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+193151_L2,193151,WATERFALL-JLRS STATION 1,Waterford Township,-83.399994,42.699753,505269804,1.0,29.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+193714_L2,193714,SHED 2 LOT EMP1,Detroit,-83.039721,42.345976,1301246776,18.8,31.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+193715_L2,193715,SHED 2 LOT EMP2,Detroit,-83.039674,42.345982,1301246776,17.7,35.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+193801_L2,193801,EMBASSY TROY STATION 1,Troy,-83.163735,42.597445,8665831,137.7,120.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+194141_L2,194141,CHELSEAMICH PALMER COMMONS,Chelsea,-84.021528,42.315864,519538085,240.5,89.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+194142_L2,194142,CHELSEAMICH CITY BIG LOT,Chelsea,-84.01949,42.317698,8734403,54.3,71.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+194937_L2,194937,M1 EVENT CENTER EVENT CENTER 1,Pontiac,-83.283792,42.619715,-622496009#1,349.0,30.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+194938_L2,194938,M1 EVENT CENTER EVENT CENTER 3,Pontiac,-83.283459,42.619574,-622496009#1,322.2,14.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+194950_L2,194950,M1 EVENT CENTER EVENT CENTER 2,Pontiac,-83.283645,42.62015,-622496009#1,335.4,78.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+198073_L2,198073,BEEKMAN STATION 1,Ann Arbor,-83.735857,42.289949,-8727887,311.9,116.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+199100_DC,199100,FLEET  SERVICES DCFC-STATION 4,Ann Arbor,-83.745,42.282143,441448168,101.8,81.8,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+199101_DC,199101,FLEET  SERVICES DCFC-STATION 1,Ann Arbor,-83.74512,42.282108,215876717,1.0,72.1,DC,CHADEMO J1772COMBO,False,True,kwh,,0.0,not listed,ChargePoint Network
+199102_DC,199102,FLEET  SERVICES DCFC-STATION 2,Ann Arbor,-83.745075,42.28211,215876717,1.0,75.8,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+199468_L2,199468,Critter Pet Shop,Allen Park,-83.2303366,42.2560953,-413321569,1.0,33.4,L2,J1772,True,True,kwh,0.25,0.0,"$0.50/Hr Parking Fee , $0.25/kWh Energy Fee",Blink Network
+200581_L2,200581,WALLED LAKE DECKER RD,Walled Lake,-83.468465,42.548991,1009699136,173.6,0.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+200582_L2,200582,WALLED LAKE COMMERCE RD,Commerce Charter Township,-83.450486,42.592883,779616114,355.3,67.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+200995_DC,200995,FLEET  SERVICES DCFC-STATION 3,Ann Arbor,-83.745025,42.282111,215876717,1.0,79.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+202411_DC,202411,WASHTENAW BP 2,Ann Arbor,-83.66148,42.25076,442195582,2.6,33.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+202417_DC,202417,WASHTENAW BP 1,Ann Arbor,-83.66149,42.250736,442195582,2.8,34.5,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+202738_L2,202738,HFHS COLUM MC LOT 1A,Novi,-83.43706,42.498203,419875291,28.2,58.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+202739_L2,202739,HFHS COLUM MC LOT 1B,Novi,-83.43702,42.498238,419875291,24.4,54.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+203282_L2,203282,WALLED LAKE WALLED LAKE EL,Walled Lake,-83.49287,42.532159,-59440721,457.1,90.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+204998_DC,204998,ROYAL#3 STATION 1,Farmington,-83.376177,42.455342,-421541849,15.8,11.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+205008_DC,205008,ROYAL#3 STATION 2,Farmington,-83.376155,42.455277,-421541849,23.1,10.5,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+205013_L2,205013,HFHS BLOOMF MC GAR3A,Bloomfield Hills,-83.300514,42.61163,440053880#1,5.4,241.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+205014_L2,205014,HFHS BLOOMF MC GAR3B,Bloomfield Hills,-83.30077,42.6111,440053880#0,1.0,183.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+205578_L2,205578,BEDROCK TWO DETROIT 1-2,Detroit,-83.043244,42.330436,552920200,168.9,14.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+207609_L2,207609,CCA CBD DETROIT STATION 2,Detroit,-83.05241,42.33605,119507707,11.2,23.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+207610_L2,207610,CCA CBD DETROIT STATION 1,Detroit,-83.052315,42.33633,46274618,122.9,4.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+211952_L2,211952,MACOMB COLLEGE S. CAMPUS LOT 1,Warren,-82.976252,42.507327,442077070,115.1,108.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+212794_L2,212794,Alrig Charging Station,Bingham Farms,-83.281883,42.51029,219474925#2,20.5,284.0,L2,J1772,True,True,kwh,0.0,0.0,Free,Blink Network
+213352_L2,213352,SJMC WHITE OAKS,Chelsea,-84.017279,42.314075,-518497031,238.5,252.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+213589_L2,213589,HFHS CAN CTR GAR 1B,Detroit,-83.084782,42.364945,8760838#2,150.0,90.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+213590_L2,213590,HFHS CAN CTR GAR 1A,Detroit,-83.084798,42.364957,8760838#2,149.4,88.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+213591_L2,213591,HFHS COTT MC GAR 1A,Grosse Pointe Farms,-82.903481,42.396563,-515511740,245.2,129.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+213592_L2,213592,HFHS COTT MC GAR 1B,Grosse Pointe Farms,-82.903438,42.396604,-515511740,239.5,129.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+214356_L2,214356,-EVCS STERLING,Farmington Hills,-83.349086,42.521658,438700716#0,1.0,209.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+216273_L2,216273,Golling Chrysler Dodge Jeep Ram - Chelsea,Chelsea,-84.0250439937815,42.2994146382286,624342571,507.2,43.0,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216277_L2,216277,Audi Ann Arbor,Ann Arbor,-83.7391212679082,42.2491269071066,-442152507,111.5,19.7,L2,J1772,False,False,kwh,0.0,0.0,Free,Non-Networked
+216279_L2,216279,Staybridge Suites,Ann Arbor,-83.7382804392006,42.2314735969238,4691810#3,56.7,49.6,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+216297_L2,216297,Gordon Chevrolet,Garden City,-83.3541196906482,42.3254852904498,120697314,198.0,41.1,L2,J1772,True,False,kwh,0.6,0.0,$0.60 per kWh,Non-Networked
+216299_L2,216299,FAW US Research & Development,Plymouth,-83.5163963195608,42.3828720641934,8731701,616.1,61.6,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216304_L2,216304,LaFontaine Chevrolet,Plymouth,-83.4448521895757,42.3736386475354,443598266,315.6,59.0,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216305_L2,216305,"Plastipak Holdings, Inc",Plymouth,-83.4501958060758,42.3587382962169,-599139455,12.8,47.2,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216306_L2,216306,Bill Brown Ford,Livonia,-83.3618612844063,42.3691508147197,421866812,1.0,69.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216307_L2,216307,Livonia Chrysler Jeep,Livonia,-83.3467091240263,42.3683474890342,-421866820,365.8,52.5,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216308_L2,216308,George Matick Chevrolet,Redford Charter Twp,-83.2781814953192,42.3876282310221,421878727,29.9,136.1,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216311_L2,216311,Mission Ford,Dearborn,-83.1855219913607,42.3186065881501,-121875302#1,76.7,76.7,L2,J1772,False,True,kwh,0.0,0.0,Free,Non-Networked
+216313_DC,216313,Rhombus Energy Solutions,Dearborn,-83.1860283426551,42.3079592907818,506445230,155.1,148.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Non-Networked
+216314_L2,216314,Ford Rotunda Center,Dearborn,-83.204459010864,42.3010021790826,42295216,183.0,183.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216315_DC,216315,Ford Motor Company - Fairlane Business Park,Allen Park,-83.201359489053,42.2931164418405,8757244,64.4,222.4,DC,CHADEMO J1772 J1772COMBO,True,False,kwh,,0.0,not listed,Non-Networked
+216315_L2,216315,Ford Motor Company - Fairlane Business Park,Allen Park,-83.201359489053,42.2931164418405,8757244,64.4,222.4,L2,CHADEMO J1772 J1772COMBO,True,False,kwh,,0.0,not listed,Non-Networked
+216316_L2,216316,Ford DTE Central Energy Plant,Dearborn,-83.2303562212286,42.2977883177663,-497691002,357.5,123.3,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216317_L2,216317,Ford Vehicle Performance & Electrification Center,Allen Park,-83.2126029420035,42.2636319438139,120562512,175.3,256.4,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216319_L2,216319,Corewell Health Trenton Hospital,Trenton,-83.2123754013196,42.117026880221,502833426#1,27.7,112.8,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216321_L2,216321,Bob Maxey Ford,Detroit,-83.0288365189802,42.3358903215709,-401419406,65.2,26.9,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+216322_L2,216322,Ray Laethem Chrysler Dodge Jeep Ram,Detroit,-82.9166864140783,42.4049682521228,500060579,867.9,44.2,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216323_L2,216323,Harper Business Suites,St. Clair Shores,-82.9127470974748,42.4563582491183,-8686639,380.5,46.4,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216324_L2,216324,Detroit Furnace,Eastpointe,-82.9546162599932,42.464851287764,-421859649,113.5,18.9,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216326_L2,216326,Elder Ford,Troy,-83.1084089055126,42.5420418315157,39122876#1-AddedOnRampEdge,1.0,75.4,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216327_L2,216327,Schneider Electric,Troy,-83.1080952947155,42.5445457396023,508128407,425.8,45.5,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216329_L2,216329,Gallagher Kaiser,Troy,-83.1151003636498,42.5424047214789,39122911,305.9,97.6,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216332_L2,216332,Somerset Collection Parking Garage,Troy,-83.1824450814604,42.5636041694384,457508278,62.5,230.2,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216333_L2,216333,Audi Birmingham Michigan,Birmingham,-83.2093157505169,42.5439625516031,256917820#0,1.0,37.2,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216334_L2,216334,Bollinger Motors,Oak Park,-83.1968102037022,42.4880572919332,43746266,364.6,52.5,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216335_L2,216335,Curt's Auto Service,Oak Park,-83.1927797705737,42.488300437052,43746266,696.9,38.1,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216337_L2,216337,Ferndale Chamber of Commerce,Ferndale,-83.1254093917883,42.4620112697441,-761430191,40.5,129.8,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216338_L2,216338,Garden Fresh Gourmet,Ferndale,-83.1190715384374,42.4605418072109,505851048,258.3,44.5,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216339_L2,216339,McLaren Macomb Healthcare Parking Garage,Clinton Twp,-82.9002975161865,42.5878922229557,-440961413,81.0,226.4,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216340_L2,216340,Sterling Heights Community Center,Sterling Heights,-83.0104297840878,42.5906101230733,30197978-AddedOnRampEdge,83.7,39.5,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216342_L2,216342,DoubleTree by Hilton,Bloomfield Hills,-83.2439165523946,42.5805020017583,502610506-AddedOnRampEdge,13.5,97.3,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216343_L2,216343,BB's of Troy,Troy,-83.1488537721743,42.5776759535877,-505006906,53.7,35.2,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216344_L2,216344,Liberty Center Parking Garage,Troy,-83.149464294872,42.5635703641077,502885268#1,1.0,114.9,L2,TESLA,True,False,kwh,,0.0,not listed,Non-Networked
+216345_L2,216345,Neehee's Indian Vegetarian Street Food,Troy,-83.1282245901463,42.5905870960118,507189644,1.0,58.7,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216346_L2,216346,Aptiv,Troy,-83.161264214076,42.6022158714616,491597716,278.0,223.4,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+216347_L2,216347,Navistar Inc,Rochester Hills,-83.1681181972745,42.6410045309457,59441037,76.6,205.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216349_DC,216349,Crestview Cadillac,Rochester Hills,-83.1328466505832,42.6730498503831,-441580878,58.6,40.7,DC,J1772COMBO,False,True,kwh,,0.0,not listed,Non-Networked
+216354_L2,216354,Oakland Schools,Waterford Twp,-83.3300958522289,42.6502616033578,-54223521,101.4,89.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216355_L2,216355,Orchard Lake Country Club,West Bloomfield Twp,-83.3834470094185,42.5857244774909,8681271,1502.1,128.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216356_L2,216356,Windmill Market,West Bloomfield Twp,-83.4287329238825,42.6150560431604,-1363167449,6.3,34.5,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216357_L2,216357,LaFontaine Chrysler Dodge Jeep Ram of Walled Lake,Walled Lake,-83.4785737043528,42.5426796791748,-8692859,1779.4,53.8,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216359_L2,216359,Gentherm Office Building,Northville,-83.4328056354784,42.4486774366907,-421542382,15.5,101.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216361_L2,216361,Hyatt Place,Novi,-83.5001915191443,42.488845699541,178252951#1,547.1,154.5,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+216362_L2,216362,Pinckney Chrysler Dodge Jeep RAM,Pinckney,-83.9289367876944,42.4599364008192,-8643097#0,2200.5,113.6,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+216363_L2,216363,Champion Chevrolet of Howell,Howell,-83.8548353421537,42.5793011591608,8626387,6.2,55.9,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+218982_L2,218982,SM SUNSHINE NOVI,Novi,-83.466485,42.509554,-8711834,525.9,35.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+220692_DC,220692,"Northville, MI - Tesla Supercharger",Northville,-83.438047,42.437116,-405649520,35.7,182.5,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+221210_L2,221210,SM SUNSHINE SH,Sterling Heights,-82.992096,42.626448,486569302-AddedOffRampEdge,1.0,40.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+221295_L2,221295,SM SUNSHINE UTICA,Utica,-83.031562,42.625172,486519987,43.7,49.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223001_L2,223001,A2DDA STATION 2,Ann Arbor,-83.742514,42.278709,222821823,121.5,74.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223002_L2,223002,A2DDA STATION 3,Ann Arbor,-83.742414,42.278692,222821823,129.9,75.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223003_L2,223003,A2DDA STATION 1,Ann Arbor,-83.742541,42.278735,222821823,119.2,71.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223004_L2,223004,A2DDA STATION 4,Ann Arbor,-83.742391,42.278705,222821823,131.7,74.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223005_L2,223005,A2DDA ST 4123,Ann Arbor,-83.742874,42.278722,222821823,91.8,74.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223006_L2,223006,A2DDA STATION 4121,Ann Arbor,-83.742922,42.278674,222821823,88.1,79.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223007_L2,223007,A2DDA 500 E WASH 1,Ann Arbor,-83.742457,42.280109,441448155,100.4,21.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223008_L2,223008,A2DDA 500 E WASH 2,Ann Arbor,-83.742462,42.280076,441448155,100.2,25.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223009_L2,223009,A2DDA STATION 27,Ann Arbor,-83.747993,42.278334,-8732697,41.6,44.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223010_L2,223010,A2DDA STATION 28,Ann Arbor,-83.747978,42.278408,-8732697,40.8,52.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223011_L2,223011,A2DDA STATION 33,Ann Arbor,-83.748008,42.27831,-8732697,42.6,41.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223012_L2,223012,A2DDA STATION 22,Ann Arbor,-83.747992,42.278218,-8732697,40.7,31.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223013_L2,223013,A2DDA STATION 24,Ann Arbor,-83.747986,42.278169,-8732697,39.9,26.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223014_L2,223014,A2DDA STATION 18,Ann Arbor,-83.749551,42.282558,441448164,108.0,11.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223015_L2,223015,A2DDA STATION 19,Ann Arbor,-83.749566,42.282599,441448164,112.5,9.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223016_L2,223016,A2DDA STATION 20,Ann Arbor,-83.749555,42.28256,441448164,108.2,10.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223017_L2,223017,A2DDA STATION 13,Ann Arbor,-83.74917,42.28281,441448164,137.3,41.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223018_L2,223018,A2DDA STATION 17,Ann Arbor,-83.74916,42.282771,441448164,133.0,42.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223019_L2,223019,A2DDA STATION 15,Ann Arbor,-83.749171,42.282735,441448164,129.0,41.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223020_L2,223020,A2DDA STATION 12,Ann Arbor,-83.749244,42.282712,441448164,126.2,35.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223021_L2,223021,A2DDA STATION 26,Ann Arbor,-83.733765,42.274037,-1122219141,127.3,122.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223022_L2,223022,A2DDA STATION 8,Ann Arbor,-83.733807,42.27403,-1122219141,127.3,124.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223023_L2,223023,A2DDA STATION 21,Ann Arbor,-83.733677,42.274022,1122219141,1.0,120.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223024_L2,223024,A2DDA STATION 16,Ann Arbor,-83.733553,42.274026,1122219141,1.0,116.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223025_L2,223025,A2DDA STATION 25,Ann Arbor,-83.733506,42.274006,1122219141,1.0,117.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223026_L2,223026,A2DDA STATION 23,Ann Arbor,-83.733832,42.274217,-1122219141,127.3,107.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223027_L2,223027,A2DDA STATION 6,Ann Arbor,-83.73381,42.274221,-1122219141,127.3,106.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223028_L2,223028,A2DDA STATION 31,Ann Arbor,-83.745129,42.278456,-223146153,75.3,67.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223029_L2,223029,A2DDA STATION 11,Ann Arbor,-83.745588,42.278517,142868318,101.2,48.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223030_L2,223030,A2DDA STATION 9,Ann Arbor,-83.745642,42.278544,142868318,98.3,43.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223031_L2,223031,A2DDA STATION 29,Ann Arbor,-83.745234,42.278476,-223146153,84.0,69.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223032_L2,223032,A2DDA STATION 32,Ann Arbor,-83.745748,42.27852,142868318,101.3,35.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223033_L2,223033,A2DDA STATION 30,Ann Arbor,-83.745697,42.27851,142868318,102.3,39.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223034_L2,223034,A2DDA STATION 7,Ann Arbor,-83.745756,42.278515,142868318,101.9,34.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223035_L2,223035,A2DDA STATION 5,Ann Arbor,-83.745659,42.278518,142868318,101.3,42.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223036_L2,223036,A2DDA STATION 10,Ann Arbor,-83.745665,42.278532,142868318,99.7,41.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223037_L2,223037,A2DDA 5TH AVE CT4K,Ann Arbor,-83.745756,42.278571,142868318,95.7,34.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223038_L2,223038,A2DDA E WASH CT4K,Ann Arbor,-83.747712,42.280678,-8731958,28.1,21.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223039_L2,223039,A2DDA E WASH CT4K 2,Ann Arbor,-83.747688,42.280696,-8731958,26.2,23.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+223461_L2,223461,FORGOTTENHARVES STATION 1,Oak Park,-83.191696,42.447495,502296086,1.0,241.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+224594_L2,224594,A2DDA STATION 14,Ann Arbor,-83.749201,42.282746,441448164,130.1,39.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+225090_L2,225090,O'DELL NAILS O'DELL NAILS,Pontiac,-83.288153,42.634792,502683616#1,43.0,29.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+225665_L2,225665,BEDROCK 1001 WW 2-1,Detroit,-83.047939,42.332608,-30258921,23.9,22.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+225709_L2,225709,Center Garage,Detroit,-83.04148458531952,42.3279000361034,772521531,82.3,19.7,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+225836_DC,225836,"Detroit, MI - Tesla Supercharger",Detroit,-83.118018,42.445336,545955454-AddedOffRampEdge,42.6,136.0,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+226621_L2,226621,PEARLE VISION PEARLE VISION 1,Waterford Township,-83.373137,42.653638,-504994057,10.1,45.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+226795_L2,226795,PARKING DECK STATION 1,Detroit,-83.043425,42.340316,25887414,300.9,64.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+226799_L2,226799,PARKING DECK STATION 2,Detroit,-83.043436,42.340363,25887414,296.3,62.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+227252_L2,227252,PARKING DECK STATION 3,Detroit,-83.04344,42.3404,25887414,292.9,59.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+227867_L2,227867,HFHS PLY MC LOT 1B,Plymouth,-83.444567,42.357838,500707937,107.8,22.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+227868_L2,227868,HFHS PLY MC LOT 1A,Plymouth,-83.444568,42.357888,500707937,113.3,23.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+228109_DC,228109,Meijer Warren #237,Warren,-83.04828,42.51151,1015909476,108.0,112.9,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,eVgo Network
+228584_DC,228584,Renaissance Center,Detroit,-83.040675,42.329915,453843838-AddedOffRampEdge,55.0,20.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+228684_DC,228684,"Meijer S. Adams Rd. - Rochester Hills, MI #260",Rochester Hills,-83.204495,42.643408,1337189067,780.5,133.8,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+228697_DC,228697,"Meijer Royal Oak, MI #34",Royal Oak,-83.182809,42.538112,495703261,54.8,152.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+228709_DC,228709,"Meijer W. Eight Mile Rd. - Detroit, MI #268",Detroit,-83.11789,42.44543,545955454-AddedOffRampEdge,53.6,126.1,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+229736_L2,229736,24 Luxe,Flat Rock,-83.293931,42.095584,-287209532,114.0,17.0,L2,J1772,True,True,hour,1.0,0.0,$1.00 per hour,AMPUP
+234478_L2,234478,WALLED LAKE OAKLEY PARK,Commerce Township,-83.462905,42.570371,-763090167,239.2,38.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+234552_L2,234552,WALLED LAKE LOON LAKE,Wixom,-83.514612,42.542601,-752946814,2443.7,78.6,L2,J1772,False,True,kwh,,0.0,not listed,ChargePoint Network
+235070_L2,235070,WALLED LAKE EARLY CHILDHOOD,Novi,-83.452788,42.510047,-506442817,364.7,77.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+235541_DC,235541,REEFERPETERBILT ABB CHARGER,Huron Charter Township,-83.389575,42.177183,489789732#1,1095.5,96.2,DC,J1772COMBO,False,True,kwh,,0.0,not listed,ChargePoint Network
+235551_L2,235551,O'DELL NAILS PHS STAFF LOT,Pontiac,-83.269392,42.665993,-442383811,350.2,283.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+235552_L2,235552,SJC14 PMS LOWER LOT,Pontiac,-83.268378,42.664724,-505242790,10.3,124.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+235554_DC,235554,OWL CREEK FAST CHARGER,Ann Arbor,-83.707423,42.32176,440954800,424.0,32.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+235596_DC,235596,Wixom Quick Stop,Wixom,-83.536283,42.50716,-506662535,548.0,28.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+235599_DC,235599,MC3,Detroit,-83.0943503393,42.363104790901,501557442#2,1930.3,50.2,DC,CHADEMO J1772 J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+235599_L2,235599,MC3,Detroit,-83.0943503393,42.363104790901,501557442#2,1930.3,50.2,L2,CHADEMO J1772 J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+235601_DC,235601,Waterford Shell,Waterford Twp,-83.3863465,42.6900001,483175465,148.5,30.9,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+235954_L2,235954,HOTEL CHARGERS HOTEL #1,Detroit,-83.068626,42.338361,30328739,329.1,168.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+235955_L2,235955,HOTEL CHARGERS HOTEL #2,Detroit,-83.068562,42.338393,40467070,9.4,170.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+236024_DC,236024,CLEANVIEW VACUUM 8,Shelby Township,-82.987204,42.671293,-1214434604,419.1,58.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+236025_DC,236025,CLEANVIEW VACUUM 9,Shelby Township,-82.987156,42.671272,-1214434604,415.3,56.2,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+236028_L2,236028,WEBER'S WEBER'S HOTEL 1,Ann Arbor,-83.792099,42.28458,508015219,507.6,65.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+236936_L2,236936,BEDROCK FIRST NAT'L 2-2,Detroit,-83.04476,42.330764,119507706#1,5.7,10.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+236937_L2,236937,BEDROCK FIRST NAT'L 3-1,Detroit,-83.044782,42.330753,119507706#1,7.9,10.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+237632_DC,237632,"Ypsilanti, MI - Tesla Supercharger",Ypsilanti,-83.678592,42.232737,-442556519,209.9,122.6,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,Tesla
+237702_L2,237702,BEDROCK BRICKTOWN 1-1,Detroit,-83.042091,42.333138,497594831,22.5,52.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+237703_L2,237703,BEDROCK BUHL 2-1,Detroit,-83.046857,42.329171,637654812,4.5,44.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+237785_L2,237785,BEDROCK ASSEMBLYUND 1-1,Detroit,-83.065122,42.323746,503974784,7.8,57.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+237787_L2,237787,BEDROCK BUHL 1-1,Detroit,-83.046865,42.329167,637654812,3.7,44.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+238877_L2,238877,BEDROCK 440ALFGRG LL1-1,Detroit,-83.049701,42.344575,783218774,257.0,55.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240748_L2,240748,VICTORY AG TOYOTA-CANTON,Canton,-83.495773,42.270375,501653016#1,1.0,69.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240749_L2,240749,BEDROCK 440ALFGRG LL1-2,Detroit,-83.050162,42.344531,783218774,269.4,18.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240823_DC,240823,HYAA HYUN DC FRONT,Ann Arbor,-83.809509,42.284497,416486226#5-AddedOnRampEdge,25.4,43.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+240833_L2,240833,BEDROCK RIVER PLACE 1-3,Detroit,-83.017266,42.33816,422037754,97.9,224.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240834_L2,240834,BEDROCK RIVER PLACE 1-2,Detroit,-83.01722,42.338252,422037754,106.3,217.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240835_L2,240835,BEDROCK RIVER PLACE 1-1,Detroit,-83.017567,42.338216,422037754,79.6,207.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240836_DC,240836,HYAA HYUN DC REAR,Ann Arbor,-83.809496,42.283862,416486226#5-AddedOnRampEdge,30.1,114.1,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+240969_L2,240969,FMC-MCT SOUTHEAST,Ann Arbor,-83.714974,42.239822,8723762#1,2093.1,244.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240970_L2,240970,FMC-MCT SOUTHWEST,Ann Arbor,-83.715059,42.239809,8723762#1,2100.1,243.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240971_L2,240971,FMC-MCT NORTHEAST,Ann Arbor,-83.714942,42.23983,8723762#1,2091.4,245.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+240972_L2,240972,FMC-MCT NORTHWEST,Ann Arbor,-83.715006,42.239814,8723762#1,2095.8,243.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+241260_L2,241260,M-59 TOYOTA CT4020-1,Waterford Township,-83.367572,42.651565,504994027,940.1,98.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+251374_L2,251374,Schoolcraft College,Livonia,-83.4259335,42.4182393,443196754,31.1,128.0,L2,J1772,True,False,kwh,,0.0,not listed,AMPUP
+251713_L2,251713,DTW AIRPORT BLUEDECK 4G #1,Detroit,-83.34703,42.224834,120557546,306.4,39.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+251998_L2,251998,BEDROCK OCM 2-10,Detroit,-83.04583,42.333523,107500706#0,77.3,39.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+251999_L2,251999,BEDROCK OCM 2-11,Detroit,-83.04619,42.333435,784224241,33.8,29.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252000_L2,252000,BEDROCK OCM B1-4,Detroit,-83.045843,42.333506,107500706#0,79.5,38.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252001_L2,252001,BEDROCK OCM B1-3,Detroit,-83.045827,42.333501,107500706#0,79.3,37.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252002_L2,252002,BEDROCK OCM 2-9,Detroit,-83.045841,42.333487,107500706#0,81.2,37.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252011_L2,252011,BEDROCK OCM B1-5,Detroit,-83.047381,42.333779,496911558,25.4,58.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252012_L2,252012,BEDROCK OCM B1-6,Detroit,-83.047716,42.333799,219614127,66.6,53.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252025_L2,252025,BEDROCK OCM 2-14,Detroit,-83.04604,42.333084,107500706#0,127.9,29.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252026_L2,252026,BEDROCK OCM 2-13,Detroit,-83.046029,42.333087,107500706#0,127.2,29.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252027_L2,252027,BEDROCK OCM 2-12,Detroit,-83.04592,42.333596,784224241,8.0,36.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252811_L2,252811,IKEA USA CANTON 1,Canton,-83.450859,42.325022,-518531859,903.9,144.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252812_L2,252812,IKEA USA CANTON 2,Canton,-83.450794,42.325023,-518531859,904.0,138.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+252813_L2,252813,IKEA USA CANTON 3,Canton,-83.450752,42.325026,-518531859,903.8,135.4,L2,J1772,False,True,kwh,,0.0,not listed,ChargePoint Network
+253013_L2,253013,CCAROY ROYAL OAK-EAST,Royal Oak,-83.123055,42.499614,-495704879,381.3,124.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+253014_L2,253014,CCAROY ROYAL OAK-WEST,Royal Oak,-83.146762,42.499875,107263419,194.2,25.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+253693_L2,253693,Northwestern Hwy Plaza,SouthField,-83.29899,42.496138,1053544629-AddedOffRampEdge,6.9,57.2,L2,J1772,True,True,kwh,0.0,0.0,Free,Blink Network
+253855_L2,253855,MACOMB COLLEGE LOT 4,Warren,-82.970383,42.50761,494442828,414.3,119.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+254110_L2,254110,LOMBARDO ARIA STATION,Shelby Township,-82.976762,42.640982,461484230,1359.3,87.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+254277_L2,254277,ROCHESTER CITY HALL 1,Rochester,-83.136621,42.683234,8711034,27.5,129.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+254278_L2,254278,ROCHESTER LOT 6 PARKING 1,Rochester,-83.132692,42.678855,-1530222393,314.5,62.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+254395_L2,254395,Berkley Library,Berkley,-83.184231,42.500959,505836551,122.7,28.7,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+255392_L2,255392,BEDROCK 1ST ST GRG 1-1,Detroit,-83.055532,42.332048,270520140,87.6,37.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+255393_L2,255393,BEDROCK 1ST ST GRG 1-2,Detroit,-83.055465,42.332052,270520140,82.0,37.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+255438_DC,255438,Livonia Commons,Livonia,-83.334261,42.380949,-725318920,50.8,50.3,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+256286_L2,256286,BEDROCK FIN DIST 1-1,Detroit,-83.049401,42.331391,-333460617,107.5,27.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+256287_L2,256287,BEDROCK FIN DIST 1-2,Detroit,-83.048942,42.330881,8734459,87.1,75.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+256288_L2,256288,BEDROCK FIN DIST 1-3,Detroit,-83.048842,42.330859,8734459,81.4,69.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+256963_L2,256963,LAG CT4000,Royal Oak,-83.183197,42.514017,637698580#1,63.9,33.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+257850_L2,257850,BEDROCK TWO DETROIT 2-4,Detroit,-83.04323,42.330531,552920200,175.3,23.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+257851_L2,257851,BEDROCK TWO DETROIT 2-1,Detroit,-83.043093,42.330546,552920200,185.9,19.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+257852_L2,257852,BEDROCK TWO DETROIT 2-3,Detroit,-83.043241,42.330518,552920200,173.8,22.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+257853_L2,257853,BEDROCK TWO DETROIT 2-2,Detroit,-83.043226,42.330523,552920200,175.1,22.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+257883_L2,257883,DDA- Parking Lot,Pinckney,-83.947204,42.456461,-8628120,9080.8,41.4,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+258243_L2,258243,HFHS NORTH GARAGE 1A,Detroit,-83.085294,42.370813,245009412,105.5,31.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+258244_L2,258244,HFHS NORTH GARAGE 1D,Detroit,-83.086376,42.373122,8755121,654.2,1.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+258245_L2,258245,HFHS NORTH GARAGE 1E,Detroit,-83.085358,42.370784,245009412,106.2,37.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+258246_L2,258246,HFHS NORTH GARAGE 1B,Detroit,-83.085259,42.370906,245009412,97.5,23.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+258247_L2,258247,HFHS NORTH GARAGE 1C,Detroit,-83.085344,42.370835,245009412,101.6,33.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+259001_L2,259001,BEDROCK GREEKTOWN 1-3,Detroit,-83.04401,42.333571,-421871740,29.4,27.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+259006_L2,259006,BEDROCK GREEKTOWN 1-2,Detroit,-83.044136,42.333514,-421871740,28.2,14.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+259009_L2,259009,BEDROCK GREEKTOWN 1-4,Detroit,-83.04406,42.333566,-421871740,30.7,23.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+259476_L2,259476,VCCANTON CCA CAN,Canton,-83.448979,42.312465,-518531848,286.7,39.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+260854_L2,260854,WALLED LAKE DUBLIN,White Lake charter Township,-83.467635,42.635107,-8675920,2117.9,53.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261017_L2,261017,BEDROCK 1001 WW 1-2,Detroit,-83.047756,42.332563,-30258921,35.6,12.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261018_L2,261018,BEDROCK 1001 WW 1-1,Detroit,-83.047841,42.332515,-30258921,36.6,20.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261068_L2,261068,BEDROCK Z DECK 4-1,Detroit,-83.046319,42.334349,284932768,40.9,31.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261069_L2,261069,BEDROCK Z DECK 4-3,Detroit,-83.046328,42.334372,284932768,40.9,32.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261071_L2,261071,BEDROCK Z DECK 4-4,Detroit,-83.046303,42.334349,284932768,40.9,30.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261072_L2,261072,BEDROCK Z DECK 4-2,Detroit,-83.046346,42.334377,284932768,40.9,34.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261287_L2,261287,MISCPRODUCTS CT4021-1,Macomb,-82.954441,42.666712,1158145670,987.1,246.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+261477_DC,261477,Range USA,Ypsilanti,-83.62252,42.22634,179465056,334.6,89.2,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ZEFNET
+261483_L2,261483,33113 Grand River Ave Farmington MI,Farmington,-83.373691490611,42.463067849886,-59440682,29.3,61.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+262364_DC,262364,BP Lathrup Village,Lathrup Village,-83.222381693108,42.486462232063,399648663,19.8,41.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+262892_L2,262892,Serra Honda Brighton,Brighton,-83.789519,42.550209,-1534506927,955.0,0.2,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+300460_L2,300460,HFHS MACOMB NT LOT1A,Clinton Township,-82.960186,42.614784,-270520214,568.1,220.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300461_L2,300461,HFHS MACOMB NT LOT1B,Clinton Township,-82.960422,42.614776,-270520214,594.4,219.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300462_L2,300462,HFHS MACOMB NT LOT1C,Clinton Township,-82.960809,42.614989,-270520214,625.7,243.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300538_L2,300538,BEDROCK ONE DETROIT 2-2,Detroit,-83.043642,42.330315,552920200,133.8,19.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300539_L2,300539,BEDROCK ONE DETROIT 2-3,Detroit,-83.043878,42.330225,552920200,112.0,21.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300540_L2,300540,BEDROCK ONE DETROIT 2-1,Detroit,-83.044072,42.330134,552920200,93.1,20.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+300541_L2,300541,BEDROCK ONE DETROIT 2-4,Detroit,-83.043695,42.330275,552920200,127.8,18.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+301833_DC,301833,ZOUROB MOBIL MOBIL CHARGER 2,Romulus,-83.38669,42.223399,-8760621,40.0,26.0,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+301849_DC,301849,ZOUROB MOBIL MOBIL CHARGER 1,Romulus,-83.386693,42.223387,-8760621,40.0,24.6,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+302071_L2,302071,Fountain Circle Apartment Homes,Auburn Hills,-83.216888,42.63504,-508084913,515.9,135.0,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+302626_L2,302626,UVS BH-CS-000025-C2,Troy,-83.168373,42.594389,507290201#0,12.5,18.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+302666_DC,302666,BP Newport MI,Newport,-83.30848,42.00143,39158084,428.4,33.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+303587_L2,303587,PARKING DECK STATION 5,Detroit,-83.043278,42.340261,25887414,315.4,59.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+303602_L2,303602,PARKING DECK STATION 4,Detroit,-83.043299,42.340325,25887414,308.7,56.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+306341_DC,306341,FELDMAN HYUNDAI FRONT,Lyon Charter Township,-83.609387,42.515845,489532665,25.8,110.9,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+306450_L2,306450,UVS BH-CS-000037-C2,Troy,-83.165755,42.594026,59441061,85.8,29.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+307010_L2,307010,WALLED LAKE PLEASANT LAKE,West Bloomfield Township,-83.412548,42.56459,8691379,576.2,129.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+307015_L2,307015,WALLED LAKE MEADOWBROOK,Novi,-83.456479,42.50803,59440518,14.4,52.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+307016_L2,307016,WALLED LAKE HICKORY WOODS,Novi,-83.468243,42.520419,506656035,653.1,52.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+307453_L2,307453,TROY WESTINGTON STATION 1,Troy,-83.166834,42.575725,38291317,1400.4,82.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+307458_L2,307458,Baker Commons-Forth-Public,Ann Arbor,-83.74849,42.27626,-1436740258,235.5,22.6,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+307565_L2,307565,LVB CHARGER 1,Detroit,-83.08648,42.347241,-421878089,219.0,27.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308082_L2,308082,750 TOWER STATION 3805,Troy,-83.162792,42.594285,-59441061,251.0,206.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308225_L2,308225,FA ANN ARBOR FOX ACURA #2,Ann Arbor,-83.810691,42.287388,516604207#2,1474.7,144.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308226_L2,308226,FA ANN ARBOR FOX ACURA #1,Ann Arbor,-83.81063,42.287384,516604207#2,1479.7,143.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308244_L2,308244,WALLED LAKE GEISLER 1,Commerce Charter Township,-83.508138,42.52627,8713779,1012.9,119.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308586_L2,308586,MDWBRK MED BLDG UNIT 2,Novi,-83.453756,42.480478,59440611,442.0,164.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+308587_L2,308587,MDWBRK MED BLDG UNIT 1,Novi,-83.453742,42.480429,59440611,436.1,165.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+310327_L2,310327,Victory Honda of Plymouth,Plymouth,-83.46398374941619,42.35838607945651,-505235450,378.1,50.4,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+310400_L2,310400,Chelsea Retirement Community,Chelsea,-84.036009184131,42.31469206599,-1081318909,261.7,49.9,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+310686_L2,310686,Martinrea International US Inc,Auburn Hills,-83.24551461627746,42.67300258839045,507559035,130.9,25.0,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+310832_L2,310832,UVS BH-CS-000060-C1,Troy,-83.168395,42.594713,507290201#0,44.4,21.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+310834_L2,310834,UVS BH-CS-000061-C2,Troy,-83.168405,42.595068,507290201#1,33.5,22.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+311178_L2,311178,TROY WESTINGTON STATION 2,Troy,-83.166842,42.575854,38291317,1414.1,82.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+314485_L2,314485,Whispering Lakes Apartments,Shelby Township,-83.086638,42.6274891,-8668112,1202.5,145.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+314490_L2,314490,Best Western Allen Park,Allen Park,-83.196527,42.282396,8729603,412.1,60.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+316094_L2,316094,L411 YODA CHARGER,Farmington Hills,-83.434543,42.475804,-420351219,42.4,59.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+316516_L2,316516,FIR PC2,Ferndale,-83.132783,42.475168,8704137#1-AddedOnRampEdge,1.0,41.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+316517_L2,316517,FIR PC1,Ferndale,-83.132813,42.475202,8704137#1-AddedOnRampEdge,1.0,37.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+316756_L2,316756,407 North Ingalls,Ann Arbor,-83.738701,42.284302,441598618,213.0,187.6,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+316942_L2,316942,PLYMOUTH CITY PLYCTY1,Plymouth,-83.467895,42.369071,-851698276,108.2,49.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+316943_L2,316943,PLYMOUTH CITY PLYCTY2,Plymouth,-83.467968,42.369084,-851698276,102.0,49.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+317090_L2,317090,808 E Kingsley St,Ann Arbor,-83.739392,42.28483,441448183,358.5,135.4,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+319988_L2,319988,MAGNAPOWERTRAIN MAGNA #3,Troy,-83.110113,42.54326,508128407,567.0,215.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+319989_L2,319989,MAGNAPOWERTRAIN MAGNA #4,Troy,-83.110183,42.543269,508128407,565.9,221.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+319990_L2,319990,MAGNAPOWERTRAIN MAGNA #2,Troy,-83.110041,42.54327,508128407,566.0,209.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+319991_L2,319991,MAGNAPOWERTRAIN MAGNA #1,Troy,-83.109972,42.543269,508128407,566.2,203.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+319992_L2,319992,MAGNAPOWERTRAIN MAGNA #5,Troy,-83.110355,42.543265,508128407,566.1,235.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+319993_L2,319993,MAGNAPOWERTRAIN MAGNA #6,Troy,-83.110431,42.543266,508128407,565.9,241.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+320503_L2,320503,750 TOWER STATION2217,Troy,-83.162776,42.594235,-59441061,120.8,205.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+320776_L2,320776,Michigan Factory – Public (Power sharing),Auburn Hills,-83.27616,42.695301,546834250,430.3,203.3,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+320986_L2,320986,Detroit - TNT,Troy,-83.11479,42.54382,39122911,462.3,127.9,L2,J1772,True,True,kwh,,0.0,not listed,TURNONGREEN
+323423_L2,323423,OAKLAND SCHOOLS WEST ISLAND,Waterford Township,-83.331343,42.650259,-54223521,13.8,142.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+323424_L2,323424,OAKLAND SCHOOLS EAST ISLAND,Waterford Township,-83.331225,42.650267,-54223521,20.6,136.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+326665_DC,326665,"Taylor, MI - Tesla Supercharger",Taylor,-83.260405,42.199135,-1155764155,174.1,149.9,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+326691_DC,326691,Victory Chevrolet,Milan,-83.6757983632137,42.0979681208765,1083234127,688.9,54.0,DC,J1772COMBO,False,True,kwh,,0.0,not listed,Non-Networked
+327436_L2,327436,Venue by 4M - Tesla Destination,Ann Arbor,-83.7366919,42.2597943,-442166214,1821.3,44.1,L2,J1772 TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+327906_DC,327906,PLYMOUTH TWP CHARGER 2,Plymouth,-83.446376,42.361454,-500707939,247.7,105.3,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+327907_DC,327907,PLYMOUTH TWP CHARGER 1,Plymouth,-83.446439,42.361449,-500707939,248.4,110.5,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+327915_L2,327915,Krishna Restaurant Farmington Hills,Farmington Hills,-83.358786988475,42.511218648125,-398705373,354.2,33.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+328624_L2,328624,Kennedy Square Garage,Detroit,-83.047548,42.331086,254230815,1.0,9.7,L2,J1772,True,True,kwh,,0.0,not listed,FLASH
+330271_L2,330271,A2 PUBLIC HURON HILLS GC1,Ann Arbor,-83.697019,42.271925,442046677,25.0,53.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+330894_DC,330894,L418 WEST STATION,Plymouth,-83.440904,42.359036,-1482818605,227.4,38.6,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+330895_DC,330895,L418 EAST STATION,Plymouth,-83.440838,42.359036,-1482818605,232.8,38.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+331080_L2,331080,Rivercrest Apartments - Forth - Public,Detroit,-82.9844749,42.3593848,-507546868,5.8,32.2,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+331585_L2,331585,Dreamtroit Apartments - Forth - Public,Detroit,-83.08192,42.36263,1437024388,736.5,123.5,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+331850_L2,331850,UVS BH-CS-000060-C2,Troy,-83.168384,42.594642,507290201#0,40.4,21.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+331851_L2,331851,UVS BH-CS-000061-C1,Troy,-83.168405,42.595092,507290201#1,36.2,22.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+332171_L2,332171,Brighton Ford,Brighton,-83.791625,42.551967,-1534506927,699.8,130.8,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+333866_L2,333866,Hanna Plaza,Rochester Hills,-83.1466306,42.68223570000001,406018747,1.0,41.6,L2,J1772,True,True,kwh,,0.0,not listed,EVGATEWAY
+334144_L2,334144,Umicore Autocat - Annex,Auburn Hills,-83.24449,42.67526,507559035,380.6,112.7,L2,J1772,True,True,kwh,,0.0,not listed,Non-Networked
+341689_L2,341689,detroit-newlab,Detroit,-83.0755004883,42.3283004761,-69706059,101.5,261.0,L2,J1772,True,False,kwh,0.0,0.0,Free,Non-Networked
+341874_DC,341874,Brighton Ford - DCFC,Brighton,-83.79074929003225,42.551931490680715,-1534506927,737.1,64.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Blink Network
+346242_L2,346242,MACOMB COLLEGE BUILDING J LT6,Clinton Township,-82.958724,42.625181,42433478,28.6,252.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+347123_L2,347123,CHELSEA RETAIL CHELSEA RETAIL,Chelsea,-84.020459,42.303561,-1250919751,51.7,120.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+347324_L2,347324,A2 PUBLIC FULLER PARK 1,Ann Arbor,-83.729234,42.287735,8728391,1.0,75.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+347325_L2,347325,A2 PUBLIC FULLER PARK 3,Ann Arbor,-83.729039,42.287735,441598614#1,26.1,75.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+347328_L2,347328,A2 PUBLIC FULLER PARK 2,Ann Arbor,-83.729123,42.28774,8728391,1.0,76.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+347902_DC,347902,7112 E Michigan Ave,Saline,-83.741738,42.184488,-442427804,207.1,68.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+350973_DC,350973,Crest Ford Flat Rock MI,Flat Rock,-83.25248885,42.09421,-505296689#0,287.8,77.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351266_DC,351266,Gorno Ford Woodhaven,Woodhaven,-83.226104798204,42.146947744388,-287207337,603.5,22.9,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351266_L2,351266,Gorno Ford Woodhaven,Woodhaven,-83.226104798204,42.146947744388,-287207337,603.5,22.9,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351288_DC,351288,Clinton Twp Amoco,Clinton Twp,-82.903784150577,42.546635207443,873213589,77.2,30.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351289_DC,351289,Bagley Mobility Hub,Detroit,-83.072952086094,42.326588651601,454737865#0,35.1,282.2,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351289_L2,351289,Bagley Mobility Hub,Detroit,-83.072952086094,42.326588651601,454737865#0,35.1,282.2,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351290_DC,351290,Jefferson Chevrolet Detroit,Detroit,-83.025311702,42.33682555833,38330165,207.6,20.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351291_DC,351291,Belle Isle Charging Station,Detroit,-82.9641579999,42.347143957566,660010976,2171.3,47.2,DC,CHADEMO J1772COMBO,False,True,kwh,,0.0,not listed,RED_E
+351292_DC,351292,Cloverleaf BP Southfield,Southfield,-83.28573777171,42.500449708635,503370997,1.9,27.5,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+351293_DC,351293,Avis Ford of Southfield,Southfield,-83.2838799684,42.50256929832,422067560,40.8,88.6,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351293_L2,351293,Avis Ford of Southfield,Southfield,-83.2838799684,42.50256929832,422067560,40.8,88.6,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351294_DC,351294,Mobil Sylvan Lake,Sylvan Lake,-83.3317148202,42.610518927827,504749978,170.9,26.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351295_DC,351295,Hines Park Ford,New Hudson,-83.6112838661,42.520955805775,301593177,2961.4,65.9,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351295_L2,351295,Hines Park Ford,New Hudson,-83.6112838661,42.520955805775,301593177,2961.4,65.9,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351297_DC,351297,Bob Maxey Ford of Howell,Howell,-83.899713,42.595526,-1373585575,521.6,54.3,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351297_L2,351297,Bob Maxey Ford of Howell,Howell,-83.899713,42.595526,-1373585575,521.6,54.3,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+351410_L2,351410,Miller Apartment - Forth - Public,Ann Arbor,-83.7560763,42.2844531,-1553954159,245.7,70.4,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+351411_L2,351411,Carrot Way Apartments - Forth - Public,Burton,-83.7272678,42.3180126,-682103162,1455.6,161.2,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+351602_L2,351602,735 Forest Ave,Birmingham,-83.20928,42.54571,256917820#1-AddedOnRampEdge,62.1,105.0,L2,J1772,True,True,kwh,0.4,0.0,$0.40 per kWh 8am-5pm; $0.50 per kWh 5pm-8am,EPIC_CHARGING
+351657_L2,351657,The Stoudamire ECN -Forth- Public,Detroit,-82.9708597,42.3863138,-421886873,27.8,54.0,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+351686_L2,351686,Washtenaw N 4th Ave,Ann Arbor,-83.7477409,42.2830109,-8724871#1,42.5,24.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+351688_L2,351688,Taylor Subway,Taylor,-83.2703371004,42.240532708386,257672467#0,34.8,31.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+351689_L2,351689,FunZonez,Redford Charter Twp,-83.31131804107,42.355959066909,136545887,1319.1,70.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+351690_L2,351690,Epic Deals Livonia,Livonia,-83.328936716,42.36883293485,505263205,254.3,45.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+352205_L2,352205,NORTHSTARAA NRTH STR PRKNG,Ann Arbor,-83.763746,42.240998,442397814,211.2,41.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+352695_L2,352695,Hampton Inn Saline,Saline,-83.759465,42.174886,432713014,458.6,126.9,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+352962_DC,352962,Southgate Ford,Southgate MI,-83.1841518149,42.18777406174,270520116,82.3,70.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+353910_L2,353910,Suburban Cadillac Of Plymouth,PLYMOUTH,-83.440206,42.358081,-1482818605,282.9,145.7,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+354039_L2,354039,WALLED LAKE CENTRAL,Commerce Charter Township,-83.47221,42.569246,500604587,183.3,57.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+356147_L2,356147,WCC HFC HFC1,Ann Arbor,-83.664056,42.266944,-442062873,39.0,145.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+356148_L2,356148,WCC HFC HFC3,Ann Arbor,-83.663914,42.266888,-442062873,25.7,145.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+356149_L2,356149,WCC HFC HCF2,Ann Arbor,-83.664001,42.266924,-442062873,33.9,145.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+357237_DC,357237,WCC HFC HFC4,Ann Arbor,-83.663865,42.266738,-442062873,14.6,132.2,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+357409_L2,357409,Gordon Chevrolet,Garden City,-83.3541196906482,42.3254852904498,120697314,198.0,41.1,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+358351_DC,358351,Ford Vehicle Performance + Electrification Center,Allen Park,-83.212832,42.264015,503508822,56.7,289.3,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,FORD_CHARGE
+358353_DC,358353,Atchinson Ford of Belleville,Belleville,-83.48653,42.231045,1165658411,300.4,68.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,FORD_CHARGE
+359058_L2,359058,Hertz Local Edition #5422-10 - Tesla Destination,Royal Oak,-83.182961,42.513871,637698580#1-AddedOffRampEdge,2.8,25.6,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359217_L2,359217,Hertz Local Edition #6920-01 - Tesla Destination,Canton,-83.451262,42.27728,501675152,1.0,56.5,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359293_L2,359293,Hertz #17-1260128-1001A - Tesla Destination,Madison Heights,-83.105377,42.533948,257694344#0,24.2,21.2,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359535_L2,359535,Hertz Local Edition #6903-16 - Tesla Destination,Dearborn,-83.266464,42.299421,1474341154,1.0,152.2,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359538_L2,359538,Incubizo - Tesla Destination,Ferndale,-83.1259826,42.4618445,-761430191,93.4,112.7,L2,J1772 TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+359581_L2,359581,Hertz Local Edition #5410 - Tesla Destination,Livonia,-83.377469,42.368827,421868947,345.0,66.5,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359821_L2,359821,Hertz Local Edition #5415-11 - Tesla Destination,Farmington Hills,-83.336125,42.447424,42372760#0,47.5,34.2,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359868_L2,359868,Meadowlark Design+Build - Tesla Destination,Ann Arbor,-83.7942965,42.2740737,421546208,266.7,39.7,L2,TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+359870_L2,359870,Hertz Local Edition #5413 - Tesla Destination,Ann Arbor,-83.668347,42.25327,442195599,662.6,174.7,L2,TESLA,True,False,kwh,,0.0,not listed,Tesla Destination
+359915_L2,359915,WALLED LAKE WESTERN,Wixom,-83.516118,42.531355,39437957,699.2,50.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+360347_L2,360347,"Macomb Community College (Center Campus, Lot 5B)",Clinton Township,-82.956653,42.6184424,-261644976,346.7,284.1,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+361070_L2,361070,LOCKWOOD MGMT STATION 2,Ann Arbor,-83.716264,42.230934,-442536348,1260.5,113.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+361071_L2,361071,LOCKWOOD MGMT ANN ARBOR 1,Ann Arbor,-83.71629,42.230875,-442536348,1262.9,107.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+361107_L2,361107,"Macomb Community College (South Campus, near T bldg.)",Warren,-82.9728529,42.5037732,-406962873,354.6,279.6,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+361183_DC,361183,GPM INVESTMENTS 4699 DC2,Brighton,-83.78055,42.53082,442064451,1.0,30.7,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+361184_DC,361184,GPM INVESTMENTS 4699 DC1,Brighton,-83.780549,42.530818,442064451,1.0,30.7,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+367629_L2,367629,BEDROCK 2853 BRUSH S-1,Detroit,-83.051527,42.34501,-440642323,487.0,52.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+367909_L2,367909,UVS BH-CS-000058-C1,Troy,-83.168338,42.595064,507290201#1,32.9,28.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+367910_L2,367910,UVS BH-CS-000058-C2,Troy,-83.168338,42.595086,507290201#1,35.3,28.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+374348_DC,374348,Sunoco Pleasant Ridge,Pleasant Ridge,-83.141050205306,42.468890606199,71691708#0,17.1,38.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+375352_L2,375352,FIR G7C,Ferndale,-83.132616,42.474205,8704137#1-AddedOnRampEdge,12.9,148.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375353_L2,375353,FIR G10C,Ferndale,-83.13262,42.474079,8704137#1-AddedOnRampEdge,12.6,162.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375354_L2,375354,FIR G8C,Ferndale,-83.132653,42.474181,8704137#1-AddedOnRampEdge,9.9,151.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375355_L2,375355,FIR G5C,Ferndale,-83.132673,42.474374,8704137#1-AddedOnRampEdge,8.1,129.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375356_L2,375356,FIR G6C,Ferndale,-83.13266,42.474303,8704137#1-AddedOnRampEdge,9.2,137.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375357_L2,375357,FIR G9C,Ferndale,-83.132637,42.474173,8704137#1-AddedOnRampEdge,11.2,151.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375358_L2,375358,FIR G11C,Ferndale,-83.132619,42.473916,8704137#1-AddedOnRampEdge,12.8,180.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375359_L2,375359,FIR G12C,Ferndale,-83.132607,42.473874,8704137#1-AddedOnRampEdge,13.8,185.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375360_L2,375360,FIR G13C,Ferndale,-83.132605,42.473864,8704137#1-AddedOnRampEdge,14.0,186.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375361_L2,375361,FIR G14C,Ferndale,-83.1326,42.473833,8704137#1-AddedOnRampEdge,14.4,189.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375362_L2,375362,FIR G15C,Ferndale,-83.132582,42.47372,8704137#1-AddedOnRampEdge,16.0,202.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375363_L2,375363,FIR G16C,Ferndale,-83.132571,42.473678,8704137#1-AddedOnRampEdge,16.9,206.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375714_L2,375714,KEMENY REC 2,Detroit,-83.158771,42.273695,249223601,28.5,67.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+375716_L2,375716,KEMENY REC 1,Detroit,-83.158697,42.27378,249223601,17.2,67.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+383843_L2,383843,HOOVER + GREENE STATION 2,Ann Arbor,-83.747921,42.269907,-8731671#0,284.4,52.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+383844_L2,383844,HOOVER + GREENE STATION 3,Ann Arbor,-83.747931,42.269958,-8731671#0,285.0,58.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+383845_L2,383845,HOOVER + GREENE STATION 1,Ann Arbor,-83.747855,42.269913,-8731671#0,278.6,53.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+383846_L2,383846,HOOVER + GREENE STATION 4,Ann Arbor,-83.747709,42.269836,-8731671#0,267.0,44.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+383945_DC,383945,SUBURBAN FORD DISPENSER 1,Waterford Township,-83.42357,42.658937,-1479540084,165.3,44.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+386949_L2,386949,CITY VIEW APTS STATION 2 FERN,Ferndale,-83.127688,42.46121,-495466185,14.5,49.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+387090_L2,387090,KEMENY LASKY REC 2,Detroit,-83.052016,42.413489,-8739989#0,358.8,199.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+387101_L2,387101,KEMENY LASKY REC 1,Detroit,-83.052016,42.413489,-8739989#0,358.8,199.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+387288_L2,387288,KEMENY WILLIAMS REC 2,Detroit,-83.096245,42.370885,443197537,6.9,42.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+387289_L2,387289,KEMENY WILLIAMS REC 1,Detroit,-83.09629,42.370876,443197537,6.2,46.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+387335_L2,387335,Scio,Ann Arbor,-83.83997760333715,42.28778968907753,257645798-AddedOffRampEdge,67.4,81.8,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+387890_L2,387890,BASF - Wyandotte,Wyandotte,-83.15002160502753,42.21830000462567,508914506,383.4,31.9,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+388671_L2,388671,L419 CP6K1,Sterling Heights,-83.032361,42.58892,1078913811,1.0,124.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+388672_L2,388672,L419 CP6K-3,Sterling Heights,-83.032283,42.588892,1078913811,1.0,118.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+388673_L2,388673,L419 CP6K-2,Sterling Heights,-83.032214,42.588948,1078913811,1.0,113.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+388930_DC,388930,"BofA Grosse Pointe Woods MI8-040 (Grosse Pointe Woods, MI)",Grosse Pointe Woods,-82.90906,42.42752,1490913744#1,778.6,21.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+389552_DC,389552,Michael Bates Chevrolet Woodhaven,Woodhaven,-83.225429,42.136767,-505548802,28.2,41.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+390029_L2,390029,BASF Corporation - Wyandotte Site,Wyandotte,-83.1519197,42.2182483,-864542512,618.3,116.5,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+390322_DC,390322,"Brighton, MI - Tesla Supercharger",Brighton,-83.788492,42.540184,-442064458,2.6,172.7,DC,TESLA,True,True,kwh,,0.0,not listed,Tesla
+391396_L2,391396,THE GEORGE STATION 1,Ann Arbor,-83.723059,42.252479,-386568425,575.4,55.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+391670_L2,391670,"Macomb Community College (Center Campus, Lot 4, near Cultural Ctr,)",Clinton Township,-82.95455,42.625841,-1053059273,70.5,93.1,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+391707_L2,391707,SUBURBAN FORD CHARGER 1-2,Waterford Township,-83.424887,42.658438,8698134,630.0,64.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+391708_L2,391708,SUBURBAN FORD CHARGER 3-4,Waterford Township,-83.42492,42.658491,8698134,636.0,62.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+391709_L2,391709,SUBURBAN FORD CHARGER 5-6,Waterford Township,-83.424953,42.658591,8698134,647.2,59.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+391710_DC,391710,SUBURBAN FORD DISPENSER 2,Waterford Township,-83.423566,42.658892,-1479540084,165.4,49.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+396303_L2,396303,St. Peter's Episcopal Church - Forth - Public,Detroit,-83.0662236,42.3310795,-401155491,46.6,34.9,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+396304_L2,396304,University Meadows - Forth - Public,Detroit,-83.0768568,42.3493153,496206317,803.1,20.3,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+397831_L2,397831,A2 PUBLIC VET'S PARK 2,Ann Arbor,-83.777363,42.281204,-233593615,799.3,60.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397832_L2,397832,A2 PUBLIC VET'S PARK 4,Ann Arbor,-83.777332,42.281006,-233593615,799.0,38.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397833_L2,397833,A2 PUBLIC VET'S PARK 1,Ann Arbor,-83.777371,42.281205,-233593615,799.9,60.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397834_L2,397834,A2 PUBLIC VET'S PARK 3,Ann Arbor,-83.777346,42.281107,-233593615,799.0,49.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397835_L2,397835,A2 PUBLIC VET'S PARK 5,Ann Arbor,-83.777321,42.280946,-233593615,798.8,31.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397836_L2,397836,A2 PUBLIC VET'S PARK 6,Ann Arbor,-83.777316,42.280895,-233593615,799.0,25.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+397948_L2,397948,The Mall at Partridge Creek EV #1,Clinton Twp,-82.9465116,42.625616,489758757,52.1,235.6,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+398031_L2,398031,Crest Ford,Flat Rock,-83.2523,42.09439,-505296689#0,303.8,57.4,L2,J1772,True,False,kwh,,0.0,not listed,Non-Networked
+399998_L2,399998,ARBOR ASSAYS STN 2 [MIDDLE],Ann Arbor,-83.722601,42.227399,496744296,251.6,252.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+399999_L2,399999,ARBOR ASSAYS STN 1 [LEFT],Ann Arbor,-83.722458,42.227393,496744296,252.5,240.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+400000_L2,400000,ARBOR ASSAYS STN 3 [RIGHT],Ann Arbor,-83.722697,42.227372,1068714905,202.3,259.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+400162_L2,400162,AATWP1 ANN ARBOR 1,Ann Arbor,-83.733198,42.328435,-77965430,1430.5,10.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+400197_DC,400197,IB Lighting Store Dearborn Heights MI,Dearborn Heights,-83.25743,42.34156,-415233364,337.2,19.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400198_L2,400198,Oakland St Parking Farmington MI,Farmington,-83.377647,42.4657441413,436098825,117.8,24.6,L2,J1772,False,True,kwh,,0.0,not listed,RED_E
+400204_L2,400204,123 E Cady St Northville MI,Northville,-83.48231,42.430396416,-570405232,61.4,67.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400205_L2,400205,123 W Cady St Northville MI,Northville,-83.484045,42.429957,214767580,111.9,75.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400207_L2,400207,114 W Main St Northville MI,Northville,-83.48401483,42.43113761,-405655612,89.0,63.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400209_L2,400209,The Scott Detroit MI,Detroit,-83.05552701,42.3458326856,500119776,1.0,90.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400220_L2,400220,IB Lighting and Plumbing,Dearborn,-83.18581856729,42.331399097241,508956238,186.7,15.3,L2,J1772,False,True,kwh,,0.0,not listed,RED_E
+400221_L2,400221,St Clair Public Parking,Grosse Pointe,-82.91500373227,42.389658933226,1532269704,11.8,87.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400224_L2,400224,Galleria of Northville,Northville,-83.550377522881,42.421040411429,-32614268#1,58.1,58.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400225_DC,400225,Bint Jebail Cultural Center,Dearborn,-83.1777297279,42.3162332835,-1561050832,19.6,163.1,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400225_L2,400225,Bint Jebail Cultural Center,Dearborn,-83.1777297279,42.3162332835,-1561050832,19.6,163.1,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400227_L2,400227,Sunoco Gas Station Taylor,Taylor,-83.26772110313,42.20420684,121875366#2-AddedOnRampEdge,39.2,41.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400230_L2,400230,SLDCC Building,South Lyon,-83.6492526137,42.44115876804,-505850674,5.2,59.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400231_L2,400231,Harper Suites,St Clair Shores,-82.9128609,42.4560429,-8686639,416.1,44.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400232_DC,400232,Ray Laethem Buick GMC,Detroit,-82.91800235966,42.4016334092,500060579,1251.0,13.7,DC,CHADEMO J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400239_L2,400239,Midwest Recycling,Inkster,-83.2937868279,42.295552825841,1474341131,50.8,81.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400240_L2,400240,Midwest Enterprises,Inkster,-83.3382359576,42.285190118368,-8754799#0,1120.4,57.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400241_L2,400241,Verboten Roots,Inkster,-83.29546806564,42.29595187333,257675388#0,51.4,16.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400244_L2,400244,Twins Market and Deli,Dearborn Heights,-83.2553023062,42.341576967761,-415233364,512.1,23.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400246_L2,400246,Great Lakes Ace Clawson MI,Clawson,-83.1448469047,42.53399788977,495620494,34.7,50.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400247_DC,400247,Pat Milliken Ford Public,Redford Charter Twp,-83.27487463812,42.36629997425,219723670#0,46.4,34.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400250_L2,400250,Ford Underground Garage,Detroit,-83.043999777134,42.328856908934,8734148#1,4.4,14.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400252_L2,400252,Eight Mile and Telegraph Mini Mart,Detroit,-83.267641982,42.44266151664,270021878#1,60.6,40.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400253_L2,400253,Main North Garage,Royal Oak,-83.1431055716,42.49079320444,503548028,56.9,97.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400255_DC,400255,Village Ford,Dearborn,-83.265178312,42.30094573494,1474341159,2.5,23.4,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400255_L2,400255,Village Ford,Dearborn,-83.265178312,42.30094573494,1474341159,2.5,23.4,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400256_L2,400256,Woodview Commons,Ann Arbor,-83.8760442,42.293082590106,189891446#1,105.5,48.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400257_DC,400257,Crest Ford in Center Line,Center Line,-83.028269051,42.487592379207,-502851973,1.5,48.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400262_DC,400262,Marathon Commerce Market Spirits,Commerce Charter Twp,-83.486673219366,42.590862929008,-8713789,337.1,24.5,DC,J1772COMBO,False,True,kwh,,0.0,not listed,RED_E
+400267_L2,400267,Liberty 1 Lending,Livonia,-83.31600017,42.398309016956,498847323,1432.6,25.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400274_DC,400274,Beyond Juice,Grosse Pointe Woods,-82.9052612795,42.448599803869,1484589086#3,103.5,14.2,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400278_DC,400278,North Kercheval Lot,Grosse Pointe Park,-82.94001,42.3809,592740766,157.1,67.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400279_DC,400279,South Kercheval Lot,Grosse Pointe Park,-82.94194,42.38123,-644935051,569.8,32.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400281_DC,400281,Shelby Pit Stop,Shelby Twp,-83.03507,42.66924,55055678,1414.5,34.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400282_DC,400282,Corner Shop Mobil,Van Buren Twp,-83.48548,42.22281,1165658411,1225.4,27.5,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+400283_DC,400283,Taylor Ford,Taylor,-83.26946,42.20845,502810748#0,40.1,47.9,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400283_L2,400283,Taylor Ford,Taylor,-83.26946,42.20845,502810748#0,40.1,47.9,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400289_L2,400289,BBs of Troy,Troy,-83.148896304973,42.577717850568,-505006906,48.9,38.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400291_L2,400291,NeeHees Indian Restaurant Troy,Troy,-83.128212607983,42.590597683306,507189644,2.0,59.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400295_L2,400295,Hampton Inn Shelby Township,Shelby Twp,-83.01302286931,42.674611304588,1221410343,53.1,72.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400296_L2,400296,Holiday Inn Auburn Hills,Auburn Hills,-83.24823305582,42.652373535369,-507319205,621.2,88.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400299_L2,400299,Staybridge Suites Auburn Hills,Auburn Hills,-83.24948744232,42.652472780169,-507319205,635.7,190.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400300_L2,400300,Hampton Inn Commerce,Commerce Charter Twp,-83.44439801392,42.528468616534,435476889,63.6,61.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400301_L2,400301,TownePlace Suites Commerce,Commerce Charter Twp,-83.44441491346,42.52937970162,42372735,82.0,83.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400303_L2,400303,BP Station Middlebelt Livonia,Livonia,-83.3355881865,42.413238224877,-421857240,6.8,27.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400304_L2,400304,Pinehurst Office Center Parking,Bloomfield Hills,-83.240219502326,42.581356550586,502610581#1-AddedOffRampEdge,82.6,176.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400305_L2,400305,Novi Public Library Municipal Parking,Novi,-83.491269999358,42.465003043144,-504731476,57.9,120.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400306_L2,400306,Milford Central Park Municipal Parking,Milford,-83.60217,42.58976,-675934046,6.8,152.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400307_L2,400307,Milford Skatepark Municipal Parking,Milford,-83.588950746007,42.586323589468,285116941#0,501.4,174.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400308_L2,400308,Howell N State St Municipal Parking,Howell,-83.928352436724,42.607560113446,1479516473,63.3,68.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400310_DC,400310,Cadillac of Novi,Novi,-83.45428922698,42.4771290227,59440611,73.6,107.4,DC,CHADEMO J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400310_L2,400310,Cadillac of Novi,Novi,-83.45428922698,42.4771290227,59440611,73.6,107.4,L2,CHADEMO J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400311_L2,400311,WSU Lot 50,Detroit,-83.0754930271,42.35357230647,71691738#1,104.8,26.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400313_L2,400313,WSU Parking Structure 8,Detroit,-83.063729372561,42.353569520276,120436469,99.4,82.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400314_L2,400314,WSU Parking Structure 7,Detroit,-83.057252105703,42.348873412879,-1490887702,472.1,68.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400315_L2,400315,WSU Parking Structure 6,Detroit,-83.06631500511,42.357156958127,552920191,85.1,73.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400325_L2,400325,New St Mark,Detroit,-83.28266818566,42.4422753331,501997912#2-AddedOffRampEdge,4.2,40.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400326_L2,400326,International Gospel,Ecorse,-83.15176,42.2541,-320211428,1008.2,24.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400327_L2,400327,Fenkell Gospel,Detroit,-83.12756684893,42.40314740729,58912801,18.4,20.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400339_DC,400339,Briarwood Ford,Saline,-83.74045766812,42.185067831686,-442427804,79.7,69.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400355_DC,400355,Feldman Chevrolet of Livonia,Livonia,-83.36538,42.3686,421868948,175.5,18.2,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400355_L2,400355,Feldman Chevrolet of Livonia,Livonia,-83.36538,42.3686,421868948,175.5,18.2,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400373_DC,400373,Feldman Chevrolet of New Hudson,New Hudson,-83.60879,42.51497,489532665,105.8,184.8,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400373_L2,400373,Feldman Chevrolet of New Hudson,New Hudson,-83.60879,42.51497,489532665,105.8,184.8,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400375_DC,400375,Dick Scott Preowned Center,Plymouth,-83.4612645,42.359514,514092074,33.3,59.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400377_L2,400377,5250 Corporate Dr Parking,Troy,-83.17157,42.59411,59441164,70.2,86.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400378_DC,400378,Feldman Chevrolet of Highland,Highland,-83.66308,42.63709,505224434,72.6,80.5,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400378_L2,400378,Feldman Chevrolet of Highland,Highland,-83.66308,42.63709,505224434,72.6,80.5,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400379_L2,400379,Crew Automotive,Dearborn,-83.15372,42.31472,220274654,130.0,108.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400380_L2,400380,Culvers Ann Arbor MI,Ann Arbor,-83.76433,42.24183,-442397817,347.1,36.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400381_L2,400381,Biggby coffee,Dearborn,-83.18859,42.30698,-506687605,709.4,29.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400384_L2,400384,Voran Funeral Home AP,Allen Park,-83.2052392868,42.260647262782,152896290#1,992.9,29.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400385_L2,400385,Willow Metropark Golf Course,New Boston,-83.365697458291,42.138832013496,8751305#0,1409.2,195.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400386_L2,400386,Davis Brothers Towing,Detroit,-83.193497708,42.430239285,-421870060,112.4,37.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400387_DC,400387,Marathon Livernois,Detroit,-83.123943005525,42.336687029113,-495623533,460.8,29.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400403_L2,400403,Beth Eden Church,Detroit,-83.159658304518,42.408225014963,500582544#1,272.7,21.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400404_L2,400404,Voran Funeral Home Taylor,Taylor,-83.2665602632,42.2268914016,413878899,132.4,36.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400405_L2,400405,Voran Funeral Home Dearborn,Dearborn,-83.2694759419,42.3268540996,-494689988,141.9,13.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400407_L2,400407,IVY Lofts,Berkley,-83.18418205499,42.492887516206,993971552,266.8,50.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400408_L2,400408,555 Apartment Building,Birmingham,-83.2098935067,42.54266921644,416980647,156.7,24.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400410_L2,400410,Westfield Group,Detroit,-83.17616,42.37987,-501695464,160.9,49.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400411_L2,400411,Legends Grand River,Detroit,-83.18186,42.38565,-505275511,260.0,32.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400412_L2,400412,Twins Auto Glenmore,Redford Charger Twp,-83.2953,42.43085,219861215#1-AddedOnRampEdge,20.6,55.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400413_L2,400413,Warren Ann BP,Detroit,-83.26194,42.34201,421854912,27.3,27.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400414_L2,400414,Twins Auto Sales 25645,Redford Charter Twp,-83.2953,42.43085,219861215#1-AddedOnRampEdge,20.6,55.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400415_L2,400415,City of Huntington Woods,Huntington Woods,-83.17386,42.4887,-219848449#1,25.7,20.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400417_L2,400417,Twins Auto Sales 24310,Redford Charter Twp,-83.28019,42.42614,42372835#1-AddedOnRampEdge,1.0,40.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400418_L2,400418,AMH Chiropractic,Dearborn Heights,-83.28149,42.34161,136463524,640.1,35.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400419_L2,400419,Best Western Livonia,Livonia,-83.42002,42.40955,443196753,37.5,68.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400420_L2,400420,Royal Food,Livonia,-83.41027,42.37022,503988758,121.7,93.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400421_L2,400421,Greater Grace Temple,Detroit,-83.2712,42.43025,419665979,223.0,123.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400422_L2,400422,Greater Emmanuel Institutional,Detroit,-83.17993,42.4315,421884326,1.0,40.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400423_L2,400423,Dexter Avenue Baptist Church,Detroit,-83.13055560187,42.390039591321,421882386,5.4,11.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400424_L2,400424,The Yunion,Detroit,-83.11769,42.40051,220236435#4,131.8,36.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400425_L2,400425,Pilgrim Baptist Church,Detroit,-83.06333,42.42842,-220188652#0,511.5,38.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400429_DC,400429,Serra Ford Farmington Hills,Farmington Hills,-83.4337962239,42.4690553083,-421887426,45.4,93.9,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400429_L2,400429,Serra Ford Farmington Hills,Farmington Hills,-83.4337962239,42.4690553083,-421887426,45.4,93.9,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400430_L2,400430,WSU Parking Structure 2,Detroit,-83.07378,42.355967,8731349,108.6,49.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400431_L2,400431,WSU Parking Structure 5,Detroit,-83.0742115,42.35794005,8731349,338.1,59.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400432_L2,400432,WSU Parking Structure 1,Detroit,-83.0710994,42.3617691,613434459,114.7,46.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400436_L2,400436,Lord of Lords Church Red E,Detroit,-82.9664962503,42.407456371454,-1018305861,891.1,17.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400438_L2,400438,D2 Solar,Detroit,-83.02707523995,42.37016764823,116556544#0,198.7,24.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400440_L2,400440,Perfecting Church,Detroit,-83.02578,42.42715,-219565770,135.8,48.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400442_L2,400442,Third New Hope,Detroit,-83.1702152,42.373611,-421866936,64.0,44.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400443_L2,400443,Great Faith Ministries,Detroit,-83.1496557009,42.37314475146,42372905,280.5,3.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400445_L2,400445,Gesu School,Detroit,-83.13844462973,42.417827520082,499829512,105.2,70.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400447_L2,400447,Gethsemane MBC,Westland,-83.3266145882,42.273785161185,-514105837,159.0,149.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400448_L2,400448,Tibbs Inc,Pontiac,-83.288102,42.63392,505848805#1,5.4,32.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400449_L2,400449,Moran Buick GMC Taylor,Taylor,-83.26945,42.20458,257654685#2,39.2,60.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400450_L2,400450,Research Lofts,Detroit,-83.08202,42.35889,1437024388,262.5,43.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400452_L2,400452,Madonna University L2 EV,Livonia,-83.4058,42.38323,506423804,67.6,109.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400453_DC,400453,Embassy Suites Livonia,Livonia,-83.42437,42.43097,492801068,97.3,112.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400454_L2,400454,Brush Watson Apartments,Detroit,-83.0515077482,42.34654563434,783218774,519.2,16.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400455_L2,400455,St Suzanne,Detroit,-83.2305090062,42.363730310619,-513940267,439.0,118.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400456_DC,400456,G and R Machine Tool,Taylor,-83.23285,42.20637,8729417,490.2,105.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400457_L2,400457,Church of the Messiah,Detroit,-83.004611486,42.35056596851,422035297,594.6,32.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400459_L2,400459,WSU Parking Structure 4,Detroit,-83.05520053558,42.355909642993,517839688#3,126.4,38.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400461_L2,400461,Waldenwoods Resort and Conference Center,Howell,-83.75825,42.64717,-500810072,1021.6,224.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400462_L2,400462,Huntington Place Detroit EV Lot,Detroit,-83.0487,42.32728,59511838,280.6,27.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400463_L2,400463,Twins Auto 24560,Detroit,-83.28377,42.42755,42372835#1,229.7,34.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400465_DC,400465,Shell Brighton,Brighton,-83.78878,42.54997,-1548575631,35.3,13.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400466_DC,400466,Mobil Madison,Madison Heights,-83.085097272,42.476694887119,-422022776,32.8,33.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400469_DC,400469,Concord Market BP,Madison Heights,-83.11234,42.53342,39122917,44.6,64.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400480_DC,400480,ChillBox 9039 Dearborn Heights,Dearborn Heights,-83.27395,42.34101,219583966,1.0,29.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400481_DC,400481,Goddard Amoco,Southgate,-83.22956,42.2272,-442580157,16.0,18.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400482_DC,400482,Serra Ford Rochester Hills,Rochester Hills,-83.13410381785,42.63837235545,442737976,99.7,178.3,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400482_L2,400482,Serra Ford Rochester Hills,Rochester Hills,-83.13410381785,42.63837235545,442737976,99.7,178.3,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400483_DC,400483,Mission Ford of Dearborn,Dearborn,-83.185252,42.319007,-121875302#1,109.1,43.5,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400483_L2,400483,Mission Ford of Dearborn,Dearborn,-83.185252,42.319007,-121875302#1,109.1,43.5,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400487_L2,400487,Birmingham Pointe Private,Birmingham,-83.20571,42.54185,-441623912,376.6,13.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400493_L2,400493,First Baptist Institutional,Detroit,-83.211681089345,42.429708671995,-498594738,535.4,54.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400495_DC,400495,Dick Scott Motor Mall,Fowlerville,-84.07109,42.64394,8635390,4947.8,109.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400496_L2,400496,MiSide,Detroit,-83.113514645738,42.331573967982,505835916,60.9,41.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400498_L2,400498,Fellowship Chapel,Detroit,-83.211980632225,42.419074998908,598737294#2,213.7,14.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400502_L2,400502,Dearborn Town Center Office,Dearborn,-83.21826,42.32074,58946887#0,130.0,83.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400504_L2,400504,Strickly EV Charging Site 1,Redford,-83.31127,42.42752,-220408283,303.3,31.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400506_L2,400506,Strickly EV Charging Site 2,Redford,-83.29241,42.44218,501997953#2,24.4,28.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400507_DC,400507,North Brothers Ford,Westland,-83.36848,42.3252,422063229,181.3,30.5,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400507_L2,400507,North Brothers Ford,Westland,-83.36848,42.3252,422063229,181.3,30.5,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+400508_L2,400508,NSO Building,Detroit,-83.11359293256,42.402993286261,-25966140,510.3,47.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400518_L2,400518,LaFontaine Infiniti Ann Arbor,Ann Arbor,-83.80018,42.28579,-441398320,566.6,56.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+400537_L2,400537,ZIM LLC,Dearborn Heights,-83.25169,42.34183,1088732672#1,803.2,24.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+404762_L2,404762,Cornerstone Community Credit Union,Troy,-83.106268615543,42.562765842539,502885294,62.1,75.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+405367_L2,405367,Main North Outside Lot,Royal Oak,-83.14329,42.49011,-507514893,153.4,24.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+405719_L2,405719,BSRO ANN ARBOR STATION 1,Ann Arbor,-83.847077,42.290414,257645796#3,152.8,58.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+405744_DC,405744,Lunghamer Buick,Waterford,-83.40258,42.65985,-504994079,26.3,8.2,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+405744_L2,405744,Lunghamer Buick,Waterford,-83.40258,42.65985,-504994079,26.3,8.2,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+405745_L2,405745,University of Michigan - Dearborn - Parking Lot E6,Dearborn,-83.22959788619995,42.31699270265598,220276706#0,107.0,72.3,L2,J1772,True,True,hour,1.7,0.0,$1.70 per hour,Non-Networked
+405746_L2,405746,University of Michigan - Dearborn - Fairlane Center North,Dearborn,-83.22434,42.32383,136463521#5,60.1,243.8,L2,J1772,True,True,hour,1.7,0.0,$1.70 per hour,Non-Networked
+405811_DC,405811,"Target T0634 (Ann Arbor, MI)",Ann Arbor,-83.7682,42.2436,442397835,31.3,95.2,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+405830_DC,405830,Taylor Buick GMC,Taylor,-83.269753,42.204688,257654685#2,19.5,84.0,DC,J1772COMBO,False,True,kwh,,0.0,not listed,CHAEVI
+416552_L2,416552,CREEK EV CHARGE CREEK TECUMSEH1,Tecumseh,-83.944255,42.004746,-17868888,185.9,72.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+416553_L2,416553,CREEK EV CHARGE CREEK TECUMSEH2,Tecumseh,-83.944255,42.004746,-17868888,185.9,72.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+416656_DC,416656,Bill Brown Ford Livonia,Livonia,-83.36153,42.36872,403113019,625.0,22.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+416848_DC,416848,Blackwell Ford Inc,Plymouth,-83.442855,42.373025,1150129823#1,250.0,107.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,FORD_CHARGE
+416856_DC,416856,Gene Butman Ford,Ypsilanti,-83.647005,42.247308,1074654989,225.6,43.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,FORD_CHARGE
+417220_L2,417220,The Historic Residences at Saint Clair,Grosse Pointe,-82.912105872554,42.383803019608,-8754197,1084.4,156.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+417446_DC,417446,ELETRIC AVE VARSITY DC-2,Ann Arbor,-83.796116,42.285478,8731021,664.0,24.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+417533_DC,417533,J One Liquor,Utica,-83.01743,42.62669,1194874363-AddedOnRampEdge,93.2,57.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+417980_DC,417980,Eastern Market Public Lot,Detroit,-83.043012871502,42.349106464371,-581362403,398.4,51.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+420725_L2,420725,Westside Food Center,Detroit,-83.11999974022,42.40042166526,219704495#0,24.9,26.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+421172_L2,421172,LOCKWOOD MGMT HAVERHILLCLARK1,Ypsilanti,-83.664373,42.258219,-1063413009,235.7,122.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+421173_L2,421173,LOCKWOOD MGMT HAVERHILLCLARK5,Ypsilanti,-83.664411,42.258162,-1063413009,232.4,128.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+421174_L2,421174,LOCKWOOD MGMT HAVERHILLCLARK2,Ypsilanti,-83.66447,42.258114,-1063413009,227.3,133.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+421175_L2,421175,LOCKWOOD MGMT HAVERHILLCLARK3,Ypsilanti,-83.664535,42.258065,-1063413009,221.8,138.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+421176_L2,421176,LOCKWOOD MGMT HAVERHILLCLARK4,Ypsilanti,-83.664624,42.258025,-1063413009,214.3,142.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+421206_L2,421206,Holiday Inn Express Wixom,Wixom,-83.53290039789,42.50017025885,991875401,19.0,206.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+421524_L2,421524,Sharon,Roseville,-82.9319885,42.5015006,68518092,74.6,89.1,L2,J1772,True,True,kwh,,0.0,not listed,AMPUP
+421668_DC,421668,Butzel Family Center,Detroit,-83.002251,42.358236,-443371536,131.3,74.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+421669_DC,421669,Heilmann Community Cente,Detroit,-82.961834,42.440904,219476394#0,308.3,203.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+421670_DC,421670,Coleman A. Young Recreat,Detroit,-83.025067,42.346257,219564837#5-AddedOnRampEdge,72.4,50.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+421671_DC,421671,Adams Butzel Complex,Detroit,-83.165572,42.395575,501689914,505.5,50.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,EV Connect
+421804_DC,421804,Clawson Shopping Center,Clawson,-83.164056,42.53231299999999,-505269784,127.5,81.3,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,EVGATEWAY
+422149_L2,422149,WALLED LAKE OPERATIONS,commerce twp,-83.507561,42.531017,-778716112,968.5,269.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+422204_DC,422204,Van Born Liquor and Gas,Dearborn Heights,-83.28513,42.26908,-416077568,620.0,30.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+422205_DC,422205,Belmont Shopping Center,Detroit,-83.0826416,42.4456977,499219125,667.4,13.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+422417_DC,422417,Mound Mini Mart,Warren,-83.0469,42.49831,492746229#1,82.8,30.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+422418_L2,422418,Spring Hill Suites Wixom,Wixom,-83.5355,42.50076,-415757656,15.3,62.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+422419_L2,422419,Hampton Inn Wixom,Wixom,-83.534505,42.5001327,208346704#2-AddedOnRampEdge,91.5,133.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+422459_DC,422459,GREAT LAKES EV CHARGER 1,Canton,-83.503414,42.268664,257670835#1,526.0,103.4,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+422520_DC,422520,GREAT LAKES EV CHARGER 2,Canton,-83.503425,42.268599,257670835#1,529.1,96.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+422743_DC,422743,GREAT LAKES EV CHARGER 3,Canton,-83.503515,42.268471,257670835#1,540.8,85.8,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+422854_L2,422854,Inkster Food Center,Inkster,-83.30986,42.3062,-441570318,185.0,58.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+422965_L2,422965,Don V Cigar Lounge,Garden City,-83.32113,42.32636,441570314,38.9,12.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+428724_L2,428724,Robertson Homes - Avery,Detroit,-83.082558,42.353115,501562699#0,220.2,134.4,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+429661_L2,429661,MECTROY MECTROY-1,Troy,-83.165507,42.604415,492745933,181.6,112.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+429662_L2,429662,MECTROY MECTROY-2,Troy,-83.165477,42.604381,492745933,180.7,110.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+429669_DC,429669,L401 L3-EVPARKMB-2,Ann Arbor,-83.820078,42.286588,416486225#1,47.5,41.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+429671_DC,429671,L401 L3-EVPARKMB-1,Ann Arbor,-83.820142,42.286564,416486225#2-AddedOnRampEdge,10.3,38.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+429721_L2,429721,Sterling Heights Community Center,Sterling Heights,-83.00987,42.59002,481047203,1.0,53.3,L2,J1772,True,True,kwh,,0.0,not listed,ZEFNET
+429731_DC,429731,Shell Novi,Novi,-83.5143867284,42.49124562382,4606644,136.4,99.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+429732_DC,429732,Shell Howell,Howell,-83.87544,42.58132,-1528733488,426.4,91.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+429815_L2,429815,WASHCOMMCOLLEGE LOT 1-ST 1,Ann Arbor,-83.661159,42.261944,223284599,11.1,96.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+429818_L2,429818,WASHCOMMCOLLEGE LOT 7 ST 1,Ann Arbor,-83.668197,42.261895,442195606,48.1,289.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+429819_L2,429819,WASHCOMMCOLLEGE LOT 7 ST 2,Ann Arbor,-83.668244,42.261811,442195606,52.4,280.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+429828_L2,429828,Hickory Way Apartments - Forth - Public,Ann Arbor,-83.7806078,42.2683764,442013275,497.3,59.2,L2,J1772,True,True,kwh,,0.0,not listed,OpConnect
+429914_DC,429914,Ford Vehicle Performance and Electrification Center - Inside Garage,Allen Park,-83.211764,42.26342,120562512,126.1,260.2,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,FORD_CHARGE
+429961_L2,429961,ENTERPRISE ENTERPRISE 20B1,Farmington Hills,-83.355413,42.526372,438700729#0,48.3,70.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434010_DC,434010,Milford Liquor and Gas,Highland,-83.61602,42.62524,-409721199,249.1,23.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+434166_L2,434166,ARNOLD ARNOLD IICC 2,Sterling Heights,-83.045215,42.557532,46227897#2,111.8,279.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434167_L2,434167,ARNOLD ARNOLD 1ICC 1,Sterling Heights,-83.045199,42.557565,46227897#2,115.4,281.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434797_L2,434797,UVS BH-CS-000024-C1,Troy,-83.168373,42.594184,1252157783,158.2,17.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434798_L2,434798,UVS BH-CS-000024-C2,Troy,-83.168362,42.594136,1252157783,152.9,18.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434799_L2,434799,UVS BH-CS-000025-C1,Troy,-83.168373,42.59433,507290201#0,6.0,17.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+434962_L2,434962,WASHCOMMCOLLEGE LOT 1 ST2,Ann Arbor,-83.661288,42.261859,223284599,27.6,98.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+439498_L2,439498,OPmobility,Troy,-83.172164,42.587272,1251844860,49.0,288.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+439500_DC,439500,Livernois EV Lot,Detroit,-83.14137,42.43496,1046627150,321.8,17.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+439726_L2,439726,BEDROCK BEDROCK MIL 5-1,Detroit,-83.041517,42.330339,68309429#1,11.9,19.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+439727_L2,439727,BEDROCK BEDROCK MIL 5-2,Detroit,-83.0416,42.330327,68309429#1,18.5,21.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+439987_L2,439987,Detroit Arsenal,Warren,-83.038082,42.492383,422021136,4.0,70.0,L2,NEMA1450,True,False,kwh,,0.0,not listed,Non-Networked
+440814_DC,440814,Chillbox 9031  I696 and Dequindre Rd,Warren,-83.08409,42.48196,219848474,483.7,49.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+440834_L2,440834,Saline Courthouse,Saline,-83.77336,42.18078,-8726445,876.0,49.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+440974_L2,440974,Staybridge Suites Novi,Novi,-83.524262963912,42.488974583829,-442171792,106.4,284.6,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+445424_L2,445424,VISN 10/Ann Arbor VAMC (506)_Grid,Ann Arbor,-83.7137,42.28591,441604065,300.9,123.1,L2,NEMA1450,True,False,kwh,,0.0,not listed,Non-Networked
+445691_L2,445691,BEDROCK BEDROCK MIL 3-1,Detroit,-83.042223,42.331156,219836063,43.0,41.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+445692_L2,445692,BEDROCK BEDROCK MIL 3-2,Detroit,-83.04218,42.331156,219836063,46.0,39.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+445693_L2,445693,BEDROCK BEDROCK MIL 3-3,Detroit,-83.04218,42.33114,219836063,45.2,38.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+445694_L2,445694,BEDROCK BEDROCK MIL 3-4,Detroit,-83.042201,42.33114,219836063,43.7,39.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+445847_DC,445847,J Mart Ford and Wyoming,Dearborn,-83.15697,42.33034,-1159397238,11.7,13.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+445914_L2,445914,Deaconess Tower,Southgate,-83.22526924128339,42.18789480034775,503796590#0,15.3,75.1,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+445918_L2,445918,KEMENY HELEN MOORE REC,Detroit,-83.125108,42.380488,-1421011434,1117.1,33.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+446044_L2,446044,Pilgrim Baptist Church Red E,Detroit,-83.06333,42.42842,-220188652#0,511.5,38.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+446045_DC,446045,Royal Oak Ford,Royal Oak,-83.161861,42.493667,502812797,1.0,53.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+446431_DC,446431,Royal Oak Ford,Royal Oak,-83.16134,42.49329,8685862#1,67.2,63.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,FORD_CHARGE
+446487_DC,446487,FastTrack Market Marathon,Taylor,-83.272797613483,42.256002069163,413352185,3.0,56.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+446638_DC,446638,Trumbull Ave Mobil,Detroit,-83.07919,42.35238,-1490500203,27.4,21.1,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+446938_L2,446938,TownePlace Suites by Marriott Detroit Warren,Warren,-83.030476,42.524191,-405447009,25.2,25.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+447036_DC,447036,AMCHELSEA RTM75 DC03,Chelsea,-84.0284,42.293541,396228499,46.0,61.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+447234_L2,447234,SUBURBAN CDJRFH STATION 3,Farmington Hills,-83.42266,42.467486,-8701201,308.0,97.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+447235_L2,447235,SUBURBAN CDJRFH STATION 1,Farmington Hills,-83.422703,42.467502,-8701201,304.6,95.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+447236_L2,447236,SUBURBAN CDJRFH STATION 2,Farmington Hills,-83.422671,42.467486,-8701201,307.1,97.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+447237_DC,447237,SUBURBAN CDJRFH STATION 4,Farmington Hills,-83.422341,42.467847,-8701201,336.0,58.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+448062_DC,448062,Chillbox 9028 Michigan and Telegraph,Dearborn,-83.26832,42.30029,270520143#1,82.6,19.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+448169_DC,448169,Bob Maxey Ford of Detroit,Detroit,-83.030728,42.335016,-401419406,248.7,21.2,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+448171_DC,448171,Empire Plug and Go 25375 Marathon Utica,Shelby Township,-83.0347686183,42.67671774904,-498517437,724.9,48.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+448194_L2,448194,OAKLAND COUNTY EVSE-04,Pontiac,-83.326097,42.65457,496061127,271.3,209.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+448195_L2,448195,OAKLAND COUNTY EVSE-05,Pontiac,-83.326134,42.654657,496061127,281.2,211.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+448203_DC,448203,"Oakland Plaza (Troy, MI)",Troy,-83.10508,42.53451,505294020,69.5,15.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+448384_L2,448384,OAKLAND COUNTY EVSE-02,Pontiac,-83.327637,42.6566,496061127,487.1,238.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+448469_DC,448469,FasCharge 4675 Express Stop Whitmore Lake MI,Whitmore Lake,-83.75491877562,42.378434054075,8720877,226.9,87.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+448930_DC,448930,IBEW Local 58 EV Lot,Detroit,-83.06209,42.32807,8755445,337.4,163.1,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+448994_L2,448994,PUBLIC WORKS EVSE-06,Waterford Township,-83.33981,42.658255,8676179#1,408.9,170.1,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+449172_L2,449172,itselectric,Detroit,-83.06552,42.32369,249228134,1.0,68.6,L2,J1772 TESLA,True,True,kwh,0.39,0.0,$0.39 per kWh,ITSELECTRIC
+449173_L2,449173,itselectric,Detroit,-83.0623,42.32803,8755445,342.2,145.9,L2,J1772 TESLA,True,True,kwh,0.39,0.0,$0.39 per kWh,ITSELECTRIC
+449174_L2,449174,itselectric,Detroit,-83.0434,42.41494,257827889,404.3,37.3,L2,J1772 TESLA,True,True,kwh,0.39,0.0,$0.39 per kWh,ITSELECTRIC
+449179_L2,449179,itselectric - DT04,Detroit,-83.07549,42.32834,-69706059,101.5,259.1,L2,J1772 TESLA,True,True,kwh,0.4,0.0,$0.40 per kWh,ITSELECTRIC
+449612_DC,449612,Downtown Auto Wash,Detroit,-83.06231,42.33115,-333363184,15.5,32.9,DC,J1772COMBO TESLA,True,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449613_L2,449613,AMC Dearborn - Outer,Dearborn,-83.24835,42.29104,422100868#1,170.2,41.2,L2,J1772,True,False,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449614_L2,449614,AMC Dearborn - Alter,Detroit,-82.93936,42.3742,510184516,39.5,68.8,L2,J1772,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449615_DC,449615,Barney's Fuel,Ypsilanti,-83.68009,42.20784,-1296459515,186.5,37.1,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449616_DC,449616,Shell - Ann Arbor - Washtenaw,Ann Arbor,-83.69629,42.25662,-442179665,356.7,21.1,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449617_DC,449617,Shell - Ann Arbor - Jackson,Ann Arbor,-83.78068,42.28096,-441415213,93.2,23.5,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449618_DC,449618,Mobil Gibraltar,Brownstown Township,-83.237,42.09493,-402421150,27.6,44.5,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449619_DC,449619,Sunoco Southfield,Southfield,-83.25968,42.45807,507267886,23.5,16.6,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449620_DC,449620,Shell West Bloomfield,West Bloomfield,-83.36016,42.54332,440907103,68.9,33.3,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449621_DC,449621,Mobil Troy,Troy,-83.12759,42.56917,1476853312,39.7,17.3,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449622_L2,449622,APCO Oil Office,Dearborn,-83.18553,42.32986,257562358,26.9,29.0,L2,J1772 TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449623_L2,449623,Safeway Oil Office,Dearborn,-83.26189,42.30379,556491735,139.8,115.3,L2,J1772 TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449625_DC,449625,Amoco - Deli,Taylor,-83.2884,42.21189,-505839312,36.8,44.1,DC,J1772COMBO TESLA,False,True,kwh,0.5,0.0,$0.50 per kWh,POWERPUMP
+449833_L2,449833,Windmill Market West Bloomfield,West Bloomfield Township,-83.4290391718277,42.61507854005875,-1433972662,63.8,32.6,L2,J1772,True,True,kwh,,0.0,not listed,EVGATEWAY
+449834_L2,449834,Philadelphia Properties Waterford,Waterford Township,-83.40768009577027,42.699554276612766,8671856,1148.9,9.5,L2,J1772,True,True,kwh,,0.0,not listed,EVGATEWAY
+449936_L2,449936,Holiday Inn Ann Arbor,Ann Arbor,-83.8406781674591,42.29463824017888,-1122012000,10.2,159.5,L2,J1772,True,True,kwh,,0.0,not listed,EVGATEWAY
+450143_L2,450143,Destination Napa Sterling Heights,Sterling Heights,-83.04783311537895,42.551020442444354,46227897#0,1.0,29.0,L2,J1772,True,True,kwh,,0.0,not listed,EVGATEWAY
+450450_L2,450450,BEDROCK HUD B2-4,Detroit,-83.048226,42.333762,219614127,84.5,15.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450451_L2,450451,BEDROCK HUD B2-5,Detroit,-83.048237,42.333784,219614127,87.1,15.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450452_L2,450452,BEDROCK HUD B2-6,Detroit,-83.048248,42.333778,219614127,87.0,14.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450453_L2,450453,BEDROCK HUD B2-7,Detroit,-83.048129,42.333655,219614127,70.2,15.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450454_L2,450454,BEDROCK HUD B2-8,Detroit,-83.048036,42.333546,219614127,55.9,16.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450455_L2,450455,BEDROCK HUD B2-9,Detroit,-83.047834,42.33329,219614127,23.1,16.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450456_L2,450456,BEDROCK HUB B2-10,Detroit,-83.047808,42.333267,219614127,19.9,16.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450457_L2,450457,BEDROCK HUD B2-3,Detroit,-83.04739,42.334106,8752486,81.5,53.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450458_L2,450458,BEDROCK HUD B2-2,Detroit,-83.047487,42.33405,8752486,76.4,54.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450459_L2,450459,BEDROCK HUD B2-1,Detroit,-83.047302,42.33381,496911558,18.1,58.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450460_L2,450460,BEDROCK HUD B1-4,Detroit,-83.047667,42.334108,8752486,66.8,41.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450461_L2,450461,BEDROCK HUD B1-2,Detroit,-83.047276,42.33376,496911558,19.0,52.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450462_L2,450462,BEDROCK HUD B1-11,Detroit,-83.048128,42.333898,219614127,93.4,29.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450463_L2,450463,BEDROCK HUD B1-10,Detroit,-83.048162,42.333902,219614127,95.2,27.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450464_L2,450464,BEDROCK HUD B1-9,Detroit,-83.048223,42.334017,8752486,22.3,27.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450465_L2,450465,BEDROCK HUD B1-8,Detroit,-83.047995,42.33397,8752486,35.9,41.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450466_L2,450466,BEDROCK HUD B1-7,Detroit,-83.047926,42.334006,8752486,42.9,40.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450472_L2,450472,BEDROCK HUD B1-3,Detroit,-83.047607,42.334053,8752486,68.0,49.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450487_L2,450487,BEDROCK HUD B1-5,Detroit,-83.047733,42.334173,8752486,65.8,32.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450859_L2,450859,HFHS SOUTH GARAGE 1K,Detroit,-83.08357,42.363896,-40467074,1.0,31.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450860_L2,450860,HFHS SOUTH GARAGE 1M,Detroit,-83.083542,42.36377,-40467074,5.8,25.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450861_L2,450861,HFHS SOUTH GARAGE 1O,Detroit,-83.083571,42.363696,-40467074,14.3,25.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450862_L2,450862,HFHS SOUTH GARAGE 1P,Detroit,-83.083483,42.363715,-40467074,10.8,19.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450863_L2,450863,HFHS SOUTH GARAGE 3A,Detroit,-83.08342,42.363621,-40467074,20.1,12.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450864_L2,450864,HFHS SOUTH GARAGE 1G,Detroit,-83.083525,42.363511,-40467074,33.8,18.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450865_L2,450865,HFHS SOUTH GARAGE 1F,Detroit,-83.083558,42.363522,-40467074,33.1,21.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450866_L2,450866,HFHS SOUTH GARAGE 1D,Detroit,-83.08357,42.363563,-40467074,28.8,23.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450867_L2,450867,HFHS SOUTH GARAGE 1C,Detroit,-83.083655,42.363602,-40467074,25.9,30.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450868_L2,450868,HFHS SOUTH GARAGE 1A,Detroit,-83.084038,42.363644,293092100,53.6,60.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450869_L2,450869,HFHS SOUTH GARAGE 1H,Detroit,-83.083906,42.363804,-40467074,7.8,55.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450870_L2,450870,HFHS SOUTH GARAGE 1L,Detroit,-83.083782,42.363936,-40467074,1.0,48.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450871_L2,450871,HFHS SOUTH GARAGE 1N,Detroit,-83.083739,42.3639,-40467074,1.0,44.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450872_L2,450872,HFHS SOUTH GARAGE 3B,Detroit,-83.083749,42.364193,-40467074,1.0,62.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450873_L2,450873,HFHS SOUTH GARAGE 1J,Detroit,-83.083685,42.364227,-40467074,1.0,62.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450874_L2,450874,HFHS SOUTH GARAGE 1B,Detroit,-83.08397,42.363596,293092100,47.2,55.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450876_L2,450876,HFHS SOUTH GARAGE 1E,Detroit,-83.083616,42.36364,-40467074,21.1,28.4,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450888_L2,450888,HFHS SOUTH GARAGE 1I,Detroit,-83.084051,42.364367,-40467074,1.0,94.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+450945_DC,450945,ELETRIC AVE VARSITY DC-3,Ann Arbor,-83.796245,42.285465,8731021,675.6,21.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+451554_DC,451554,Serra Buick GMC Rochester Hills,Rochester Hills,-83.13231623044,42.6688965626,-37019766,187.0,74.1,DC,CHADEMO J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+451554_L2,451554,Serra Buick GMC Rochester Hills,Rochester Hills,-83.13231623044,42.6688965626,-37019766,187.0,74.1,L2,CHADEMO J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+451722_DC,451722,Chase Bank - 28660 Northwestern Hwy,Southfield,-83.30292,42.49958,491356956,87.6,114.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,eVgo Network
+451781_DC,451781,Wayne Truck Stop,Wayne,-83.421026194722,42.279240862163,421880430,33.6,67.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+451913_L2,451913,Towns on the Green,Pittsfield Township,-83.77348224708,42.24297140785,-283527689,480.8,31.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+451914_L2,451914,Hudson Towns,Lyon Township,-83.606250291249,42.510963097244,678176155,15.0,134.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+452531_L2,452531,Queen Lillian II,Detroit,-83.057983,42.34601,-421883490,122.8,70.7,L2,J1772,False,True,kwh,,0.0,not listed,SYNERGEV
+452712_DC,452712,GREAT LAKES EV LIVONIA DC4,Livonia,-83.339406,42.370029,-421865072,43.0,107.9,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+452714_DC,452714,GREAT LAKES EV LIVONIA DC 3,Livonia,-83.339374,42.369947,-421865072,40.8,98.7,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+452719_DC,452719,GREAT LAKES EV LIVONIA DC 2,Livonia,-83.339413,42.36993,-421865072,44.1,97.0,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+453307_L2,453307,Sakura Novi Residential,Novi,-83.46873160289,42.481134946728,8670270,726.8,7.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+453385_L2,453385,LTU Lot C EV Parking,Southfield,-83.249826896492,42.4764030164,1137839609#1,217.6,121.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+453386_L2,453386,LTU Lot D EV Parking,Southfield,-83.2489,42.47615,1137839609#1,290.1,88.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+454070_DC,454070,GREAT LAKES EV LIVONIA DC 1,Livonia,-83.339394,42.369939,-421865072,42.5,97.9,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+454109_L2,454109,BEDROCK HUD B1-6,Detroit,-83.047831,42.334121,8752486,55.9,33.8,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+454183_L2,454183,Hanon Systems Front EV Lot,Novi,-83.43843586773,42.505723942,59440568,527.8,146.9,L2,J1772,False,True,kwh,,0.0,not listed,RED_E
+455371_L2,455371,Livonia Store,Livonia,-83.344845,42.369661,-422075257,337.4,81.7,L2,J1772,False,True,kwh,,0.0,not listed,CHARGELAB
+456294_L2,456294,AAHC STATION 2,Ann Arbor,-83.747292,42.283518,8724871#1,5.2,30.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+456586_L2,456586,The Beauton Apartments,Detroit,-83.067927549928,42.373547243045,421885041,32.6,118.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+456642_DC,456642,Fast Napa Sterling Heights,Sterling Heights,-83.04723364166412,42.550967092648285,-502664324,1473.1,32.8,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,EVGATEWAY
+456658_L2,456658,BEDROCK HUD B1-1,Detroit,-83.04721,42.333681,496911558,18.8,41.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+456670_L2,456670,PLYMOUTH BRANCH UMCU 2,Ann Arbor,-83.702401,42.302967,-441386542,769.9,32.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+456714_L2,456714,PLYMOUTH BRANCH UMCU 3,Ann Arbor,-83.702533,42.303011,-441386542,780.6,37.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+456878_L2,456878,Lindsey Living,Troy,-83.16611657999,42.558429218242,507294472,37.3,75.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+457505_L2,457505,PLYMOUTH BRANCH UMCU 1,Ann Arbor,-83.702542,42.302885,-441386542,781.9,23.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+457577_L2,457577,Suburban Ford of Ferndale,Ferndale,-83.12765408967138,42.45160467072696,219477184#2-AddedOnRampEdge,41.9,39.9,L2,J1772,True,True,kwh,,0.0,not listed,Blink Network
+457791_L2,457791,OAKLAND COUNTY EVSE-03,Pontiac,-83.327875,42.656601,496061127,500.1,224.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+457943_DC,457943,Roseville Pit Stop,Roseville,-82.94043,42.49391,421873390,59.1,20.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+458106_L2,458106,LAKE TRUST CU LAKE TRUST -03,Brighton,-83.785009,42.539299,442064476,34.2,46.2,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+459862_L2,459862,Canton Administration Building,Canton Township,-83.487221,42.298507,8735811#1,427.9,34.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+459905_L2,459905,A2 PUBLIC A2 ELECTIONCENT,Ann Arbor,-83.790382,42.298939,9596388,77.5,72.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+460136_DC,460136,Fast Hampton Inn Commerce,Commerce Township,-83.44461298717194,42.52835548205798,435476889,53.1,42.1,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,EVGATEWAY
+460139_DC,460139,Childrens Services,Ann Arbor,-83.677904300936,42.254264382883,1357789214,347.4,81.7,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+460653_DC,460653,Sams Mart,Madison Heights,-83.109065118549,42.491086330665,-8680503,206.6,31.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+460654_L2,460654,Cornerstone Community CU Macomb,Macomb Twp,-82.912842,42.629417,489545094#1,66.9,50.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+460684_L2,460684,BEDROCK ONE DETROIT 2-6,Detroit,-83.043954,42.330135,552920200,101.6,15.6,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+460685_L2,460685,BEDROCK ONE DETROIT 2-5,Detroit,-83.044003,42.330117,552920200,97.1,16.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+460741_L2,460741,BEDROCK GREEKTOWN 1-5,Detroit,-83.04408,42.333791,-421871740,53.4,32.3,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+460813_L2,460813,Island Charging LLC,Grosse Ile,-83.15818,42.1303,-1428434973,72.8,43.8,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+461041_L2,461041,A2 PUBLIC BC PARK 1,Ann Arbor,-83.702305,42.230886,-442536348,106.4,61.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461042_L2,461042,A2 PUBLIC BC PARK 3,Ann Arbor,-83.702452,42.230886,-442536348,118.5,61.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461043_L2,461043,A2 PUBLIC BC PARK 4,Ann Arbor,-83.702553,42.230879,-442536348,126.9,61.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461049_L2,461049,A2 PUBLIC BC PARK 5,Ann Arbor,-83.702608,42.230876,-442536348,131.4,61.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461072_DC,461072,Warren Valley Golf Course,Dearborn Heights,-83.2962538,42.341828,442187261,195.2,92.9,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+461072_L2,461072,Warren Valley Golf Course,Dearborn Heights,-83.2962538,42.341828,442187261,195.2,92.9,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+461129_L2,461129,POLICE DEPARTME PD,Sterling Heights,-83.013101,42.590857,-639184383,48.7,159.9,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461189_DC,461189,Champion Cueter Chrysler Jeep Dodge Ram Ypsilanti,Ypsilanti,-83.65176,42.2497,442383820,345.3,45.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+461190_DC,461190,Fresh Choice Marketplace,Eastpointe,-82.925124579073,42.466467387939,-421326722,172.8,100.0,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+461290_DC,461290,Art Moehn Chevrolet of Chelsea,Chelsea,-84.02839893701,42.293524561151,396228499,47.7,60.2,DC,J1772COMBO,False,True,kwh,,0.0,not listed,RED_E
+461382_L2,461382,A2 PUBLIC BC PARK 2,Ann Arbor,-83.70243,42.230884,-442536348,116.7,61.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461417_L2,461417,POLICE DEPARTME LIBRARY 2,Sterling Heights,-83.012591,42.590263,-639184383,115.8,120.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461418_L2,461418,POLICE DEPARTME LIBRARY 1,Sterling Heights,-83.012977,42.590167,-639184383,125.4,152.1,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+461457_L2,461457,Chick-Fil-A Store #5391 - Ann Arbor,Ann Arbor,-83.694824,42.255841,-442179669,86.4,72.0,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+461555_L2,461555,May's Bakery & Country Store,Taylor,-83.2356063,42.2560025,-153465433,607.4,32.1,L2,J1772,True,True,kwh,,0.0,not listed,POWERPUMP
+461752_DC,461752,"Troy, MI",Troy,-83.130907,42.5617359,219476712#1,17.0,118.3,DC,TESLA,True,True,kwh,,0.0,not listed,RIVIAN_ADVENTURE
+462544_DC,462544,Waterford Mobil,Waterford,-83.39827,42.62247,-1430191211,66.8,19.8,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+462750_L2,462750,Victory Chevrolet,Milan,-83.6757983632137,42.0979681208765,1083234127,688.9,54.0,L2,J1772,True,True,kwh,0.0,0.0,Free,Non-Networked
+463296_L2,463296,Brightdawn Village,Ann Arbor,-83.684775,42.249048,43423791-AddedOnRampEdge,93.5,75.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+463521_L2,463521,KUKA Systems 12200 Middlebelt Rd.,Livonia,-83.3302,42.37472,509795964,151.5,251.2,L2,J1772,True,True,kwh,,0.0,not listed,QUICKCHARGE
+463523_L2,463523,KUKA Systems 28251 Van Dyke Ave,Warren,-83.02823,42.50095,-1368618511,527.3,4.1,L2,J1772,True,True,kwh,,0.0,not listed,QUICKCHARGE
+463610_L2,463610,Shorepower Ferndale MI,Ferndale,-83.1245068,42.4664285,-1414500618,159.0,97.8,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,OpConnect
+463656_L2,463656,NOVA Consultants Inc,Novi,-83.472486,42.446855,-442573762,415.8,105.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+463657_DC,463657,12 Mile and I94 Marathon,Roseville,-82.9176908,42.510304,485055798,18.1,7.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+463882_DC,463882,Meijer Rochester Hills MI 57,Rochester Hills,-83.127212,42.635102,503356214,293.1,126.5,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,eVgo Network
+464966_DC,464966,General Motors Proving Ground,Milford,-83.667755,42.575224,-190387519#0,222.0,116.7,DC,J1772COMBO TESLA,True,False,kwh,,0.0,not listed,CHAEVI
+465473_L2,465473,BEDROCK HUD B2-11,Detroit,-83.047628,42.333196,496911558,75.7,12.7,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+465666_L2,465666,75 and 94 Intersection Gas Station,Melvindale,-83.1633027,42.2846755,421883741,37.2,20.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+465755_L2,465755,South State Commons,Ann Arbor,-83.73766,42.24741,220544251,105.2,70.6,L2,J1772,True,True,kwh,,0.0,not listed,FLO
+466116_DC,466116,Garfield and Canal Zipz Market,Clinton Township,-82.9517078,42.6054759,-441423183,35.0,41.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+466273_DC,466273,Civic Center Auburn Hills,Auburn Hills,-83.22472,42.67802,442056694,368.2,99.9,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+466352_DC,466352,Red Barn Market Site 16 Marathon Fenton,Fenton,-83.757253,42.677594,-188178968#0,4512.7,76.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+466443_L2,466443,MEIJER STORES MEIJER 233 ST2,Allen Park,-83.203971,42.2798,490903109,193.2,199.8,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+466449_L2,466449,MEIJER STORES MEIJER 233 ST1,Allen Park,-83.203885,42.279763,490903109,193.0,191.6,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+466617_DC,466617,Hall and Hayes Zipz Market,Clinton Township,-82.9726731,42.6270279,487618780,38.7,21.1,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+466716_L2,466716,MEIJER STORES MEIJER 661 ST 1,Detroit,-83.032877,42.334635,46274643#0,100.3,11.7,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+466845_L2,466845,Detroit Seafood Spot Bar & Marketplace - Tesla Destination,Warren,-82.9725257,42.46456,-42853495#0,480.7,19.4,L2,J1772 TESLA,True,True,kwh,0.0,0.0,Free,Tesla Destination
+467681_L2,467681,MEIJER STORES MEIJER 54 ST2,Northville,-83.43558,42.435133,-405649520,283.1,122.5,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+467686_L2,467686,MEIJER STORES MEIJER 54 ST1,Northville,-83.435647,42.435107,-405649520,283.1,128.6,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,ChargePoint Network
+469416_DC,469416,12 and Stephenson Marathon,Madison Heights,-83.11871,42.50463,1510757696,38.3,18.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+469706_DC,469706,I 75 and Clark St Sunoco,Detroit,-83.090717,42.312869,-219568155,26.0,11.2,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+469854_DC,469854,"Target T0923 (Woodhaven, MI)",Woodhaven,-83.22548,42.13856,-505548801,85.4,41.5,DC,J1772COMBO,True,True,kwh,,0.0,not listed,Electrify America
+470608_DC,470608,Pinckney Red Barn Market,Pinckney,-83.8758764,42.4670206,-8632621,119.1,24.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+470663_L2,470663,Plymouth Walk Apartments,Plymouth,-83.45353,42.359813,403105868,140.8,75.1,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+470787_DC,470787,"Plymouth, MI",Plymouth,-83.5204911,42.3922021,-404876866,758.7,178.8,DC,TESLA,True,True,kwh,,0.0,not listed,RIVIAN_ADVENTURE
+470859_DC,470859,Kroger Hazel Park,Hazel Park,-83.10428607002,42.462302415075,-505602756,131.9,17.4,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+470938_DC,470938,Mobil,Southfield,-83.30384124585251,42.49799104421862,422080930,60.7,37.5,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,Non-Networked
+471099_L2,471099,Self Storage Etkin,Auburn Hills,-83.24601,42.62187,-719299765,231.5,203.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+471568_L2,471568,Hunt Street Station,Detroit,-83.032124,42.350497,505040550#1,177.0,85.3,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+471660_DC,471660,11 Mile and Campbell Mobil,Royal Oak,-83.1245803,42.4901416,-735474361,10.9,10.7,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,RED_E
+471690_DC,471690,Mobil - Tesla Supercharger (M-59 Enterprises),Macomb,-82.9150772510286,42.6297456788033,8691349,61.9,67.6,DC,J1772COMBO TESLA,True,True,kwh,0.49,0.0,$0.49 per kWh,Tesla
+471814_L2,471814,ECGC,Ypsilanti,-83.618861855912,42.240162319749,-493921441,168.4,74.4,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+471927_L2,471927,101 E Huron St,Ann Arbor,-83.747899,42.281648,-8726968,43.0,23.7,L2,J1772,True,True,kwh,,0.0,not listed,EV Connect
+471948_DC,471948,Kensington Valley Outlets,Howell,-83.994334,42.62108,1088102688#1-AddedOnRampEdge,93.5,233.8,DC,J1772COMBO TESLA,True,True,kwh,,0.0,not listed,eVgo Network
+471955_DC,471955,MCorp M22 Detroit BP,Detroit,-83.0549,42.36041,415772664,107.9,14.6,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+472102_DC,472102,Amoco To Go Ypsilanti,Ypsilanti,-83.613836580605,42.233537666997,8732293,5.9,10.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+472144_DC,472144,ROYAL FRESH ROYAL FRESH PL2,Detroit,-83.22441,42.402417,-1149902014,93.1,68.9,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+472145_DC,472145,ROYAL FRESH ROYAL FRESH PL1,Detroit,-83.22423,42.402546,-1149902014,99.4,49.3,DC,J1772COMBO,True,True,kwh,,0.0,not listed,ChargePoint Network
+472164_L2,472164,Washtenaw Trial Court,Ann Arbor,-83.7480820626,42.28189205475,8728047,39.2,27.9,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+472280_L2,472280,2140 Ellsworth Rd,Ann Arbor,-83.717362,42.228566,216972164,83.4,139.7,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+472282_L2,472282,Ferndale Apartments 2,Ferndale,-83.149757,42.460669,419644357,94.0,47.0,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+472283_L2,472283,Ferndale Apartments 1,Ferndale,-83.1532,42.46049,1414270124,176.3,34.5,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+472656_L2,472656,LYNDEN PARKE BH-CS-000035-C1,Ypsilanti,-83.664749,42.256422,442195590,131.6,291.0,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+472657_L2,472657,LYNDEN PARKE BH-CS-000035-C2,Ypsilanti,-83.664743,42.256424,442195590,131.4,290.5,L2,J1772,True,True,kwh,,0.0,not listed,ChargePoint Network
+472661_DC,472661,Chillbox Valero Harper Ave,St Clair Shores,-82.906701,42.467315,503514865,69.1,39.1,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+472720_L2,472720,Icon Park Apartments Sterling Heights,Sterling Heights,-83.04893809398726,42.537088148194115,46227883#7,91.9,61.1,L2,J1772 TESLA,True,True,kwh,,0.0,not listed,EVGATEWAY
+472725_L2,472725,Washtenaw County Health Department,Ypsilanti,-83.601257889,42.239877740911,-8734672,494.3,59.2,L2,J1772,True,True,kwh,,0.0,not listed,RED_E
+472819_DC,472819,Sarokis Cellar BP,Wixom,-83.538357,42.552559,-721643285#0,56.3,40.8,DC,J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+473153_DC,473153,Golling CDJR Bloomfield Hills MI,Bloomfield Hills,-83.291696,42.604821,503372719#1,19.7,90.0,DC,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
+473153_L2,473153,Golling CDJR Bloomfield Hills MI,Bloomfield Hills,-83.291696,42.604821,503372719#1,19.7,90.0,L2,J1772 J1772COMBO,True,True,kwh,,0.0,not listed,RED_E
