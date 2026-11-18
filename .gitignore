@@ -12,3 +12,5 @@ venv/
 *.log
 .DS_Store
 Thumbs.db
+outputs/
+data/aa_det.net.xml
